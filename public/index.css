@@ -33,6 +33,14 @@ body{
         width: 7%;
         height: 7%;
     }
+
+    .imgContainer img{
+        transition: transform .2s;
+    }
+
+    .imgContainer img:hover{
+        transform: scale(1.5);
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -52,6 +60,14 @@ body{
     .imgContainer a {
         width: 5%;
         height: 5%;
+    }
+
+    .imgContainer img{
+        transition: transform .5s;
+    }
+
+    .imgContainer img:hover{
+        transform: scale(1.25);
     }
 }
 
