@@ -6,7 +6,16 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                pathway: ['Pathway Extreme'],
+                taruno: ['Taruno Wide'],
+                taruno2: ['Taruno Wide Outline']
+            },
+            spacing: {
+                '500': '31rem',
+            }
+        },
     },
-    plugins: [],
+    plugins: [require("daisyui")],
 };
