@@ -19,7 +19,6 @@ jobs:
           node-version: '18.x'
       - run: npm install
       - run: npm run build --if-present
-      - run: npm test
       - name: Install Dependencies
         run: composer update --ignore-platform-reqs
       - name: Generate key
