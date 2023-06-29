@@ -19,8 +19,6 @@ jobs:
           node-version: '18.x'
       - run: npm install
       - run: npm run build --if-present
-      - name: Install Dependencies
-        run: composer update --ignore-platform-reqs
       - name: Generate key
         run: php artisan key:generate
       - name: Generate storage link
