@@ -1,4 +1,4 @@
-name: RadioActive 2023 CI/CD AutoDeploy
+name: RadioActive 2023 CI/CD Staging AutoDeploy
 on:
   push:
     branches:
