@@ -1,3 +1,129 @@
-@tailwind base;
+
+@font-face {
+    font-family: 'Taruno Wide';
+    src: url("fonts/TarunoWide-Regular.otf") format("opentype");
+}
+
+/* html {
+    height: 5500%;
+} */
+
+body {
+    margin: 0;
+    background-color: black;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 10000;
+}
+header.sticky {
+    height: 100px;
+    transition: 0.75s;
+    background-color: blue;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Taruno Wide';
+    color: white;
+    margin-left: 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.sec_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    z-index: 2;
+}
+.sec_1 p {
+    color: white;
+    font-family: 'Taruno Wide';
+    font-size: 10px;
+    font-weight: bold;
+}
+.logo{
+    height: 550px;
+    position: relative;
+    z-index: 1;
+}
+li {
+    position: relative;
+    list-style: none;
+}
+.logo_radio {
+    margin: auto;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+.logo_stack {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.background_logo {
+    position: absolute;
+    height: 760px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}@tailwind base;
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+    h3 {
+      @apply text-lg;
+    }
+    a {
+      @apply text-blue-600 underline;
+    }
+  }
+  
+
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Taruno Wide';
+    src: url("fonts/TarunoWide-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Taruno Wide Outline';
+    src: url("fonts/TarunoWideOutline-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Pathway Extreme';
+    src: url("fonts/PathwayExtreme.ttf") format("truetype");
+}

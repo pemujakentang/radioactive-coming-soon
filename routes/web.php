@@ -21,3 +21,8 @@ Route::get('/', function () {
 Route::get('/ticket', [OrderController::class, 'index']);
 Route::post('/checkout', [OrderController::class, 'checkout']);
 Route::get('/invoice/{id}', [OrderController::class, 'invoice']);
+
+
+Route::get('/home', function () {
+    return view('Home.index');
+});
