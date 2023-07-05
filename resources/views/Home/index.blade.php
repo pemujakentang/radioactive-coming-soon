@@ -7,17 +7,24 @@
         @vite('resources/css/app.css')
         <title>UMN Radioactive 2023</title>
     </head>
-    <body class="bg-black h-screen">
+    <body class="bg-black h-full">
     <div class="navbar bg-[#0E0EC0] justify-center gap-16">
-        <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/home">HOME</a>
-        <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer">VO CHALLENGE</a>
-        <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer">RAC</a>
-        <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="ticket">CLOSING
-            NIGHT</a>\
+        <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer" href="/home">HOME</a>
+        <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO CHALLENGE</a>
+        <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
+        <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer" href="ticket">CLOSING
+            NIGHT</a>
 
     </div>
-    <div>
-        <p>Halooo</p>
+    <div id="section-1" class="py-16 max-w-4xl mx-auto">
+        <div class="flex items-center justify-center gap-4">
+            <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+            <img class="w-24 z-10" src="img/LOGO UMN RADIO.png">
+        </div>
+        <div class="relative flex flex-col items-center">
+            <img class="object-cover -mt-28 z-0" src="img/BACKGROUND LOGO.png" alt="background logo" />
+            <img class="object-cover z-30 w-[640px] absolute" src="img/logo.gif" alt="logo" />
+        </div>
     </div>
-    </body>
+</body>
 </html>
