@@ -14,8 +14,8 @@
         <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
         <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer" href="ticket">CLOSING
             NIGHT</a>
-
     </div>
+
     <div id="section-1" class="py-16 max-w-4xl mx-auto">
         <div class="flex items-center justify-center gap-4">
             <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
@@ -25,6 +25,21 @@
             <img class="object-cover -mt-28 z-0" src="img/BACKGROUND LOGO.png" alt="background logo" />
             <img class="object-cover z-30 w-[640px] absolute" src="img/logo.gif" alt="logo" />
         </div>
+    </div>
+
+    <div id="section2" class="mb-16">
+            <h2 class="font-taruno2 text-white text-center my-12">ABOUT US</h2>
+            <p class="font-pathway text-sm text-white text-center">RADIOACTIVE merupakan acara off air tahunan yang diselenggarakan oleh UMN Radio,</p>
+            <p class="font-pathway text-sm text-white text-center">radio komunitas dari Universitas Multimedia Nusantara.</p>
+            <br>
+            <p class="font-pathway text-sm text-white text-center">Dimulai sejak 2015, RADIOACTIVE tahun in menjadi kali ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE</p>
+            <p class="font-pathway text-sm text-white text-center">berkembang dengan baik. Lebih lanjut, RADIOACTIVE diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
+            <br>
+            <p class="font-pathway text-sm text-white text-center">Pada tahun ini, acara kami mengangkat tema "RADIOACTIVE 2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-</p>
+            <p class="font-pathway text-sm text-white text-center">fokus pada pengembangan diri individu dan mendorong mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami</p>
+            <p class="font-pathway text-sm text-white text-center">sebelumnya mengangkat tema "RADIOACTIVE 2022: Radiant" dengan tagline "Light Up Your Action” yang berfokus pada tindakan anak-anak</p>
+            <p class="font-pathway text-sm text-white text-center">muda untuk bersinar dan memancarkan cahaya positif dari diri mereka kepada orang lain di sekitarnya.</p>
+            <br>
     </div>
 </body>
 </html>
