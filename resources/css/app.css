@@ -7,7 +7,7 @@
 /* html {
     height: 5500%;
 } */
-
+/* 
 body {
     margin: 0;
     background-color: black;
@@ -92,8 +92,9 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-}@tailwind base;
+}*/
 
+@tailwind base; 
 @layer base {
     h1 {
       @apply text-2xl;
