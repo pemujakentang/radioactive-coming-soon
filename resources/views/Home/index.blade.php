@@ -15,8 +15,10 @@
         <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer">VO CHALLENGE</a>
         <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer">RAC</a>
         <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="ticket">CLOSING
-            NIGHT</a>\
-
+            NIGHT</a>
+        @auth
+            <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
+        @endauth
     </div>
     <div>
         <p>Halooo</p>
