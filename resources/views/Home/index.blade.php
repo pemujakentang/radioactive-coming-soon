@@ -9,7 +9,7 @@
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="bg-black h-screen">
+<body class="bg-black h-full">
     <div class="navbar bg-[#0E0EC0] justify-center gap-16">
         <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/home">HOME</a>
         <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer">VO CHALLENGE</a>
@@ -20,32 +20,16 @@
             <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
         @endauth
     </div>
-    <div>
-        <p>Halooo</p>
-    </div>
-
-    {{-- <header>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">VO CHALLENGE</a></li>
-                <li><a href="#">RAC</a></li>
-                <li><a href="#">CLOSING NIGHT</a></li>
-            </ul>
-        </header>
-        <div class="sec_1">
-                <li><p>THE MOST SPECTACULAR ANNUAL EVENT BY </p></li>
-                <li><img class="logo_radio" src="img/LOGO UMN RADIO.png"></li>
+    <div id="section-1" class="py-16 max-w-4xl mx-auto">
+        <div class="flex items-center justify-center gap-4">
+            <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+            <img class="w-24 z-10" src="img/LOGO UMN RADIO.png">
         </div>
-        <center>
-            <img class="logo logo_stack" src="img/logo.gif" alt="logo"/>
-            <img class="background_logo" src="img/BACKGROUND LOGO.png" alt="background logo"/>
-        </center> --}}
-    {{-- <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0);
-            });
-        </script> --}}
+        <div class="relative flex flex-col items-center">
+            <img class="object-cover -mt-28 z-0" src="img/BACKGROUND LOGO.png" alt="background logo" />
+            <img class="object-cover z-30 w-[640px] absolute" src="img/logo.gif" alt="logo" />
+        </div>
+    </div>
 </body>
 
 </html>
