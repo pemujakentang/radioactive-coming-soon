@@ -7,28 +7,15 @@
         @vite('resources/css/app.css')
         <title>UMN Radioactive 2023</title>
     </head>
-    <body>
-        <header>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">VO CHALLENGE</a></li>
-                <li><a href="#">RAC</a></li>
-                <li><a href="#">CLOSING NIGHT</a></li>
-            </ul>
-        </header>
-        <div class="sec_1">
-                <li><p>THE MOST SPECTACULAR ANNUAL EVENT BY </p></li>
-                <li><img class="logo_radio" src="img/LOGO UMN RADIO.png"></li>
+    <body class="h-screen bg-black overflow-hidden">
+        
+        <div class="flex justify-center items-center">
+                <p class="font-taruno text-white text-xs">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+                <img class="h-7 ml-2" src="img/LOGO UMN RADIO.png">
         </div>
-        <center>
-            <img class="logo logo_stack" src="img/logo.gif" alt="logo"/>
-            <img class="background_logo" src="img/BACKGROUND LOGO.png" alt="background logo"/>
-        </center>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0);
-            });
-        </script>
+        <div class="flex justify-center ">
+            <img class="absolute h-1/2 z-10" src="img/logo.gif" alt="logo"/>
+            <img class="absolute h-1/2 z-1" src="img/BACKGROUND LOGO.png" alt="background logo"/>
+        </div>
     </body>
 </html>
