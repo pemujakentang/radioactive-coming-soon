@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 Route::get('/ticket', function () {
     return view('Tickets.index');
 });
+
+Route::get('/form', function(){
+    return view('Forms.index');
+});
+
+Route::resource('teams', TeamDataController::class);
