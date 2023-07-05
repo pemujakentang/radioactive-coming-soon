@@ -8,7 +8,7 @@
         <title>UMN Radioactive 2023</title>
     </head>
     <body class="bg-black h-full">
-    <div class="navbar bg-[#0E0EC0] justify-center gap-16">
+    <div class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer" href="/home">HOME</a>
         <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO CHALLENGE</a>
         <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
@@ -16,7 +16,7 @@
             NIGHT</a>
     </div>
 
-    <div id="section-1" class="pt-16 max-w-4xl mx-auto">
+    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
         <div class="flex items-center justify-center gap-4">
             <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-24 z-10" src="img/LOGO UMN RADIO.png">
