@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <title>UMN Radio | Login</title>
+    <title>UMN RadioActive 2023 | Login</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         class="absolute inset-0 z-0 h-full w-full object-cover" />
     <div class="absolute inset-0 z-0 h-full w-full bg-black/50" />
     <div class="container relative z-40 mx-auto p-8 flex items-center justify-center">
-        <img src="{{ url('/images/logoRadio-putih.png') }}" alt="Image" class="h-20" />
+        <img src="{{ url('/img/logo.gif') }}" alt="Image" class="h-32" />
     </div>
     <div class="class=container mx-auto p-4">
         <form action="/" method="POST">
@@ -26,9 +26,6 @@
                         Log In</h3>
                 </div>
                 <div class="p-6 flex flex-col gap-4">
-                    <!-- @if (session()->has('loginError'))
-<p>{{ session('loginError') }}</p>
-@endif -->
                     @csrf
                     <div class="relative w-full min-w-[200px] h-11">
                         <input name="email" type="email" placeholder="Email"

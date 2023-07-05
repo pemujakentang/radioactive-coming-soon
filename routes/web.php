@@ -42,7 +42,7 @@ Route::get('/logout', function (Request $request) {
     return redirect('/');
 });
 
-Route::controller(OrderControler::class)->group(function () {
+Route::controller(OrderController::class)->group(function () {
     Route::get('/ticket', 'index');
     Route::post('/checkout', 'checkout');
     Route::get('/invoice/{id}', 'invoice');
