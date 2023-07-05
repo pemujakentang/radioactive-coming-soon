@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1000px) {
     .backgroundView {
-        content: url("comingsoon_mobile.png");
+        content: url("comingsoon_mobile.webp");
     }
     .imgContainer {
         display: flex;
@@ -21,7 +21,7 @@
 
 @media only screen and (min-width: 1000px) {
     .backgroundView {
-        content: url("comingsoon_desktop2.png");
+        content: url("comingsoon_desktop2.webp");
     }
     .imgContainer {
         display: flex;
