@@ -45,8 +45,13 @@ Route::get('/logout', function (Request $request) {
 });
 
 Route::controller(OrderController::class)->group(function () {
-    Route::get('/ticket', 'index');
-    Route::post('/checkout', 'checkout');
+    Route::get('/ticket', 'index'); 
+
+    Route::get('/order/{quantity}/personal-information', 'order');  
+
+    Route::post('/order/{quantity}/ticket-information', 'ticket_information'); 
+
+    Route::post('/{quantity}/checkout', 'checkout');
     Route::get('/invoice/{id}', 'invoice');
 });
 

@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('detail_transactions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('header_transaction_id')->constrained('header_transactions');
-            $table->foreignId('merch_id')->constrained('merches');
+            // $table->foreignId('header_transaction_id')->constrained('header_transactions');
+            // $table->foreignId('merch_id')->constrained('merches');
             $table->integer('qty');
             $table->bigInteger('total_price');
             $table->enum('status', ['Unpaid', 'Paid', 'Used', 'Canceled', 'Expired']);
