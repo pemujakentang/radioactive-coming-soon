@@ -53,6 +53,9 @@ Route::controller(OrderController::class)->group(function () {
 
     Route::post('/{quantity}/checkout', 'checkout');
     Route::get('/invoice/{id}', 'invoice');
+
+    // debug only
+    Route::get('/approve', 'approve_ticket');
 });
 
 Route::middleware('guest')->controller(ResetPasswordController::class)->group(function() {

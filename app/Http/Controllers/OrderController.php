@@ -9,6 +9,8 @@ use App\Models\BundleOrder;
 use App\Models\Ticket;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Str;
+
 class OrderController extends Controller
 {
     /**
@@ -155,35 +157,51 @@ class OrderController extends Controller
 
                 if($order->qty == 1){
                     Ticket::create([
+                        'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $order->email,
-                        'ticket_code' => "RA230" +  String::random(5),
                     ]);
                 } elseif ($order->qty == 2) {
                     Ticket::create([
+                        'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_1,
-                        'ticket_code' => "RA230" +  String::random(5),
                     ]);
                     Ticket::create([
+                        'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_2,
-                        'ticket_code' => "RA230" +  String::random(5),
                     ]);
                 } elseif ($order->qty == 3) {
                     Ticket::create([
+                        'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_1,
-                        'ticket_code' => "RA230" +  String::random(5),
                     ]);
                     Ticket::create([
+                        'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_2,
-                        'ticket_code' => "RA230" +  String::random(5),
                     ]);
                     Ticket::create([
+                        'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_3,
-                        'ticket_code' => "RA230" +  String::random(5),
                     ]);
                 }
             }
         }
     }
+
+    // public function approve_ticket()
+    // {
+    //     $bundle = BundleOrder::where('email_1', "bella@gmail.com")->first();
+
+    //     // dd($bundle->email_2);
+    //         Ticket::create([
+    //             'ticket_code' => str("RA230")->append( Str::random(5)),
+    //             'email' => $bundle->email_1,
+    //         ]);
+    //         Ticket::create([
+    //             'ticket_code' => str("RA230")->append( Str::random(5)),
+    //             'email' => $bundle->email_2,
+    //         ]);
+
+    // }
 
     public function invoice($id)
     {
