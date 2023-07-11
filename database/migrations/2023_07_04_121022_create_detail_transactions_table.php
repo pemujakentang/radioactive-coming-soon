@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('orders', function (Blueprint $table) {
+        Schema::create('detail_transactions', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('phone');
+            // $table->foreignId('header_transaction_id')->constrained('header_transactions');
+            // $table->foreignId('merch_id')->constrained('merches');
             $table->integer('qty');
             $table->bigInteger('total_price');
             $table->enum('status', ['Unpaid', 'Paid', 'Used', 'Canceled', 'Expired']);
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('orders');
+        Schema::dropIfExists('detail_transactions');
     }
 };

@@ -5,6 +5,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ResetPasswordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DetailTransactionController;
+use App\Http\Controllers\MerchController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,8 +45,13 @@ Route::get('/logout', function (Request $request) {
 });
 
 Route::controller(OrderController::class)->group(function () {
-    Route::get('/ticket', 'index');
-    Route::post('/checkout', 'checkout');
+    Route::get('/ticket', 'index'); 
+
+    Route::get('/order/{quantity}/personal-information', 'order');  
+
+    Route::post('/order/{quantity}/ticket-information', 'ticket_information'); 
+
+    Route::post('/{quantity}/checkout', 'checkout');
     Route::get('/invoice/{id}', 'invoice');
 });
 
@@ -54,3 +61,9 @@ Route::middleware('guest')->controller(ResetPasswordController::class)->group(fu
     Route::get('/reset-password/{token}', 'reset_token')->name('password.reset');
     Route::post('/reset-password', 'reset')->name('password.update');;
 });
+
+Route::get('/merch', [MerchController::class, 'index']);
+Route::get('/cart', [MerchController::class, 'cart']);
+Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
+Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
+Route::get('/merch-checkout', [MerchController::class, 'checkout']);
