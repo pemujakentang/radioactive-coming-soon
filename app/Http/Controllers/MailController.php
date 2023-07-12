@@ -10,7 +10,11 @@ use Illuminate\Support\Facades\Mail;
 
 class MailController extends Controller
 {
-    public function index()
+    public function index(){
+        $this-> mail();
+    }
+
+    public function mail()
     {
         $data = [
             'subject' => '[UMN RadioActive 2023 - Your Ticket Order is Confirmed]',
@@ -22,10 +26,10 @@ class MailController extends Controller
 
         try {
             Mail::to('geraldimanuelwijaya@gmail.com')->send(new TicketNotify($data));
-            return response()->json([
-                'status' => 'success',
-                'message' => 'Email sent successfully'
-            ]);
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
 
          
         } catch (\Throwable $th) {

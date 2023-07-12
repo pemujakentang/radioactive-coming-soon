@@ -215,7 +215,7 @@ class OrderController extends Controller
             'receiver' => $receiver,
             'ticket_type' => 'Early Bird',
             'quantity' => $quantity,
-            'ticket_code' => implode(', ', $ticket_code),
+            'ticket_code' => $ticket_code->implode(', '),
         ];
 
         try {
