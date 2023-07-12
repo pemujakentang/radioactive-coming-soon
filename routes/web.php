@@ -6,6 +6,7 @@ use App\Http\Controllers\ResetPasswordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DetailTransactionController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\MerchController;
 use Illuminate\Support\Facades\Route;
 
@@ -70,3 +71,5 @@ Route::get('/cart', [MerchController::class, 'cart']);
 Route::get('/{id}/cart', [MerchController::class, 'addToCart']);
 Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
+
+Route::get('/send', [MailController::class, 'index']);

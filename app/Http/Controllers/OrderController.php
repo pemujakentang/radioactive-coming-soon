@@ -11,6 +11,9 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Str;
 
+use App\Mail\TicketNotify;
+use Illuminate\Support\Facades\Mail;
+
 class OrderController extends Controller
 {
     /**
@@ -44,6 +47,7 @@ class OrderController extends Controller
             $order = Order::create($request->all());
 
             BundleOrder::create([
+                'order_id' => $order->id,
                     'name_1' => $request->name,
                     'email_1' => $request->email,
                     'phone_1' => $request->phone,
@@ -75,9 +79,21 @@ class OrderController extends Controller
             return view('Tickets.checkout', compact('order', 'snapToken'));
         }
 
+        $order = Order::create(
+            [
+                'name' => $request->name_1,
+                'email' => $request->email_1,
+                'phone' => $request->phone_1,
+                'qty' => $request->qty,
+                'total_price' => $request->qty * 75000,
+                'status' => 'Unpaid'
+            ]
+        );
+
         // kalo bundle
         if ($request->qty ==2) {
             BundleOrder::create([
+                'order_id' => $order->id,
                 'name_1' => $request->name_1,
                 'email_1' => $request->email_1,
                 'phone_1' => $request->phone_1,
@@ -87,6 +103,7 @@ class OrderController extends Controller
             ]);
         } elseif ($request->qty == 3) {
             BundleOrder::create([
+                'order_id' => $order->id,
                 'name_1' => $request->name_1,
                 'email_1' => $request->email_1,
                 'phone_1' => $request->phone_1,
@@ -100,16 +117,7 @@ class OrderController extends Controller
         }
 
 
-        $order = Order::create(
-            [
-                'name' => $request->name_1,
-                'email' => $request->email_1,
-                'phone' => $request->phone_1,
-                'qty' => $request->qty,
-                'total_price' => $request->qty * 75000,
-                'status' => 'Unpaid'
-            ]
-        );
+
 
          // Set your Merchant Server Key
          \Midtrans\Config::$serverKey = config('midtrans.server_key');
@@ -157,51 +165,74 @@ class OrderController extends Controller
 
                 if($order->qty == 1){
                     Ticket::create([
+                        'order_id' => $order->id,
                         'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $order->email,
                     ]);
                 } elseif ($order->qty == 2) {
                     Ticket::create([
+                        'order_id' => $order->id,
                         'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_1,
                     ]);
                     Ticket::create([
+                        'order_id' => $order->id,
                         'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_2,
                     ]);
                 } elseif ($order->qty == 3) {
                     Ticket::create([
+                        'order_id' => $order->id,
                         'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_1,
                     ]);
                     Ticket::create([
+                        'order_id' => $order->id,
                         'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_2,
                     ]);
                     Ticket::create([
+                        'order_id' => $order->id,
                         'ticket_code' => str("RA230")->append( Str::random(5)),
                         'email' => $bundle->email_3,
                     ]);
                 }
+                $receiver_mail = $order->email;
+                $receiver = $order->name;
+                $quantity = $order->qty;
+                $ticket_code = Ticket::where('order_id', $order->id)->get()->pluck('ticket_code');
+
+                // send ticket ke email
+                $this->email($receiver_mail, $receiver, $quantity, $ticket_code);
             }
         }
     }
 
-    // public function approve_ticket()
-    // {
-    //     $bundle = BundleOrder::where('email_1', "bella@gmail.com")->first();
+    private function email($receiver_mail,$receiver, $quantity, $ticket_code)
+    {
+        $data = [
+            'subject' => '[UMN RadioActive 2023 - Your Ticket Order is Confirmed]',
+            'receiver' => $receiver,
+            'ticket_type' => 'Early Bird',
+            'quantity' => $quantity,
+            'ticket_code' => implode(', ', $ticket_code),
+        ];
 
-    //     // dd($bundle->email_2);
-    //         Ticket::create([
-    //             'ticket_code' => str("RA230")->append( Str::random(5)),
-    //             'email' => $bundle->email_1,
-    //         ]);
-    //         Ticket::create([
-    //             'ticket_code' => str("RA230")->append( Str::random(5)),
-    //             'email' => $bundle->email_2,
-    //         ]);
+        try {
+            Mail::to($receiver_mail)->send(new TicketNotify($data));
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Email sent successfully'
+            // ]);
 
-    // }
+         
+        } catch (\Throwable $th) {
+           return response()->json([
+               'status' => 'error',
+               'message' => 'Email failed to send'
+           ]);
+        }
+    }
 
     public function invoice($id)
     {

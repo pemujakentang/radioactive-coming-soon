@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('bundle_orders', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger("order_id");
+            $table->foreign("order_id")->references("id")->on("orders")->onDelete("cascade")->onUpdate("cascade");
             $table->string('name_1');
             $table->string('email_1')->unique();
             $table->string('phone_1');
