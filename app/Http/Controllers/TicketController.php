@@ -5,15 +5,37 @@ namespace App\Http\Controllers;
 use App\Models\Ticket;
 use App\Http\Requests\StoreTicketRequest;
 use App\Http\Requests\UpdateTicketRequest;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class TicketController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function ticket_redeem($ticket_code)
     {
-        //
+        $inserted_ticket = Ticket::where('ticket_code', $ticket_code)->first();
+        
+        if ($inserted_ticket->status == 'used') {
+            return response()->json([
+                'message' => 'Ticket already redeemed',
+                'status' => 'error'
+            ]);
+        } else {
+            $inserted_ticket->update(['status' => 'used']);
+            return response()->json([
+                'message' => 'Ticket redeemed successfully',
+                'status' => 'success'
+            ]);
+        }
+        
+    }
+
+    public function show_qr($ticket_code)
+    {
+        $url = 'https://staging.umnradioactive.com/ticket-redeem/'.$ticket_code;
+        $qr_code = QrCode::size(200)->generate($url);
+        return view('Admin.qr', compact('qr_code'));
     }
 
     /**

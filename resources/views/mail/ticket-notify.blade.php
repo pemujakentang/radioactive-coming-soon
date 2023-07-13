@@ -38,6 +38,13 @@ Thanks,<br>
     <p>Booking Reference/Confirmation Number: {{ $data['ticket_code'] }}
         Please make a note of this number as it will be required for any further inquiries or changes to your booking.
     </p>
+
+    <p>Please visit this link and show to our gate master:
+        @foreach ($data['ticket_code_packed'] as $ticket_code)
+            <p>staging.umnradioactive.com/show-qr/{{ $ticket_code }}
+            </p>
+        @endforeach
+
     <p>If you have any questions or need assistance, please don't hesitate to contact our customer support team at
         [Nomor Telepon] or [Alamat Email]. We are available to assist you from [Jam Operasional].
 

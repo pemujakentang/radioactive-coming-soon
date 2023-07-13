@@ -216,6 +216,7 @@ class OrderController extends Controller
             'ticket_type' => 'Early Bird',
             'quantity' => $quantity,
             'ticket_code' => $ticket_code->implode(', '),
+            'ticket_code_packed' => $ticket_code,
         ];
 
         try {

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DetailTransactionController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\MerchController;
+use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,8 +56,14 @@ Route::controller(OrderController::class)->group(function () {
     Route::post('/{quantity}/checkout', 'checkout');
     Route::get('/invoice/{id}', 'invoice');
 
-    // debug only
+    // debug only *nanti dihapus*
     Route::get('/approve', 'approve_ticket');
+});
+
+Route::controller(TicketController::class)->group(function (){
+
+    Route::get('/ticket-redeem/{ticket_code}', 'ticket_redeem')->middleware('auth');
+    Route::get('/show-qr/{ticket_code}', 'show_qr');
 });
 
 Route::middleware('guest')->controller(ResetPasswordController::class)->group(function() {
