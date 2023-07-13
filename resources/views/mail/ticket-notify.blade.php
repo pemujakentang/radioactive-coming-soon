@@ -40,10 +40,9 @@ Thanks,<br>
     </p>
 
     <p>Please visit this link and show to our gate master:
-        @foreach ($data['ticket_code_packed'] as $ticket_code)
-            <p>staging.umnradioactive.com/show-qr/{{ $ticket_code }}
-            </p>
-        @endforeach
+    <p>
+        {{ $data['ticket_code_packed'] }}
+    </p>
 
     <p>If you have any questions or need assistance, please don't hesitate to contact our customer support team at
         [Nomor Telepon] or [Alamat Email]. We are available to assist you from [Jam Operasional].

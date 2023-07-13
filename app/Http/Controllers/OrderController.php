@@ -210,13 +210,20 @@ class OrderController extends Controller
 
     private function email($receiver_mail,$receiver, $quantity, $ticket_code)
     {
+        $ticket_code_packed = '';
+        $ticket_code_array = $ticket_code->toArray();
+
+        foreach($ticket_code_array as $ticket){
+            $ticket_code_packed = $ticket_code_packed . "staging.umnradioactive.com/show-qr/" . $ticket . ', ';
+        }
+
         $data = [
             'subject' => '[UMN RadioActive 2023 - Your Ticket Order is Confirmed]',
             'receiver' => $receiver,
             'ticket_type' => 'Early Bird',
             'quantity' => $quantity,
             'ticket_code' => $ticket_code->implode(', '),
-            'ticket_code_packed' => $ticket_code,
+            'ticket_code_packed' => $ticket_code_packed,
         ];
 
         try {
