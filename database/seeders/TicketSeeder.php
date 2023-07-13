@@ -13,10 +13,10 @@ class TicketSeeder extends Seeder
      */
     public function run(): void
     {
-        Ticket::create([
-            // 'order_id'=> '1',
-            'ticket_code' => 'RA230JDFKNDS',
-            'email' => 'geraldimanuel@gmail.com'
-        ]);
+        // Ticket::create([
+        //     // 'order_id'=> '1',
+        //     'ticket_code' => 'RA230JDFKNDS',
+        //     'email' => 'geraldimanuel@gmail.com'
+        // ]);
     }
 }
