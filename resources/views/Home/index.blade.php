@@ -9,7 +9,13 @@
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="h-screen bg-black">
+<body>
+    <div> 
+        <video width="400" autoplay loop class="absolute -z-10 w-auto min-w-full min-h-full max-w-none">
+            <source src="/images/BACKGROUND_DESKTOP.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <div>
         <div id="section2" class="my-16">
             <h2 class="font-taruno2 text-white text-center my-12">ABOUT US</h2>
