@@ -14,9 +14,10 @@
         <p class="text-3xl py-8">Tickets Menu</p>
 
         <div class="flex flex-col">
+            <a href="/custom-order">Custom Order</a>
             <a href="/order/1/personal-information">Single</a>
-            <a href="/order/2/personal-information">Duo</a>
             <a href="/order/3/personal-information">Trio</a>
+            <a href="/order/5/personal-information">Friends Combo</a>
         </div>
 
     </div>

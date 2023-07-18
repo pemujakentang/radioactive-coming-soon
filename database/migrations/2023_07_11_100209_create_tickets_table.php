@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreign("order_id")->references("id")->on("orders")->onDelete("cascade")->onUpdate("cascade");
 
             $table->string("ticket_code");
-            $table->string("email")->unique();
+            $table->string("email");
             $table->enum("status", ["used", "available"])->default("available");
             $table->timestamps();
         });
