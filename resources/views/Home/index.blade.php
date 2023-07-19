@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     @vite('resources/css/app.css')
     <title>UMN Radioactive 2023</title>
 </head>
@@ -31,17 +32,17 @@
     </div>
 
     <div id="section-1" class="pt-24 max-w-4xl mx-auto">
-        <div class="flex items-center justify-center gap-4">
+        <div data-aos="fade-up" class="flex items-center justify-center gap-4">
             <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-24 z-10" src="img/LOGO UMN RADIO.png">
         </div>
-        <div class="relative flex flex-col items-center">
+        <div class="relative flex flex-col items-center" data-aos="fade-up">
             <img class="object-cover -mt-28 z-0" src="img/BACKGROUND LOGO.png" alt="background logo" />
             <img class="object-cover z-30 w-[640px] absolute" src="img/logo.gif" alt="logo" />
         </div>
     </div>
 
-    <div id="section2" class="-mt-28 mb-16">
+    <div id="section2" class="-mt-28 mb-16" data-aos="fade-up">
         <h2 class="font-taruno2 text-white text-center my-12">ABOUT US</h2>
         <p class="font-pathway text-sm text-white text-center">RADIOACTIVE merupakan acara off air tahunan yang
             diselenggarakan oleh UMN Radio,</p>
@@ -64,7 +65,7 @@
         <br>
     </div>
 
-    <div id="section3" class="my-16">
+    <div id="section3" class="my-16" data-aos="fade-up">
         <h2 class="font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h2>
         <div class="carousel carousel-center">
             <div class="carousel-item ml-32 border border-white">
@@ -138,8 +139,8 @@
             </div>
         </div>
 
-        <footer class="bg-gradient-to-b from-black to-[#0E0EC0] pt-56 pb-16">
-        <div class="flex flex-row">
+        <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
+        <div class="flex flex-row" data-aos="fade-up">
             <div class="container w-full ml-5">
                     <img src="/images/LOGO RA.png" alt="" class="h-40 pl-12">
             </div>
@@ -206,6 +207,10 @@
         </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
