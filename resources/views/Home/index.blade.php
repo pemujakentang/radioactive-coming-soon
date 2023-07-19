@@ -11,9 +11,9 @@
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="bg-black h-full lg:bg-transparent">
+<body class="">
     <div> 
-        <video autoplay loop muted class="invisible lg:visible fixed -z-10 w-auto lg:w-full lg:min-w-full lg:min-h-full lg:max-w-none" loading="lazy">
+        <video autoplay loop muted class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-none" loading="lazy">
             <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div>
