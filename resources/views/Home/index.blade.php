@@ -43,8 +43,8 @@
 
     <div id="section2" class="-mt-8 md:-mt-28 mb-16" data-aos="fade-up">
         <h4 class="font-taruno2 md:text-xl text-white text-center my-12">ABOUT US</h4>
-        <div class="px-8 md:px-48">
-            <p class="md:px-44 font-pathway text-sm text-white text-justify md:text-center">RADIOACTIVE merupakan acara off air tahunan yang
+        <div class="px-8 md:px-20 lg:px-48">
+            <p class="lg:px-44 font-pathway text-sm text-white text-justify md:text-center">RADIOACTIVE merupakan acara off air tahunan yang
                 diselenggarakan oleh UMN Radio, radio komunitas dari Universitas Multimedia Nusantara.
             </p>
             <br>
@@ -137,11 +137,11 @@
         </div>
 
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
-        <div class="flex flex-col lg:flex-row">
-            <div class="container w-full md:ml-5">
-                    <img src="/images/LOGO RA.webp" alt="" class="h-40 pl-12">
+        <div class="flex flex-col justify-center md:items-center md:flex-row">
+            <div class="container w-full md:ml-5 flex justify-center">
+                    <img src="/images/LOGO RA.webp" alt="" class="h-40 md:h-24 lg:h-40 md:pl-12">
             </div>
-            <div class="container flex flex-col justify-evenly py-3 my-10 md:my-0 gap-4 md:gap-0 text-center md:text-left">
+            <div class="container flex flex-col justify-evenly py-3 my-10 md:ml-4 lg:ml-0 md:my-0 gap-4 lg:gap-0 text-center md:text-left">
                 <a href="/" class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>HOME</b>
@@ -193,10 +193,10 @@
                 </div>
             </div>
             <div class="flex justify-center md:justify-end items-center w-full mb-10 md:mb-0">
-                <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-12 md:h-16">
+                <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-12 lg:h-16">
             </div>
             <div class="flex justify-center w-full">
-                <img src="/images/LOGO UMN.webp" alt="" class="h-36 md:h-40">
+                <img src="/images/LOGO UMN.webp" alt="" class="h-36 lg:h-40">
             </div>
     
         </div>
