@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body>
-<div>
+<body class="bg-black h-full lg:bg-transparent">
     <div> 
-        <video autoplay loop muted class="fixed -z-10 w-full min-w-full min-h-full max-w-none" loading="lazy">
+        <video autoplay loop muted class="invisible lg:visible fixed -z-10 w-auto lg:w-full lg:min-w-full lg:min-h-full lg:max-w-none" loading="lazy">
             <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div>
-
-    <div id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
+    <nav id="header" class="hidden fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
             href="/">HOME</a>
         <a
@@ -29,9 +28,9 @@
         <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
             href="ticket">CLOSING
             NIGHT</a>
-    </div>
+    </nav>
 
-    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
+    <div id="section-1" class="pt-10 max-w-4xl mx-auto">
         <div data-aos="fade-up" class="flex items-center justify-center gap-4">
             <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-24 z-10" src="images/LOGO UMN RADIO.webp">
@@ -140,7 +139,7 @@
         </div>
 
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
-        <div class="flex flex-row" data-aos="fade-up">
+        <div class="flex flex-row">
             <div class="container w-full ml-5">
                     <img src="/images/LOGO RA.webp" alt="" class="h-40 pl-12">
             </div>
@@ -206,11 +205,12 @@
                 <p class="mb-2 text-xs font-taruno font-medium text-white">&copy; UMN RADIOACTIVE 2023</p>
         </div>
         </footer>
-    </div>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script>
         window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
