@@ -141,7 +141,7 @@
             <div class="container w-full md:ml-5 flex justify-center">
                     <img src="/images/LOGO RA.webp" alt="" class="h-40 md:h-24 lg:h-40 md:pl-12">
             </div>
-            <div class="container flex flex-col justify-evenly py-3 my-10 md:ml-4 lg:ml-0 md:my-0 gap-4 lg:gap-0 text-center md:text-left">
+            <div class="container flex flex-col justify-evenly py-3 my-10 md:ml-4 lg:ml-0 md:my-0 gap-4 text-center md:text-left">
                 <a href="/" class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>HOME</b>
