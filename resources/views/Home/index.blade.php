@@ -9,8 +9,14 @@
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="bg-black h-full">
+<body>
 <div>
+    <div> 
+        <video width="400" autoplay loop class="fixed -z-10 w-full min-w-full min-h-full max-w-none">
+            <source src="/images/BACKGROUND_DESKTOP.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <div id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
             href="/home">HOME</a>
