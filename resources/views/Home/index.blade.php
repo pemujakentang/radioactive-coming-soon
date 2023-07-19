@@ -31,41 +31,38 @@
     </nav>
 
     <div id="section-1" class="pt-10 max-w-4xl mx-auto">
-        <div data-aos="fade-up" class="flex items-center justify-center gap-4">
-            <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
-            <img class="w-24 z-10" src="images/LOGO UMN RADIO.webp">
+        <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
+            <p class="text-center font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+            <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
         </div>
         <div class="relative flex flex-col items-center" data-aos="fade-up">
-            <img class="object-cover -mt-28 z-0" src="images/BACKGROUND LOGO.webp" alt="background logo" />
-            <img class="object-cover z-30 w-[640px] absolute" src="images/logo.gif" alt="logo" />
+            <img class="object-cover -mt-4 md:-mt-28 z-0" src="images/BACKGROUND LOGO.webp" alt="background logo" />
+            <img class="object-cover -mt-4 md:-mt-0 z-30 w-[640px] absolute" src="images/logo.gif" alt="logo" />
         </div>
     </div>
 
-    <div id="section2" class="-mt-28 mb-16" data-aos="fade-up">
-        <h2 class="font-taruno2 text-white text-center my-12">ABOUT US</h2>
-        <p class="font-pathway text-sm text-white text-center">RADIOACTIVE merupakan acara off air tahunan yang
-            diselenggarakan oleh UMN Radio,</p>
-        <p class="font-pathway text-sm text-white text-center">radio komunitas dari Universitas Multimedia Nusantara.
-        </p>
-        <br>
-        <p class="font-pathway text-sm text-white text-center">Dimulai sejak 2015, RADIOACTIVE tahun in menjadi kali
-            ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE</p>
-        <p class="font-pathway text-sm text-white text-center">berkembang dengan baik. Lebih lanjut, RADIOACTIVE
-            diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
-        <br>
-        <p class="font-pathway text-sm text-white text-center">Pada tahun ini, acara kami mengangkat tema "RADIOACTIVE
-            2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-</p>
-        <p class="font-pathway text-sm text-white text-center">fokus pada pengembangan diri individu dan mendorong
-            mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami</p>
-        <p class="font-pathway text-sm text-white text-center">sebelumnya mengangkat tema "RADIOACTIVE 2022: Radiant"
-            dengan tagline "Light Up Your Action” yang berfokus pada tindakan anak-anak</p>
-        <p class="font-pathway text-sm text-white text-center">muda untuk bersinar dan memancarkan cahaya positif dari
-            diri mereka kepada orang lain di sekitarnya.</p>
-        <br>
+    <div id="section2" class="-mt-8 md:-mt-28 mb-16" data-aos="fade-up">
+        <h4 class="font-taruno2 md:text-xl text-white text-center my-12">ABOUT US</h4>
+        <div class="px-8 md:px-48">
+            <p class="md:px-44 font-pathway text-sm text-white text-justify md:text-center">RADIOACTIVE merupakan acara off air tahunan yang
+                diselenggarakan oleh UMN Radio, radio komunitas dari Universitas Multimedia Nusantara.
+            </p>
+            <br>
+            <p class="font-pathway text-sm text-white text-justify md:text-center">Dimulai sejak 2015, RADIOACTIVE tahun in menjadi kali
+                ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE berkembang dengan baik. Lebih lanjut, RADIOACTIVE
+                diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
+            <br>
+            <p class="font-pathway text-sm text-white text-justify md:text-center">Pada tahun ini, acara kami mengangkat tema "RADIOACTIVE
+                2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-fokus pada pengembangan diri individu dan mendorong
+                mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami sebelumnya mengangkat tema "RADIOACTIVE 2022: Radiant"
+                dengan tagline "Light Up Your Action” yang berfokus pada tindakan anak-anak muda untuk bersinar dan memancarkan cahaya positif dari
+                diri mereka kepada orang lain di sekitarnya.</p>
+            <br>
+        </div>
     </div>
 
-    <div id="section3" class="lg:my-16" data-aos="fade-up">
-        <h4 class="lg:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
+    <div id="section3" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
+        <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
         <div class="carousel carousel-center">
             <div class="carousel-item ml-16 lg:ml-32 border border-white">
                 <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
@@ -140,11 +137,11 @@
         </div>
 
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
-        <div class="flex flex-row">
-            <div class="container w-full ml-5">
+        <div class="flex flex-col lg:flex-row">
+            <div class="container w-full md:ml-5">
                     <img src="/images/LOGO RA.webp" alt="" class="h-40 pl-12">
             </div>
-            <div class="container flex flex-col justify-evenly py-3">
+            <div class="container flex flex-col justify-evenly py-3 my-10 md:my-0 gap-4 md:gap-0 text-center md:text-left">
                 <a href="/" class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>HOME</b>
@@ -166,7 +163,7 @@
                     </h5>
                 </a>
             </div>
-            <div class="mx-auto flex flex-wrap content-center">
+            <div class="mx-auto flex flex-wrap content-center mb-12 md:mb-0">
                 <div class="flex space-x-4 mt-4 sm:mt-0">
                     <a href="mailto:mediarelation.radioactive@gmail.com" target="_blank" class="text-white">
                         <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -195,14 +192,15 @@
                     </a>
                 </div>
             </div>
-            <div class="flex justify-end items-center w-full">
-                    <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-16">
-                </div>
-            <div class="flex justify-center w-full">
-                    <img src="/images/LOGO UMN.webp" alt="" class="h-40">
+            <div class="flex justify-center md:justify-end items-center w-full mb-10 md:mb-0">
+                <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-12 md:h-16">
             </div>
+            <div class="flex justify-center w-full">
+                <img src="/images/LOGO UMN.webp" alt="" class="h-36 md:h-40">
+            </div>
+    
         </div>
-        <div class="container mx-auto mt-1 text-center">
+        <div class="container mt-16 -mb-10 text-center">
                 <p class="mb-2 text-xs font-taruno font-medium text-white">&copy; UMN RADIOACTIVE 2023</p>
         </div>
         </footer>
