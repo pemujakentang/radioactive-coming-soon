@@ -64,26 +64,26 @@
         <br>
     </div>
 
-    <div id="section3" class="my-16" data-aos="fade-up">
-        <h2 class="font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h2>
+    <div id="section3" class="lg:my-16" data-aos="fade-up">
+        <h4 class="lg:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
         <div class="carousel carousel-center">
-            <div class="carousel-item ml-32 border border-white">
-                <div class="flex bg-[#0E0EC0] flex-row max-h-96">
-                    <div class="flex flex-col justify-start p-6 w-56">
-                        <h1 class="mb-2 text-4xl font-taruno font-medium text-white pt-4">
+            <div class="carousel-item ml-16 lg:ml-32 border border-white">
+                <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
+                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
+                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
                             <b>18-30</b>
                         </h1>
-                        <h3 class="mb-2 text-3xl font-taruno font-medium text-white">
+                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
                             <b>Sept</b>
                         </h3>
                     </div>
                     <div class="relative">
-                        <img class="h-96 w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp" alt="" />
+                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp" alt="" />
                         <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="px-4">
-                                <h3 class="text-3xl font-taruno text-white font-bold">
+                            <div class="lg:px-4">
+                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
                                     Voiceover</h3>
-                                <h3 class="text-3xl font-taruno text-white font-bold">
+                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
                                     Challenge</h3>
                             </div>
                         </div>
@@ -91,22 +91,22 @@
                 </div>
             </div>
             <div class="carousel-item border border-white ml-16">
-                <div class="flex bg-[#0E0EC0] max-h-96 flex-row">
-                    <div class="flex flex-col justify-start p-6 w-56">
-                        <h1 class="mb-2 text-4xl font-taruno font-medium text-white pt-4">
+                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96 flex-row">
+                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
+                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
                             <b>28</b>
                         </h1>
-                        <h3 class="mb-2 text-3xl font-taruno font-medium text-white">
+                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
                             <b>Oct</b>
                         </h3>
                     </div>
                     <div class="relative">
-                        <img class="h-96 w-auto object-cover" src="/images/FOTO RAC.webp" alt="" />
+                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO RAC.webp" alt="" />
                         <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="px-4">
-                                <h3 class="text-3xl font-taruno text-white font-bold">
+                            <div class="lg:px-4">
+                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
                                     Announcing</h3>
-                                <h3 class="text-3xl font-taruno text-white font-bold">
+                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
                                     Competition</h3>
                             </div>
                         </div>
@@ -114,28 +114,29 @@
                 </div>
             </div>
             <div class="carousel-item border border-white ml-16 mr-32">
-                <div class="flex bg-[#0E0EC0] max-h-96">
-                    <div class="flex flex-col justify-start p-6 w-56">
-                        <h1 class="mb-2 text-4xl font-taruno font-medium text-white pt-4">
+                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96">
+                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
+                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
                             <b>4</b>
                         </h1>
-                        <h3 class="mb-2 text-3xl font-taruno font-medium text-white">
+                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
                             <b>Nov</b>
                         </h3>
                     </div>
                     <div class="relative">
-                        <img class="h-96 w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp" alt="" />
+                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp" alt="" />
                         <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="px-4">
-                                <h3 class="text-3xl font-taruno text-white font-bold">
+                            <div class="lg:px-4">
+                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
                                     Closing</h3>
-                                <h3 class="text-3xl font-taruno text-white font-bold">
+                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
                                     Night</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
