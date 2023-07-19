@@ -13,14 +13,14 @@
 <body>
 <div>
     <div> 
-        <video width="400" autoplay loop class="fixed -z-10 w-full min-w-full min-h-full max-w-none">
-            <source src="/images/BACKGROUND_DESKTOP.mp4" type="video/mp4">
+        <video autoplay loop class="fixed -z-10 w-full min-w-full min-h-full max-w-none">
+            <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div>
 
     <div id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
-            href="/home">HOME</a>
+            href="/">HOME</a>
         <a
             class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO
             CHALLENGE</a>
@@ -34,11 +34,11 @@
     <div id="section-1" class="pt-24 max-w-4xl mx-auto">
         <div data-aos="fade-up" class="flex items-center justify-center gap-4">
             <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
-            <img class="w-24 z-10" src="img/LOGO UMN RADIO.png">
+            <img class="w-24 z-10" src="images/LOGO UMN RADIO.webp">
         </div>
         <div class="relative flex flex-col items-center" data-aos="fade-up">
-            <img class="object-cover -mt-28 z-0" src="img/BACKGROUND LOGO.png" alt="background logo" />
-            <img class="object-cover z-30 w-[640px] absolute" src="img/logo.gif" alt="logo" />
+            <img class="object-cover -mt-28 z-0" src="images/BACKGROUND LOGO.webp" alt="background logo" />
+            <img class="object-cover z-30 w-[640px] absolute" src="images/logo.gif" alt="logo" />
         </div>
     </div>
 
@@ -79,7 +79,7 @@
                         </h3>
                     </div>
                     <div class="relative">
-                        <img class="h-96 w-auto object-cover" src="/images/FOTO VO CHALLENGE.png" alt="" />
+                        <img class="h-96 w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp" alt="" />
                         <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
                             <div class="px-4">
                                 <h3 class="text-3xl font-taruno text-white font-bold">
@@ -102,7 +102,7 @@
                         </h3>
                     </div>
                     <div class="relative">
-                        <img class="h-96 w-auto object-cover" src="/images/FOTO RAC.png" alt="" />
+                        <img class="h-96 w-auto object-cover" src="/images/FOTO RAC.webp" alt="" />
                         <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
                             <div class="px-4">
                                 <h3 class="text-3xl font-taruno text-white font-bold">
@@ -125,7 +125,7 @@
                         </h3>
                     </div>
                     <div class="relative">
-                        <img class="h-96 w-auto object-cover" src="/images/FOTO CLOSING NIGHT.png" alt="" />
+                        <img class="h-96 w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp" alt="" />
                         <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
                             <div class="px-4">
                                 <h3 class="text-3xl font-taruno text-white font-bold">
@@ -142,10 +142,10 @@
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
         <div class="flex flex-row" data-aos="fade-up">
             <div class="container w-full ml-5">
-                    <img src="/images/LOGO RA.png" alt="" class="h-40 pl-12">
+                    <img src="/images/LOGO RA.webp" alt="" class="h-40 pl-12">
             </div>
             <div class="container flex flex-col justify-evenly py-3">
-                <a href="/home" class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
+                <a href="/" class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>HOME</b>
                     </h5>
@@ -196,10 +196,10 @@
                 </div>
             </div>
             <div class="flex justify-end items-center w-full">
-                    <img src="/images/LOGO UMN RADIO.png" alt="" class="h-16">
+                    <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-16">
                 </div>
             <div class="flex justify-center w-full">
-                    <img src="/images/LOGO UMN.png" alt="" class="h-40">
+                    <img src="/images/LOGO UMN.webp" alt="" class="h-40">
             </div>
         </div>
         <div class="container mx-auto mt-1 text-center">
