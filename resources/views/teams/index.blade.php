@@ -22,12 +22,8 @@
 </head>
 
 <body class="antialiased">
-    
-
     <div class="container w-full mx-auto px-2">
-
         <div id='table_container' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
-
             <table id="teamdata_table" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
                 <thead>
                     <tr>
@@ -42,6 +38,7 @@
                         <th data-priority="9">WA</th>
                         <th data-priority="10">LINE</th>
                         <th data-priority="11">Bukti Pembayaran</th>
+                        <th data-priority="12">Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,6 +61,15 @@
                                             style="width:100%;height:100%;object-fit:contain;" alt="">
                                     </a>
                                 </div>
+                            </td>
+                            <td>{{ $team->status }}
+                                <form action="/teams/{{$team->id}}/edit" class="inline">
+                                    @method('put')
+                                    @csrf
+                                    <button class="text-white bg-green-500 rounded text-sm px-2.5 py-1 m-1">
+                                        Confirm Payment
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

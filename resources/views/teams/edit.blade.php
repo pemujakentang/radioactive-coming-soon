@@ -19,9 +19,11 @@
 
 <body class="antialiased">
     <div class="w-full max-w-xs">
-        <form action="/teams" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" enctype="multipart/form-data"
-            method="post">
+        <form action="/teams/{{ $team->id }}" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            enctype="multipart/form-data" method="post">
+            @method('put')
             @csrf
+            Confirm Payment for Team ID: {{ $team->id }}
             @if (session()->has('success'))
                 <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
             @endif
@@ -34,10 +36,8 @@
                         <input
                             class="block @error('penyiar1') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Nama Lengkap Penyiar 1" name="penyiar1"
-                            value="{{ old('penyiar1') }}">
-                        @error('penyiar1')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            value="{{ old('penyiar1', $team->penyiar1) }}" readonly>
+
                     </div>
                 </div>
                 <div class="mb-0.5">
@@ -48,10 +48,8 @@
                         <input
                             class="block @error('penyiar2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Nama Lengkap Penyiar 2" name="penyiar2"
-                            value="{{ old('penyiar2') }}">
-                        @error('penyiar2')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            value="{{ old('penyiar2', $team->penyiar2) }}" readonly>
+
                     </div>
                 </div>
                 <div class="mb-0.5">
@@ -62,10 +60,8 @@
                         <input
                             class="block @error('operator') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Nama Lengkap Operator" name="operator"
-                            value="{{ old('operator') }}">
-                        @error('operator')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            value="{{ old('operator', $team->operator) }}" readonly>
+
                     </div>
                 </div>
             </div>
@@ -77,7 +73,8 @@
                 <div>
                     <input
                         class="block @error('institusi') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        type="text" placeholder="Institusi Asal" name="institusi" value="{{ old('institusi') }}">
+                        type="text" placeholder="Institusi Asal" name="institusi"
+                        value="{{ old('institusi', $team->institusi) }}" readonly>
                     @error('institusi')
                         <div class="text-sm text-red-600">{{ $message }}</div>
                     @enderror
@@ -92,10 +89,9 @@
                     <div>
                         <input
                             class="block @error('nims1') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="'-' untuk luar UMN" name="nims1" value="{{ old('nims1') }}">
-                        @error('nims1')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            type="text" placeholder="'-' untuk luar UMN" name="nims1"
+                            value="{{ old('nims1', $team->nims1) }}" readonly>
+
                     </div>
                 </div>
                 <div class="mb-0.5">
@@ -105,10 +101,9 @@
                     <div>
                         <input
                             class="block @error('nims2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"class="block @error('penyiar2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="'-' untuk luar UMN" name="nims2" value="{{ old('nims2') }}">
-                        @error('nims2')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            type="text" placeholder="'-' untuk luar UMN" name="nims2"
+                            value="{{ old('nims2', $team->nims2) }}" readonly>
+
                     </div>
                 </div>
                 <div class="mb-0.5">
@@ -118,10 +113,9 @@
                     <div>
                         <input
                             class="block @error('nimop') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="'-' untuk luar UMN" name="nimop" value="{{ old('nimop') }}">
-                        @error('nimop')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            type="text" placeholder="'-' untuk luar UMN" name="nimop"
+                            value="{{ old('nimop', $team->nimop) }}" readonly>
+
                     </div>
                 </div>
             </div>
@@ -135,10 +129,9 @@
                     <div>
                         <input
                             class="block @error('contact_wa') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="" name="contact_wa" value="{{ old('contact_wa') }}">
-                        @error('contact_wa')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            type="text" placeholder="" name="contact_wa"
+                            value="{{ old('contact_wa', $team->contact_wa) }}" readonly>
+
                     </div>
                 </div>
                 <div class="mb-0.5">
@@ -149,35 +142,47 @@
                     <div>
                         <input
                             class="block @error('contact_line') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="" name="contact_line" value="{{ old('contact_line') }}">
-                        @error('contact_line')
-                            <div class="text-sm text-red-600">{{ $message }}</div>
-                        @enderror
+                            type="text" placeholder="" name="contact_line"
+                            value="{{ old('contact_line', $team->contact_line) }}" readonly>
+
                     </div>
                 </div>
             </div>
-
             <div class="mb-0.5">
                 <div>
                     <label class="block text-gray-700 text-sm font-bold mb-0.5" for="">Bukti
                         Pembayaran</label>
                 </div>
                 <div>
-                    <input
-                        class="block @error('payment_proof') border-red-500 @enderror w-full mb-5 text-xs text-gray-900 border rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        type="file" accept="image/*" name="payment_proof">
-                    @error('payment_proof')
+                    <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
+                        <img src={{ asset('storage/' . $team->payment_proof) }}
+                            style="width:100%;height:100%;object-fit:contain;" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="mb-0.5">
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-0.5" for="">Status</label>
+                </div>
+                <div>
+                    <select name="status" class="@error('status') border-red-500 @enderror border border-spacing-10 border-opacity-100 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                        <option disabled selected>Status</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Approved">Approved</option>
+                    </select>
+                    @error('status')
                         <div class="text-sm text-red-600">{{ $message }}</div>
                     @enderror
                 </div>
             </div>
 
             <div class="">
-                <button class="text-white bg-blue-600 rounded text-sm px-5 py-2.5 m-1" type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
-                    Daftar
+                <button class="text-white bg-green-600 rounded text-sm px-5 py-2.5 m-1" type="submit"
+                    onclick="return confirm('Confirm Payment?')">
+                    Confirm payment
                 </button>
             </div>
-
         </form>
     </div>
 </body>

@@ -58,7 +58,8 @@ class TeamDataController extends Controller
             'nimop'=>$request->nimop,
             'contact_wa'=>$request->contact_wa,
             'contact_line'=>$request->contact_line,
-            'payment_proof'=>$request->file('payment_proof')->storePublicly('payment_images', 'public')
+            'payment_proof'=>$request->file('payment_proof')->storePublicly('payment_images', 'public'),
+            'status'=>'Pending'
         ]);
         // $team->penyiar1 = $request->penyiar1;
         // $team->penyiar2 = $request->penyiar2;
@@ -71,7 +72,7 @@ class TeamDataController extends Controller
         // $team->contact_line = $request->contact_line;
         // $team->payment_proof = $request->file('payment_proof')->storePublicly('payment_images', 'public');
         // $team->save();
-        return redirect('/teams')->with('success', "Pendaftaran berhasil.");
+        return redirect('/teams/create')->with('success', "Pendaftaran berhasil.");
     }
 
     /**
@@ -85,17 +86,34 @@ class TeamDataController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(rac_teams $rac_teams)
+    public function edit($id)
     {
         //
+        $team = rac_teams::findOrFail($id);
+        return view('teams.edit',[
+            'team'=>$team
+        ]);
     }
+
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, rac_teams $rac_teams)
+    public function update(Request $request, rac_teams $rac_teams, $id)
     {
         //
+        $rules = $request->validate([
+            'status' => 'required|max:255'
+        ]);
+
+        $target_team = rac_teams::findOrFail($id);
+        $target_team->status = $request->status;
+        $target_team->save();
+        return redirect('/teams');
+
+        // rac_teams::where('id', $request->id)->update([
+        //     'status'=>$request->status
+        // ]);
     }
 
     /**

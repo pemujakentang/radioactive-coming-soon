@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('contact_wa');
             $table->string('contact_line');
             $table->string('payment_proof');
+            $table->string('status');
         });
     }
 

@@ -22,8 +22,8 @@ Route::get('/ticket', function () {
     return view('Tickets.index');
 });
 
-Route::get('/form', function(){
-    return view('Forms.index');
-});
+// Route::get('/form', function(){
+//     return view('Forms.index');
+// });
 
 Route::resource('teams', TeamDataController::class);
