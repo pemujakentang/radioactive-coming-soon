@@ -123,8 +123,38 @@
                 </div>
             </div>
         </div>
-        <div>
-            <p>Put your code here. . .</p>
+        <div id="section4" class="my-16">
+            <h2 class="font-taruno2 text-white text-center my-12">MEDIA PARTNERS</h2>
+            <table class="table-fixed text-center mx-auto">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img
+                                class="h-auto w-48 mx-8"
+                                src="/images/umntv.jpg"
+                                alt="" />
+                        </td>
+                        <td> 
+                            <img
+                                class="h-auto w-48 mx-8"
+                                src="/images/ultimagz.png"
+                                alt="" />
+                        </td>
+                        <td>
+                            <img
+                                    class="h-auto w-48 mx-8"
+                                    src="/images/funradio.png"
+                                    alt="" />
+                        </td>
+                        <td>
+                            <img
+                                    class="h-auto w-48 mx-8"
+                                    src="/images/radiountar.jpg"
+                                    alt="" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
