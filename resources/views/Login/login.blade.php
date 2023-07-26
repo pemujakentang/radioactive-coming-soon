@@ -17,7 +17,7 @@
         <img src="{{ url('/img/logo.gif') }}" alt="Image" class="h-32" />
     </div>
     <div class="class=container mx-auto p-4">
-        <form action="/" method="POST">
+        <form action="/login" method="POST">
             <div
                 class="class=flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md absolute top-2/4 left-2/4 mt-5 w-full max-w-[24rem] -translate-y-2/4 -translate-x-2/4">
                 <div
