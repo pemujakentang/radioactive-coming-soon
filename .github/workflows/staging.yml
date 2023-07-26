@@ -28,30 +28,13 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
 
-      # - name: Cache Composer packages
-      #   id: composer-cache
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: vendor
-      #     key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-php-
-
-      # - name: Install Dependencies
-      #   run: composer install --prefer-dist --no-progress
-
-      # - name: Generate key
-      #   run: php artisan key:generate
-
-      # - name: Generate storage link
-      #   run: php artisan storage:link
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.STAGING_FTP_SERVER }}
+          username: ${{ secrets.STAGING_FTP_USERNAME }}
+          password: ${{ secrets.STAGING_FTP_PASSWORD }}
           server-dir: /
