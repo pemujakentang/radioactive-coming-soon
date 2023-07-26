@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     @vite('resources/css/app.css')
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="">
+<body>
+<div>
     <div> 
-        <video autoplay loop muted class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-none" loading="lazy">
+        <video autoplay loop class="fixed -z-10 w-full min-w-full min-h-full max-w-none">
             <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div>
-    <nav id="header" class="hidden fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
+
+    <div id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
             href="/">HOME</a>
         <a
@@ -28,120 +30,126 @@
         <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
             href="ticket">CLOSING
             NIGHT</a>
-    </nav>
+    </div>
 
-    <div id="section-1" class="pt-10 max-w-4xl mx-auto">
-        <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
-            <p class="text-center font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
-            <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
+    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
+        <div data-aos="fade-up" class="flex items-center justify-center gap-4">
+            <p class="font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
+            <img class="w-24 z-10" src="images/LOGO UMN RADIO.webp">
         </div>
         <div class="relative flex flex-col items-center" data-aos="fade-up">
-            <img class="object-cover -mt-4 md:-mt-28 z-0" src="images/BACKGROUND LOGO.webp" alt="background logo" />
-            <img class="object-cover -mt-4 md:-mt-0 z-30 w-[640px] absolute" src="images/logo.gif" alt="logo" />
+            <img class="object-cover -mt-28 z-0" src="images/BACKGROUND LOGO.webp" alt="background logo" />
+            <img class="object-cover z-30 w-[640px] absolute" src="images/logo.gif" alt="logo" />
         </div>
     </div>
 
-    <div id="section2" class="-mt-8 md:-mt-28 mb-16" data-aos="fade-up">
-        <h4 class="font-taruno2 md:text-xl text-white text-center my-12">ABOUT US</h4>
-        <div class="px-8 md:px-20 lg:px-48">
-            <p class="lg:px-44 font-pathway text-sm text-white text-justify md:text-center">RADIOACTIVE merupakan acara off air tahunan yang
-                diselenggarakan oleh UMN Radio, radio komunitas dari Universitas Multimedia Nusantara.
-            </p>
-            <br>
-            <p class="font-pathway text-sm text-white text-justify md:text-center">Dimulai sejak 2015, RADIOACTIVE tahun in menjadi kali
-                ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE berkembang dengan baik. Lebih lanjut, RADIOACTIVE
-                diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
-            <br>
-            <p class="font-pathway text-sm text-white text-justify md:text-center">Pada tahun ini, acara kami mengangkat tema "RADIOACTIVE
-                2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-fokus pada pengembangan diri individu dan mendorong
-                mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami sebelumnya mengangkat tema "RADIOACTIVE 2022: Radiant"
-                dengan tagline "Light Up Your Action” yang berfokus pada tindakan anak-anak muda untuk bersinar dan memancarkan cahaya positif dari
-                diri mereka kepada orang lain di sekitarnya.</p>
-            <br>
-        </div>
+    <div id="section2" class="-mt-28 mb-16" data-aos="fade-up">
+        <h2 class="font-taruno2 text-white text-center my-12">ABOUT US</h2>
+        <p class="font-pathway text-sm text-white text-center">RADIOACTIVE merupakan acara off air tahunan yang
+            diselenggarakan oleh UMN Radio,</p>
+        <p class="font-pathway text-sm text-white text-center">radio komunitas dari Universitas Multimedia Nusantara.
+        </p>
+        <br>
+        <p class="font-pathway text-sm text-white text-center">Dimulai sejak 2015, RADIOACTIVE tahun in menjadi kali
+            ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE</p>
+        <p class="font-pathway text-sm text-white text-center">berkembang dengan baik. Lebih lanjut, RADIOACTIVE
+            diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
+        <br>
+        <p class="font-pathway text-sm text-white text-center">Pada tahun ini, acara kami mengangkat tema "RADIOACTIVE
+            2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-</p>
+        <p class="font-pathway text-sm text-white text-center">fokus pada pengembangan diri individu dan mendorong
+            mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami</p>
+        <p class="font-pathway text-sm text-white text-center">sebelumnya mengangkat tema "RADIOACTIVE 2022: Radiant"
+            dengan tagline "Light Up Your Action” yang berfokus pada tindakan anak-anak</p>
+        <p class="font-pathway text-sm text-white text-center">muda untuk bersinar dan memancarkan cahaya positif dari
+            diri mereka kepada orang lain di sekitarnya.</p>
+        <br>
     </div>
 
-    <div id="section3" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
-        <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
-        <div class="carousel carousel-center">
-            <div class="carousel-item ml-16 lg:ml-32 border border-white">
-                <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>18-30</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Sept</b>
-                        </h3>
+    <div id="section3" class="my-16" data-aos="fade-up">
+        <h2 class="font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="carousel-item swiper-slide ml-32 border border-white">
+                    <div class="flex bg-[#0E0EC0] flex-row max-h-96">
+                        <div class="flex flex-col justify-start p-6 w-56">
+                            <h1 class="mb-2 text-4xl font-taruno font-medium text-white pt-4">
+                                <b>18-30</b>
+                            </h1>
+                            <h3 class="mb-2 text-3xl font-taruno font-medium text-white">
+                                <b>Sept</b>
+                            </h3>
+                        </div>
+                        <div class="relative">
+                            <img class="h-96 w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp" alt="" />
+                            <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
+                                <div class="px-4">
+                                    <h3 class="text-3xl font-taruno text-white font-bold">
+                                        Voiceover</h3>
+                                    <h3 class="text-3xl font-taruno text-white font-bold">
+                                        Challenge</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp" alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Voiceover</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Challenge</h3>
+                </div>
+                <div class="carousel-item swiper-slide border border-white ml-16">
+                    <div class="flex bg-[#0E0EC0] max-h-96 flex-row">
+                        <div class="flex flex-col justify-start p-6 w-56">
+                            <h1 class="mb-2 text-4xl font-taruno font-medium text-white pt-4">
+                                <b>28</b>
+                            </h1>
+                            <h3 class="mb-2 text-3xl font-taruno font-medium text-white">
+                                <b>Oct</b>
+                            </h3>
+                        </div>
+                        <div class="relative">
+                            <img class="h-96 w-auto object-cover" src="/images/FOTO RAC.webp" alt="" />
+                            <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
+                                <div class="px-4">
+                                    <h3 class="text-3xl font-taruno text-white font-bold">
+                                        Announcing</h3>
+                                    <h3 class="text-3xl font-taruno text-white font-bold">
+                                        Competition</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item swiper-slide border border-white ml-16 mr-32">
+                    <div class="flex bg-[#0E0EC0] max-h-96">
+                        <div class="flex flex-col justify-start p-6 w-56">
+                            <h1 class="mb-2 text-4xl font-taruno font-medium text-white pt-4">
+                                <b>4</b>
+                            </h1>
+                            <h3 class="mb-2 text-3xl font-taruno font-medium text-white">
+                                <b>Nov</b>
+                            </h3>
+                        </div>
+                        <div class="relative">
+                            <img class="h-96 w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp" alt="" />
+                            <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
+                                <div class="px-4">
+                                    <h3 class="text-3xl font-taruno text-white font-bold">
+                                        Closing</h3>
+                                    <h3 class="text-3xl font-taruno text-white font-bold">
+                                        Night</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item border border-white ml-16">
-                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96 flex-row">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>28</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Oct</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO RAC.webp" alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Announcing</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Competition</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item border border-white ml-16 mr-32">
-                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>4</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Nov</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp" alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Closing</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Night</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
-        <div class="flex flex-col justify-center md:items-center md:flex-row">
-            <div class="container w-full md:ml-5 flex justify-center">
-                    <img src="/images/LOGO RA.webp" alt="" class="h-40 md:h-24 lg:h-40 md:pl-12">
+        <div class="flex flex-row" data-aos="fade-up">
+            <div class="container w-full ml-5">
+                    <img src="/images/LOGO RA.webp" alt="" class="h-40 pl-12">
             </div>
-            <div class="container flex flex-col justify-evenly py-3 my-10 md:ml-4 lg:ml-0 md:my-0 gap-4 text-center md:text-left">
+            <div class="container flex flex-col justify-evenly py-3">
                 <a href="/" class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>HOME</b>
@@ -163,7 +171,7 @@
                     </h5>
                 </a>
             </div>
-            <div class="mx-auto flex flex-wrap content-center mb-12 md:mb-0">
+            <div class="mx-auto flex flex-wrap content-center">
                 <div class="flex space-x-4 mt-4 sm:mt-0">
                     <a href="mailto:mediarelation.radioactive@gmail.com" target="_blank" class="text-white">
                         <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -192,24 +200,23 @@
                     </a>
                 </div>
             </div>
-            <div class="flex justify-center md:justify-end items-center w-full mb-10 md:mb-0">
-                <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-12 lg:h-16">
-            </div>
+            <div class="flex justify-end items-center w-full">
+                    <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-16">
+                </div>
             <div class="flex justify-center w-full">
-                <img src="/images/LOGO UMN.webp" alt="" class="h-36 lg:h-40">
+                    <img src="/images/LOGO UMN.webp" alt="" class="h-40">
             </div>
-    
         </div>
-        <div class="container mt-16 -mb-10 text-center">
+        <div class="container mx-auto mt-1 text-center">
                 <p class="mb-2 text-xs font-taruno font-medium text-white">&copy; UMN RADIOACTIVE 2023</p>
         </div>
         </footer>
-    
+    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script>
         window.addEventListener('scroll', function () {
             var header = document.getElementById('header');
@@ -222,6 +229,59 @@
             }
         });
     </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+        });
+        document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide(
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+        });
+        document
+        .querySelector(".append-slide")
+        .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide(
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+        });
+        document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+        });
+  </script>
+    
 </body>
 
 </html>
