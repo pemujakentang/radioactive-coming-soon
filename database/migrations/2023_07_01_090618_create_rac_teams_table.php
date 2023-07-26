@@ -14,15 +14,27 @@ return new class extends Migration
         Schema::create('rac_teams', function (Blueprint $table) {
             $table->id()->unique();
             $table->timestamps();
-            $table->string('penyiar1');
-            $table->string('penyiar2');
-            $table->string('operator');
-            $table->string('institusi');
-            $table->string('nims1');
-            $table->string('nims2');
-            $table->string('nimop');
-            $table->string('contact_wa');
-            $table->string('contact_line');
+            
+            $table->string('tim1_penyiar1');
+            $table->string('tim1_penyiar2');
+            $table->string('tim1_operator');
+            $table->string('tim1_institusi');
+            $table->string('tim1_nims1');
+            $table->string('tim1_nims2');
+            $table->string('tim1_nimop');
+            $table->string('tim1_contact_wa');
+            $table->string('tim1_contact_line');
+
+            $table->string('tim2_penyiar1')->nullable();
+            $table->string('tim2_penyiar2')->nullable();
+            $table->string('tim2_operator')->nullable();
+            $table->string('tim2_institusi')->nullable();
+            $table->string('tim2_nims1')->nullable();
+            $table->string('tim2_nims2')->nullable();
+            $table->string('tim2_nimop')->nullable();
+            $table->string('tim2_contact_wa')->nullable();
+            $table->string('tim2_contact_line')->nullable();
+
             $table->string('payment_proof');
             $table->string('status');
         });

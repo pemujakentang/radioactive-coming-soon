@@ -32,44 +32,53 @@ class TeamDataController extends Controller
     public function store(Request $request)
     {
         //
-        
-
         $validData = $request->validate([
-            'penyiar1' => 'required|max:255',
-            'penyiar2' => 'required|max:255',
-            'operator' => 'required|max:255',
-            'institusi' => 'required|max:255',
-            'nims1' => 'required|max:255',
-            'nims2' => 'required|max:255',
-            'nimop' => 'required|max:255',
-            'contact_wa' => 'required|max:255',
-            'contact_line' => 'required|max:255',
+            'tim1_penyiar1' => 'required|max:255',
+            'tim1_penyiar2' => 'required|max:255',
+            'tim1_operator' => 'required|max:255',
+            'tim1_institusi' => 'required|max:255',
+            'tim1_nims1' => 'required|max:255',
+            'tim1_nims2' => 'required|max:255',
+            'tim1_nimop' => 'required|max:255',
+            'tim1_contact_wa' => 'required|max:255',
+            'tim1_contact_line' => 'required|max:255',
             'payment_proof' => 'required|image|file|max:10240'
         ]);
 
         // $team = new rac_teams();
         rac_teams::create([
-            'penyiar1'=>$request->penyiar1,
-            'penyiar2'=>$request->penyiar2,
-            'operator'=>$request->operator,
-            'institusi'=>$request->institusi,
-            'nims1'=>$request->nims1,
-            'nims2'=>$request->nims2,
-            'nimop'=>$request->nimop,
-            'contact_wa'=>$request->contact_wa,
-            'contact_line'=>$request->contact_line,
+            'tim1_penyiar1'=>$request->tim1_penyiar1,
+            'tim1_penyiar2'=>$request->tim1_penyiar2,
+            'tim1_operator'=>$request->tim1_operator,
+            'tim1_institusi'=>$request->tim1_institusi,
+            'tim1_nims1'=>$request->tim1_nims1,
+            'tim1_nims2'=>$request->tim1_nims2,
+            'tim1_nimop'=>$request->tim1_nimop,
+            'tim1_contact_wa'=>$request->tim1_contact_wa,
+            'tim1_contact_line'=>$request->tim1_contact_line,
+
+            'tim2_penyiar1'=>$request->tim2_penyiar1,
+            'tim2_penyiar2'=>$request->tim2_penyiar2,
+            'tim2_operator'=>$request->tim2_operator,
+            'tim2_institusi'=>$request->tim2_institusi,
+            'tim2_nims1'=>$request->tim2_nims1,
+            'tim2_nims2'=>$request->tim2_nims2,
+            'tim2_nimop'=>$request->tim2_nimop,
+            'tim2_contact_wa'=>$request->tim2_contact_wa,
+            'tim2_contact_line'=>$request->tim2_contact_line,
+
             'payment_proof'=>$request->file('payment_proof')->storePublicly('payment_images', 'public'),
             'status'=>'Pending'
         ]);
-        // $team->penyiar1 = $request->penyiar1;
-        // $team->penyiar2 = $request->penyiar2;
-        // $team->operator = $request->operator;
-        // $team->institusi = $request->institusi;
-        // $team->nims1 = $request->nims1;
-        // $team->nims2 = $request->nims2;
-        // $team->nimop = $request->nimop;
-        // $team->contact_wa = $request->contact_wa;
-        // $team->contact_line = $request->contact_line;
+        // $team->tim1_penyiar1 = $request->tim1_penyiar1;
+        // $team->tim1_penyiar2 = $request->tim1_penyiar2;
+        // $team->tim1_operator = $request->tim1_operator;
+        // $team->tim1_institusi = $request->tim1_institusi;
+        // $team->tim1_nims1 = $request->tim1_nims1;
+        // $team->tim1_nims2 = $request->tim1_nims2;
+        // $team->tim1_nimop = $request->tim1_nimop;
+        // $team->tim1_contact_wa = $request->tim1_contact_wa;
+        // $team->tim1_contact_line = $request->tim1_contact_line;
         // $team->payment_proof = $request->file('payment_proof')->storePublicly('payment_images', 'public');
         // $team->save();
         return redirect('/teams/create')->with('success', "Pendaftaran berhasil.");
@@ -122,5 +131,9 @@ class TeamDataController extends Controller
     public function destroy(rac_teams $rac_teams)
     {
         //
+    }
+
+    public function form($amount){
+        return view('teams.form', compact("amount"));
     }
 }

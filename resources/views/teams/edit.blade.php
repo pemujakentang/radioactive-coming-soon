@@ -34,9 +34,9 @@
                     </label>
                     <div>
                         <input
-                            class="block @error('penyiar1') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Nama Lengkap Penyiar 1" name="penyiar1"
-                            value="{{ old('penyiar1', $team->penyiar1) }}" readonly>
+                            class="block @error('tim1_penyiar1') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="Nama Lengkap Penyiar 1" name="tim1_penyiar1"
+                            value="{{ old('tim1_penyiar1', $team->tim1_penyiar1) }}" readonly>
 
                     </div>
                 </div>
@@ -46,21 +46,21 @@
                     </div>
                     <div>
                         <input
-                            class="block @error('penyiar2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Nama Lengkap Penyiar 2" name="penyiar2"
-                            value="{{ old('penyiar2', $team->penyiar2) }}" readonly>
+                            class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="Nama Lengkap Penyiar 2" name="tim1_penyiar2"
+                            value="{{ old('tim1_penyiar2', $team->tim1_penyiar2) }}" readonly>
 
                     </div>
                 </div>
                 <div class="mb-0.5">
                     <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-0.5" for="">Operator</label>
+                        <label class="block text-gray-700 text-sm font-bold mb-0.5" for="">tim1_operator</label>
                     </div>
                     <div>
                         <input
-                            class="block @error('operator') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Nama Lengkap Operator" name="operator"
-                            value="{{ old('operator', $team->operator) }}" readonly>
+                            class="block @error('tim1_operator') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="Nama Lengkap Operator" name="tim1_operator"
+                            value="{{ old('tim1_operator', $team->tim1_operator) }}" readonly>
 
                     </div>
                 </div>
@@ -72,10 +72,10 @@
                 </div>
                 <div>
                     <input
-                        class="block @error('institusi') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        type="text" placeholder="Institusi Asal" name="institusi"
-                        value="{{ old('institusi', $team->institusi) }}" readonly>
-                    @error('institusi')
+                        class="block @error('tim1_institusi') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Institusi Asal" name="tim1_institusi"
+                        value="{{ old('tim1_institusi', $team->tim1_institusi) }}" readonly>
+                    @error('tim1_institusi')
                         <div class="text-sm text-red-600">{{ $message }}</div>
                     @enderror
                 </div>
@@ -88,9 +88,9 @@
                     </div>
                     <div>
                         <input
-                            class="block @error('nims1') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="'-' untuk luar UMN" name="nims1"
-                            value="{{ old('nims1', $team->nims1) }}" readonly>
+                            class="block @error('tim1_nims1') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="'-' untuk luar UMN" name="tim1_nims1"
+                            value="{{ old('tim1_nims1', $team->tim1_nims1) }}" readonly>
 
                     </div>
                 </div>
@@ -100,9 +100,9 @@
                     </div>
                     <div>
                         <input
-                            class="block @error('nims2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"class="block @error('penyiar2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="'-' untuk luar UMN" name="nims2"
-                            value="{{ old('nims2', $team->nims2) }}" readonly>
+                            class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
+                            value="{{ old('tim1_nims2', $team->tim1_nims2) }}" readonly>
 
                     </div>
                 </div>
@@ -112,9 +112,9 @@
                     </div>
                     <div>
                         <input
-                            class="block @error('nimop') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="'-' untuk luar UMN" name="nimop"
-                            value="{{ old('nimop', $team->nimop) }}" readonly>
+                            class="block @error('tim1_nimop') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="'-' untuk luar UMN" name="tim1_nimop"
+                            value="{{ old('tim1_nimop', $team->tim1_nimop) }}" readonly>
 
                     </div>
                 </div>
@@ -128,9 +128,9 @@
                     </div>
                     <div>
                         <input
-                            class="block @error('contact_wa') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="" name="contact_wa"
-                            value="{{ old('contact_wa', $team->contact_wa) }}" readonly>
+                            class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="" name="tim1_contact_wa"
+                            value="{{ old('tim1_contact_wa', $team->tim1_contact_wa) }}" readonly>
 
                     </div>
                 </div>
@@ -141,9 +141,9 @@
                     </div>
                     <div>
                         <input
-                            class="block @error('contact_line') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="" name="contact_line"
-                            value="{{ old('contact_line', $team->contact_line) }}" readonly>
+                            class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text" placeholder="" name="tim1_contact_line"
+                            value="{{ old('tim1_contact_line', $team->tim1_contact_line) }}" readonly>
 
                     </div>
                 </div>

@@ -22,15 +22,15 @@ class TeamDataRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'penyiar1' => 'required|max:255',
-            'penyiar2' => 'required|max:255',
-            'operator' => 'required|max:255',
-            'institusi' => 'required|max:255',
-            'nims1' => 'required|max:255',
-            'nims2' => 'required|max:255',
-            'nimop' => 'required|max:255',
-            'contact_wa' => 'required|max:255',
-            'contact_line' => 'required|max:255',
+            'tim1_penyiar1' => 'required|max:255',
+            'tim1_penyiar2' => 'required|max:255',
+            'tim1_operator' => 'required|max:255',
+            'tim1_institusi' => 'required|max:255',
+            'tim1_nims1' => 'required|max:255',
+            'tim1_nims2' => 'required|max:255',
+            'tim1_nimop' => 'required|max:255',
+            'tim1_contact_wa' => 'required|max:255',
+            'tim1_contact_line' => 'required|max:255',
             'payment_proof' => 'required|image|file|max:10240'
         ];
     }
