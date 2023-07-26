@@ -11,9 +11,9 @@
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="">
+<body class="overflow-x-hidden">
     <div> 
-        <video autoplay loop muted class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-none" loading="lazy">
+        <video autoplay loop muted class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit" loading="lazy">
             <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div>
@@ -134,38 +134,26 @@
                 </div>
             </div>
         </div>
-        <div id="section4" class="my-16">
+        <div id="section4" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center my-12">MEDIA PARTNERS</h2>
-            <table class="table-fixed text-center mx-auto">
-                <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                class="h-auto w-48 mx-8"
-                                src="/images/umntv.jpg"
-                                alt="" />
-                        </td>
-                        <td> 
-                            <img
-                                class="h-auto w-48 mx-8"
-                                src="/images/ultimagz.png"
-                                alt="" />
-                        </td>
-                        <td>
-                            <img
-                                    class="h-auto w-48 mx-8"
-                                    src="/images/funradio.png"
-                                    alt="" />
-                        </td>
-                        <td>
-                            <img
-                                    class="h-auto w-48 mx-8"
-                                    src="/images/radiountar.jpg"
-                                    alt="" />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-center mx-auto">
+                <img
+                    class="h-auto w-48 mx-8"
+                    src="/images/umntv.jpg"
+                    alt="" />
+                <img
+                    class="h-auto w-48 mx-8"
+                    src="/images/ultimagz.png"
+                    alt="" />
+                <img
+                    class="h-auto w-48 mx-8"
+                    src="/images/funradio.png"
+                    alt="" />
+                <img
+                    class="h-auto w-48 mx-8"
+                    src="/images/radiountar.jpg"
+                    alt="" />
+            </div>
         </div>
 
         <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
