@@ -75,7 +75,7 @@
 
     <div id="section3" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
         <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
-        <div class="carousel carousel-center">
+        <div class="carousel carousel-center flex">
             <div class="carousel-item ml-16 lg:ml-32 border border-white">
                 <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
                     <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
