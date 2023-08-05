@@ -43,7 +43,148 @@
                 </thead>
                 <tbody>
                     @foreach ($rac_teams as $team)
+
                         <tr>
+                            {{-- ID --}}
+                            <td>{{ $team->id }}</td>
+
+                            {{-- Institusi --}}
+                            <td>
+                                {{ $team->tim1_institusi }}
+                            </td>
+
+                            {{-- Penyiar 1 --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0">
+                                        {{ $team->tim1_penyiar1 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0">
+                                        {{ $team->tim2_penyiar1 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0">
+                                        {{ $team->tim3_penyiar1 }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- Penyiar 2 --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_penyiar2 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_penyiar2 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_penyiar2 }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- Operator --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_operator }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_operator }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_operator }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- NIM Penyiar 1--}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_nims1 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_nims1 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_nims1 }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- NIM Penyiar 2 --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_nims2 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_nims2 }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_nims2 }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- NIM OP --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_nimop }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_nimop }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_nimop }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- WA --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_contact_wa }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_contact_wa }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_contact_wa }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- LINE --}}
+                            <td>
+                                <div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200">
+                                        {{ $team->tim1_contact_line }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200">
+                                        {{ $team->tim2_contact_line }}
+                                    </div>
+                                    <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200">
+                                        {{ $team->tim3_contact_line }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            {{-- Bukti Pembayaran --}}
+                            <td>
+                                <div style="max-width: 200px;max-height:200px;overflow:hidden">
+                                    <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
+                                        <img src={{ asset('storage/' . $team->payment_proof) }}
+                                            style="width:100%;height:100%;object-fit:contain;" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        {{-- <tr>
                             <td>{{ $team->id }}</td>
 
                             <td>{{ $team->tim1_institusi }}</td>
@@ -64,7 +205,7 @@
                                     </a>
                                 </div>
                             </td>
-                            {{-- <td>{{ $team->status }}
+                            <td>{{ $team->status }}
                                 <form action="/teams/{{ $team->id }}/edit" class="inline">
                                     @method('put')
                                     @csrf
@@ -72,7 +213,7 @@
                                         Confirm Payment
                                     </button>
                                 </form>
-                            </td> --}}
+                            </td>
                         </tr>
                         <tr>
                             <td>{{ $team->id }}</td>
@@ -96,6 +237,29 @@
                                 </div>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td>{{ $team->id }}</td>
+                            
+                            <td>{{ $team->tim3_institusi }}</td>
+                            <td>{{ $team->tim3_penyiar1 }}</td>
+                            <td>{{ $team->tim3_penyiar2 }}</td>
+                            <td>{{ $team->tim3_operator }}</td>
+                            <td>{{ $team->tim3_nims1 }}</td>
+                            <td>{{ $team->tim3_nims2 }}</td>
+                            <td>{{ $team->tim3_nimop }}</td>
+                            <td>{{ $team->tim3_contact_wa }}</td>
+                            <td>{{ $team->tim3_contact_line }}</td>
+
+                            <td>
+                                <div style="max-width: 200px;max-height:200px;overflow:hidden">
+                                    <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
+                                        <img src={{ asset('storage/' . $team->payment_proof) }}
+                                            style="width:100%;height:100%;object-fit:contain;" alt="">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr> --}}
                     @endforeach
                 </tbody>
             </table>

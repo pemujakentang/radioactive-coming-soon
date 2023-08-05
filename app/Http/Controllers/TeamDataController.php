@@ -42,6 +42,27 @@ class TeamDataController extends Controller
             'tim1_nimop' => 'required|max:255',
             'tim1_contact_wa' => 'required|max:255',
             'tim1_contact_line' => 'required|max:255',
+
+            'tim2_penyiar1' => 'max:255',
+            'tim2_penyiar2' => 'max:255',
+            'tim2_operator' => 'max:255',
+            'tim2_institusi' => 'max:255',
+            'tim2_nims1' => 'max:255',
+            'tim2_nims2' => 'max:255',
+            'tim2_nimop' => 'max:255',
+            'tim2_contact_wa' => 'max:255',
+            'tim2_contact_line' => 'max:255',
+
+            'tim3_penyiar1' => 'max:255',
+            'tim3_penyiar2' => 'max:255',
+            'tim3_operator' => 'max:255',
+            'tim3_institusi' => 'max:255',
+            'tim3_nims1' => 'max:255',
+            'tim3_nims2' => 'max:255',
+            'tim3_nimop' => 'max:255',
+            'tim3_contact_wa' => 'max:255',
+            'tim3_contact_line' => 'max:255',
+
             'payment_proof' => 'required|image|file|max:10240'
         ]);
 
@@ -66,6 +87,16 @@ class TeamDataController extends Controller
             'tim2_nimop'=>$request->tim2_nimop,
             'tim2_contact_wa'=>$request->tim2_contact_wa,
             'tim2_contact_line'=>$request->tim2_contact_line,
+
+            'tim3_penyiar1'=>$request->tim3_penyiar1,
+            'tim3_penyiar2'=>$request->tim3_penyiar2,
+            'tim3_operator'=>$request->tim3_operator,
+            'tim3_institusi'=>$request->tim3_institusi,
+            'tim3_nims1'=>$request->tim3_nims1,
+            'tim3_nims2'=>$request->tim3_nims2,
+            'tim3_nimop'=>$request->tim3_nimop,
+            'tim3_contact_wa'=>$request->tim3_contact_wa,
+            'tim3_contact_line'=>$request->tim3_contact_line,
 
             'payment_proof'=>$request->file('payment_proof')->storePublicly('payment_images', 'public'),
             'status'=>'Pending'

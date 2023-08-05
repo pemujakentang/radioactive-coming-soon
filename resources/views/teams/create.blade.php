@@ -23,6 +23,7 @@
         <div class="flex flex-col">
             <a href="/form/1">Satu Tim</a>
             <a href="/form/2">Dua Tim</a>
+            <a href="/form/3">Tiga Tim</a>
         </div>
     </div>
 </body>

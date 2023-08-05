@@ -35,6 +35,16 @@ return new class extends Migration
             $table->string('tim2_contact_wa')->nullable();
             $table->string('tim2_contact_line')->nullable();
 
+            $table->string('tim3_penyiar1')->nullable();
+            $table->string('tim3_penyiar2')->nullable();
+            $table->string('tim3_operator')->nullable();
+            $table->string('tim3_institusi')->nullable();
+            $table->string('tim3_nims1')->nullable();
+            $table->string('tim3_nims2')->nullable();
+            $table->string('tim3_nimop')->nullable();
+            $table->string('tim3_contact_wa')->nullable();
+            $table->string('tim3_contact_line')->nullable();
+
             $table->string('payment_proof');
             $table->string('status');
         });
