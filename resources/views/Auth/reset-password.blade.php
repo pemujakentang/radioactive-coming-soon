@@ -13,7 +13,7 @@
         class="absolute inset-0 z-0 h-full w-full object-cover" />
     <div class="absolute inset-0 z-0 h-full w-full bg-black/50" />
     <div class="container relative z-40 mx-auto p-8 flex items-center justify-center">
-        <img src="{{ url('/images/logoRadio-putih.png') }}" alt="Image" class="h-20" />
+        <img src="{{ url('/images/logoRadio-putih.webp') }}" alt="Image" class="h-20" />
     </div>
     <div class="class=container mx-auto p-4">
         <form action="{{ route('password.update') }}" method="post">
