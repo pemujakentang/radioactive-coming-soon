@@ -142,25 +142,25 @@
                         <td>
                             <img
                                 class="h-auto w-48 mx-8"
-                                src="/images/umntv.jpg"
+                                src="/images/umntv.webp"
                                 alt="" />
                         </td>
                         <td> 
                             <img
                                 class="h-auto w-48 mx-8"
-                                src="/images/ultimagz.png"
+                                src="/images/ultimagz.webp"
                                 alt="" />
                         </td>
                         <td>
                             <img
                                     class="h-auto w-48 mx-8"
-                                    src="/images/funradio.png"
+                                    src="/images/funradio.webp"
                                     alt="" />
                         </td>
                         <td>
                             <img
                                     class="h-auto w-48 mx-8"
-                                    src="/images/radiountar.jpg"
+                                    src="/images/radiountar.webp"
                                     alt="" />
                         </td>
                     </tr>
