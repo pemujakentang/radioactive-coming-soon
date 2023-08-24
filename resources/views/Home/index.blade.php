@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
     <title>UMN Radioactive 2023</title>
@@ -18,24 +19,59 @@
             <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div>
-    <nav id="header"
-        class="hidden fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
-        <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
-            href="/">HOME</a>
-        <a
-            class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO
-            CHALLENGE</a>
-        <a
-            class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
-        <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-            href="ticket">CLOSING
-            NIGHT</a>
-        @auth
-            <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
-        @endauth
-    </nav>
 
-    <div id="section-1" class="pt-10 max-w-4xl mx-auto">
+    <div id="header" x-data="{ isOpen: false }" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
+            <div class="flex items-center justify-between">
+                <button @click="isOpen = !isOpen" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="pr-4 hidden space-x-6 lg:inline-block">
+                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                    href="/">HOME</a>
+                <a
+                    class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="/voc">VO
+                    CHALLENGE</a>
+                <a
+                    class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="/rac">RAC</a>
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="/ticket">CLOSING
+                    NIGHT</a>
+                    <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="#">MERCHANDISE</a>
+                </div>
+
+                <div class="mobile-navbar">
+                    <div class="fixed left-0 w-full h-52 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
+                        @click.away=" isOpen = false">
+                        <div class="flex flex-col space-y-6">
+                        <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
+                            href="/">HOME</a>
+                        <a
+                            class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/voc">VO
+                            CHALLENGE</a>
+                        <a
+                            class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/rac">RAC</a>
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/ticket">CLOSING
+                            NIGHT</a>
+                            <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="#">MERCHANDISE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
         <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
             <p class="text-center font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
