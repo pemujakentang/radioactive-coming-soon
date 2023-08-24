@@ -76,7 +76,7 @@
                 <br>
                 <p class="font-pathway text-sm text-white text-justify md:text-center">Konsep Closing Night tahun ini adalah 'Neo World', yang memiliki makna dunia baru. Melalui konsep ini, kami akan mengajak peserta untuk berani melakukan revolusi serta keluar dari zona nyaman mereka untuk masuk ke dunia yang baru. Musisi lokal juga akan hadir memeriahkan acara RADIOACTIVE 2023.</p>
             </div>
-            <div id="button1" class="flex justify-center items-center mt-16">
+            <div id="button1" class="flex justify-center items-center mt-16" data-aos="fade-up">
                 <a href="#ticket" class="no-underline">
                     <button class="bg-[#0E0EC0] text-white border-white p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                         GET YOUR TICKETS HERE
