@@ -71,7 +71,7 @@
         </div>
         <div class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
             <h2 id="title" class="font-taruno2 text-white text-center my-12">CLOSING NIGHT</h2>
-            <div id="description" class="px-8 md:px-20 lg:px-80">
+            <div id="description" class="px-8 md:px-20 lg:px-80" data-aos="fade-up">
                 <p class="font-pathway text-sm text-white text-justify md:text-center">Closing Night merupakan puncak dan penutup dari rangkaian acara RADIOACTIVE 2023 yang akan dilaksanakan secara offline. Kegiatan ini bertujuan untuk meningkatkan awareness dan engagement RADIOACTIVE sebagai acara tahunan dari UMN Radio.</p>
                 <br>
                 <p class="font-pathway text-sm text-white text-justify md:text-center">Konsep Closing Night tahun ini adalah 'Neo World', yang memiliki makna dunia baru. Melalui konsep ini, kami akan mengajak peserta untuk berani melakukan revolusi serta keluar dari zona nyaman mereka untuk masuk ke dunia yang baru. Musisi lokal juga akan hadir memeriahkan acara RADIOACTIVE 2023.</p>
@@ -84,19 +84,19 @@
                 </a>
             </div>
             <div id="gueststar" class="flex flex-col justify-center items-center my-16">
-                <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12">GUEST STARS</h4>
-                <div id="mainGS" class="flex flex-col mb-12">
+                <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">GUEST STARS</h4>
+                <div id="mainGS" class="flex flex-col mb-12" data-aos="fade-up">
                     <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp"
                     alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">REVEALING SOON</h4>
                 </div>
                 <div id="otherGS" class="flex flex-col md:flex-row gap-12">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col" data-aos="fade-up">
                         <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp"
                         alt="" />
                         <h4 class="font-taruno text-white text-center font-bold">MENDADAK MANGGUNG</h4>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col" data-aos="fade-up">
                         <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp"
                         alt="" />
                         <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
@@ -104,9 +104,9 @@
                 </div>
             </div>
             <div id="ticket" class="flex flex-col justify-center items-center">
-                <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-16">GET YOUR TICKETS</h4>
+                <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-16" data-aos="fade-up">GET YOUR TICKETS</h4>
                 <div id="ticketType" class="flex flex-col md:flex-row gap-24">
-                    <div id="ticket1" class="w-72 relative">
+                    <div id="ticket1" class="w-72 relative" data-aos="fade-up">
                         <img id="ticketblue1" class="" src="/images/TICKET-BLUE.webp"
                         alt="" />
                         <img id="ticketblack1" class="hidden" src="/images/TICKET-BLACK.webp"
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="ticket2" class="w-72 relative">
+                    <div id="ticket2" class="w-72 relative" data-aos="fade-up">
                         <img id="ticketblack2" class="" src="/images/TICKET-BLACK.webp"
                         alt="" />
                         <img id="ticketblue2" class="hidden" src="/images/TICKET-BLUE.webp"
