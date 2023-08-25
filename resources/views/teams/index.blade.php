@@ -247,82 +247,7 @@
                             </td>
                         </tr>
 
-                        {{-- <tr>
-                            <td>{{ $team->id }}</td>
-
-                            <td>{{ $team->tim1_institusi }}</td>
-                            <td>{{ $team->tim1_penyiar1 }}</td>
-                            <td>{{ $team->tim1_penyiar2 }}</td>
-                            <td>{{ $team->tim1_operator }}</td>
-                            <td>{{ $team->tim1_nims1 }}</td>
-                            <td>{{ $team->tim1_nims2 }}</td>
-                            <td>{{ $team->tim1_nimop }}</td>
-                            <td>{{ $team->tim1_contact_wa }}</td>
-                            <td>{{ $team->tim1_contact_line }}</td>
-
-                            <td>
-                                <div style="max-width: 200px;max-height:200px;overflow:hidden">
-                                    <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
-                                        <img src={{ asset('storage/' . $team->payment_proof) }}
-                                            style="width:100%;height:100%;object-fit:contain;" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                            <td>{{ $team->status }}
-                                <form action="/teams/{{ $team->id }}/edit" class="inline">
-                                    @method('put')
-                                    @csrf
-                                    <button class="text-white bg-green-500 rounded text-sm px-2.5 py-1 m-1">
-                                        Confirm Payment
-                                    </button>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>{{ $team->id }}</td>
-                            
-                            <td>{{ $team->tim2_institusi }}</td>
-                            <td>{{ $team->tim2_penyiar1 }}</td>
-                            <td>{{ $team->tim2_penyiar2 }}</td>
-                            <td>{{ $team->tim2_operator }}</td>
-                            <td>{{ $team->tim2_nims1 }}</td>
-                            <td>{{ $team->tim2_nims2 }}</td>
-                            <td>{{ $team->tim2_nimop }}</td>
-                            <td>{{ $team->tim2_contact_wa }}</td>
-                            <td>{{ $team->tim2_contact_line }}</td>
-
-                            <td>
-                                <div style="max-width: 200px;max-height:200px;overflow:hidden">
-                                    <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
-                                        <img src={{ asset('storage/' . $team->payment_proof) }}
-                                            style="width:100%;height:100%;object-fit:contain;" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>{{ $team->id }}</td>
-                            
-                            <td>{{ $team->tim3_institusi }}</td>
-                            <td>{{ $team->tim3_penyiar1 }}</td>
-                            <td>{{ $team->tim3_penyiar2 }}</td>
-                            <td>{{ $team->tim3_operator }}</td>
-                            <td>{{ $team->tim3_nims1 }}</td>
-                            <td>{{ $team->tim3_nims2 }}</td>
-                            <td>{{ $team->tim3_nimop }}</td>
-                            <td>{{ $team->tim3_contact_wa }}</td>
-                            <td>{{ $team->tim3_contact_line }}</td>
-
-                            <td>
-                                <div style="max-width: 200px;max-height:200px;overflow:hidden">
-                                    <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
-                                        <img src={{ asset('storage/' . $team->payment_proof) }}
-                                            style="width:100%;height:100%;object-fit:contain;" alt="">
-                                    </a>
-                                </div>
-                            </td>
-                        </tr> --}}
+                       
                     @endforeach
                 </tbody>
             </table>
@@ -347,45 +272,6 @@
                 .responsive.recalc();
         });
     </script>
-
-    {{-- old table --}}
-    {{-- <table border="1">
-        <tr>
-            <th>Team ID</th>
-            <th>Institusi Asal</th>
-            <th>Penyiar 1</th>
-            <th>Penyiar 2</th>
-            <th>Operator</th>
-            <th>NIM Penyiar 1</th>
-            <th>NIM Penyiar 2</th>
-            <th>NIM Operator</th>
-            <th>WA</th>
-            <th>LINE</th>
-            <th>Bukti Pembayaran</th>
-        </tr>
-        @foreach ($rac_teams as $team)
-            <tr>
-                <td>{{ $team->id }}</td>
-                <td>{{ $team->tim1_institusi }}</td>
-                <td>{{ $team->tim1_penyiar1 }}</td>
-                <td>{{ $team->tim1_penyiar2 }}</td>
-                <td>{{ $team->tim1_operator }}</td>
-                <td>{{ $team->tim1_nims1 }}</td>
-                <td>{{ $team->tim1_nims2 }}</td>
-                <td>{{ $team->tim1_nimop }}</td>
-                <td>{{ $team->tim1_contact_wa }}</td>
-                <td>{{ $team->tim1_contact_line }}</td>
-                <td>
-                    <div style="max-width: 200px;max-height:200px;overflow:hidden">
-                        <a target="_blank" href={{ asset('storage/' . $team->payment_proof) }}>
-                            <img src={{ asset('storage/' . $team->payment_proof) }}
-                                style="width:100%;height:100%;object-fit:contain;" alt="">
-                        </a>
-                    </div>
-                </td>
-            </tr>
-        @endforeach
-    </table> --}}
 </body>
 
 </html>
