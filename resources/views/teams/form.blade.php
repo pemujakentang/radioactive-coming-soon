@@ -18,14 +18,14 @@
 </head>
 
 <body class="antialiased bg-black min-h-screen">
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-8">
+    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-8 mb-6">
         FORM PENDAFTARAN RAC
     </div>
     @if ($amount == 1)
         <form action="/teams" class="" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[400px] max-w-[95vw]">
-                    <div class="w-full form-content shadow-md  px-8 py-3 mb-4 font-pathway shadow-[#FFF000]">
+                    <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#FFF000]">
                         <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data Tim</div>
                         @csrf
                         @if (session()->has('success'))
@@ -179,7 +179,9 @@
                     <div class="w-full form-content shadow-md  px-8 py-3 mb-4 font-pathway shadow-[#FFF000]">
                         <div class="mb-1">
                             <div>
-                                <label class="block font-taruno text-center text-md md:text-lg text- form-label text-sm mb-0" for="">Bukti Pembayaran</label>
+                                <label
+                                    class="block font-taruno text-center text-md md:text-lg text- form-label text-sm mb-0"
+                                    for="">Bukti Pembayaran</label>
                             </div>
                             <div>
                                 <h6 class="text-sm">Pembayaran sebesar Rp 150.000,~ ke xxxxx a/n xxxxx</h6
@@ -210,7 +212,7 @@
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[800px] max-w-[95vw]">
                     <div
-                        class="flex justify-center flex-wrap w-full form-content shadow-md py-3 mb-4 font-pathway shadow-[#FFF000]">
+                        class="flex justify-center flex-wrap w-full form-content shadow-md py-3 mb-10 font-pathway shadow-[#FFF000]">
                         <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data Tim</div>
                         @csrf
                         @if (session()->has('success'))
@@ -520,7 +522,9 @@
                             class="w-1/2 min-w-[340px] my-1 form-content shadow-md  px-6 py-3 mb-4 font-pathway shadow-[#FFF000]">
                             <div class="mb-1">
                                 <div>
-                                    <label class="block font-taruno text-center text-md md:text-lg form-label text-sm mb-0" for="">Bukti Pembayaran</label>
+                                    <label
+                                        class="block font-taruno text-center text-md md:text-lg form-label text-sm mb-0"
+                                        for="">Bukti Pembayaran</label>
                                 </div>
                                 <div>
                                     <h6 class="text-sm">Pembayaran sebesar Rp 200.000,~ ke xxxxx a/n xxxxx</h6>
@@ -536,7 +540,8 @@
                             </div>
 
                             <div class="">
-                                <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
+                                <button
+                                    class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
                                     type="submit"
                                     onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
                                     Daftar
@@ -553,7 +558,7 @@
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[1200px] max-w-[95vw]">
                     <div
-                        class="flex flex-row flex-wrap justify-center w-full form-content shadow-md  py-3 mb-4 font-pathway shadow-[#FFF000]">
+                        class="flex flex-row flex-wrap justify-center w-full form-content shadow-md  py-3 mb-10 font-pathway shadow-[#FFF000]">
                         <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data Tim</div>
                         @csrf
                         @if (session()->has('success'))
@@ -1012,7 +1017,9 @@
                             class="min-w-[33%] w-[340px] my-1 form-content shadow-md  px-6 py-3 mb-4 font-pathway shadow-[#FFF000]">
                             <div class="mb-1">
                                 <div>
-                                    <label class="block font-taruno text-center text-md md:text-lg form-label text-sm mb-0" for="">Bukti Pembayaran</label>
+                                    <label
+                                        class="block font-taruno text-center text-md md:text-lg form-label text-sm mb-0"
+                                        for="">Bukti Pembayaran</label>
                                 </div>
                                 <div>
                                     <h6 class="text-sm">Pembayaran sebesar Rp 300.000,~ ke xxxxx a/n xxxxx</h6>
@@ -1028,7 +1035,8 @@
                             </div>
 
                             <div class="">
-                                <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
+                                <button
+                                    class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1"
                                     type="submit"
                                     onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
                                     Daftar
@@ -1072,6 +1080,36 @@
     .button-submit:active {
         background-color: white;
         color: black;
+    }
+
+    /* WebKit, Edge */
+    ::-webkit-input-placeholder {
+        font-family: 'Pathway Extreme';
+    }
+
+    /* Firefox 4-18 */
+    :-moz-placeholder {
+        font-family: 'Pathway Extreme';
+    }
+
+    /* Firefox 19+ */
+    ::-moz-placeholder {
+        font-family: 'Pathway Extreme';
+    }
+
+    /* IE 10-11 */
+    :-ms-input-placeholder {
+        font-family: 'Pathway Extreme';
+    }
+
+    /* Edge */
+    ::-ms-input-placeholder {
+        font-family: 'Pathway Extreme';
+    }
+
+    /* MODERN BROWSER */
+    ::placeholder {
+        font-family: 'Pathway Extreme';
     }
 </style>
 
