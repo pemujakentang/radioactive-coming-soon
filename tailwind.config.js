@@ -13,7 +13,11 @@ export default {
                 taruno2: ['Taruno Wide Outline']
             },
             spacing: {
+                '76' : '19rem',
                 '500': '31rem',
+            },
+            objectPosition: {
+                'center-bottom': 'center bottom',
             }
         },
     },
