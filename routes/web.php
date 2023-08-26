@@ -79,3 +79,7 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
+
+Route::get('/rac', function(){
+    return view('Rac.index');
+});
