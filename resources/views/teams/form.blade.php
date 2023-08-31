@@ -118,7 +118,7 @@
                                 </div>
                                 <div>
                                     <input
-                                        class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
                                         value="{{ old('tim1_nims2') }}">
                                     @error('tim1_nims2')
@@ -308,7 +308,7 @@
                                     </div>
                                     <div>
                                         <input
-                                            class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
                                             value="{{ old('tim1_nims2') }}">
                                         @error('tim1_nims2')
@@ -457,7 +457,7 @@
                                     </div>
                                     <div>
                                         <input
-                                            class="block @error('tim2_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim2_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            class="block @error('tim2_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nims2"
                                             value="{{ old('tim2_nims2') }}">
                                         @error('tim2_nims2')
@@ -654,7 +654,7 @@
                                     </div>
                                     <div>
                                         <input
-                                            class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
                                             value="{{ old('tim1_nims2') }}">
                                         @error('tim1_nims2')
@@ -803,7 +803,7 @@
                                     </div>
                                     <div>
                                         <input
-                                            class="block @error('tim2_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim2_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            class="block @error('tim2_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nims2"
                                             value="{{ old('tim2_nims2') }}">
                                         @error('tim2_nims2')
@@ -952,7 +952,7 @@
                                     </div>
                                     <div>
                                         <input
-                                            class="block @error('tim3_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('tim3_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            class="block @error('tim3_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim3_nims2"
                                             value="{{ old('tim3_nims2') }}">
                                         @error('tim3_nims2')

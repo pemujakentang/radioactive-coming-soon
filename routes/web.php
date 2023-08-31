@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamDataController;
+use App\Http\Controllers\VocController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,5 @@ Route::resource('teams', TeamDataController::class);
 Route::controller(TeamDataController::class)->group(function(){
     Route::get('form/{amount}', 'form');
 });
+
+Route::resource('voc', VocController::class);
