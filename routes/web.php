@@ -26,6 +26,10 @@ Route::get('/', function () {
     return view('Home.index');
 });
 
+Route::get('/voc', function () {
+    return view('VOC.index');
+});
+
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
     Route::post('/login', 'authenticate');

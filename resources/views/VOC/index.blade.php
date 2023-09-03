@@ -12,15 +12,9 @@
     <title>UMN Radioactive 2023</title>
 </head>
 
-<body class="overflow-x-hidden">
-    <div>
-        <video autoplay loop muted class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover"
-            loading="lazy">
-            <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
-        </video>
-    </div>
+<body class="overflow-x-hidden bg-black h-full">
 
-    <div id="header" x-data="{ isOpen: false }" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
+    <div id="header" x-data="{ isOpen: false }" class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
             <div class="flex items-center justify-between">
                 <button @click="isOpen = !isOpen" type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
@@ -30,10 +24,10 @@
                     </svg>
                 </button>
                 <div class="pr-4 hidden space-x-6 lg:inline-block">
-                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/">HOME</a>
                 <a
-                    class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/voc">VO
                     CHALLENGE</a>
                 <a
@@ -50,10 +44,10 @@
                     <div class="fixed left-0 w-full h-52 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
                         @click.away=" isOpen = false">
                         <div class="flex flex-col space-y-6">
-                        <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/">HOME</a>
                         <a
-                            class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
                             href="/voc">VO
                             CHALLENGE</a>
                         <a
@@ -71,141 +65,43 @@
         </div>
         </div>
 
-    <div id="section-1" class="pt-24 max-w-4xl mx-auto">
-        <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
-            <p class="text-center font-taruno text-xs text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
-            <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
+        <div class="pt-16">
+            <img class="w-full h-48 md:h-80 object-cover object-center" src="/images/FOTO VO CHALLENGE.webp"
+            alt="" />
         </div>
-        <div class="relative flex flex-col items-center" data-aos="fade-up">
-            <img class="object-cover -mt-4 md:-mt-28 z-0" src="images/BACKGROUND LOGO.webp" alt="background logo" />
-            <video autoplay loop muted class="object-cover -mt-4 md:-mt-0 z-30 w-[640px] absolute" src="images/logo.webm" alt="logo" loading="lazy"/>
-        </div>
-    </div>
 
-    <div id="section2" class="-mt-8 md:-mt-28 mb-16" data-aos="fade-up">
-        <h4 class="font-taruno2 md:text-xl text-white text-center my-12">ABOUT US</h4>
-        <div class="px-8 md:px-20 lg:px-48">
-            <p class="lg:px-44 font-pathway text-sm text-white text-justify md:text-center">RADIOACTIVE merupakan acara
-                off air tahunan yang
-                diselenggarakan oleh UMN Radio, radio komunitas dari Universitas Multimedia Nusantara.
-            </p>
-            <br>
-            <p class="font-pathway text-sm text-white text-justify md:text-center">Dimulai sejak 2015, RADIOACTIVE tahun
-                in menjadi kali
-                ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE berkembang dengan baik. Lebih
-                lanjut, RADIOACTIVE
-                diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
-            <br>
-            <p class="font-pathway text-sm text-white text-justify md:text-center">Pada tahun ini, acara kami mengangkat
-                tema "RADIOACTIVE
-                2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-fokus pada pengembangan diri
-                individu dan mendorong
-                mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami sebelumnya mengangkat tema
-                "RADIOACTIVE 2022: Radiant"
-                dengan tagline "Light Up Your Action” yang berfokus pada tindakan anak-anak muda untuk bersinar dan
-                memancarkan cahaya positif dari
-                diri mereka kepada orang lain di sekitarnya.</p>
-            <br>
-        </div>
-    </div>
-
-    <div id="section3" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
-        <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
-        <div class="carousel carousel-center flex">
-            <div class="carousel-item ml-16 lg:ml-32 border border-white">
-                <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>18-30</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Sept</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp"
-                            alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Voiceover</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Challenge</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item border border-white ml-16">
-                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96 flex-row">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>28</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Oct</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO RAC.webp"
-                            alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Announcing</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Competition</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item border border-white ml-16 mr-32">
-                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>4</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Nov</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp"
-                            alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Closing</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Night</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="section4" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
-            <h2 class="font-taruno2 text-white text-center my-12">MEDIA PARTNERS</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 w-4/5 md:w-3/4 gap-2 items-center justify-center text-center mx-auto">
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/LOGO-BEM-UMN.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/umntv.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/ultimagz.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/funradio.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/radiountar.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/LOGO-ERAFM-UNJ.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/Logo-Eventhunter.id.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/fourtyfiveradio.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/ubradio.webp" alt="" />
-                <img class="h-auto max-w-28 md:w-48 md:mx-8" src="/images/lsr.webp" alt="" />
+        <div class=" lg:-mb-0 lg:my-16" >
+            <h2 id="title" class="font-taruno2 text-white text-center my-12">VOICEOVER CHALLENGE</h2>
+            <div id="description" class="px-8 md:px-20 lg:px-80" >
+                <p class="font-pathway text-sm text-white text-justify md:text-center md:pb-0">Voice Over Challenge merupakan salah satu rangkaian acara RADIOACTIVE 2023. Voice Over Challenge bertujuan untuk mengasah skill para peserta dalam bidang tarik suara. Dalam challenge ini, peserta tidak dibatasi untuk berkreasi. Teknis dari Voice Over Challenge ini adalah peserta dapat melakukan duet melalui media sosial RADIOACTIVE. Disisi lain, challenge ini juga dapat meningkatkan awareness untuk rangkaian acara berikutnya.</p>
+                <br>
+                <p class="font-pathway text-sm text-white text-justify md:text-center"></p>
             </div>
         </div>
 
-        <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
+        <div class="mt-6">
+            <blockquote class="tiktok-embed mx-16" cite="https://www.tiktok.com/@umnradioactive/video/7255628935868845317" data-video-id="7255628935868845317" style="max-width: 325px;min-width: 325px;" > <section> <a target="_blank" title="@umnradioactive" href="https://www.tiktok.com/@umnradioactive?refer=embed">@umnradioactive</a><a title="contentcreator" target="_blank" href="https://www.tiktok.com/tag/contentcreator?refer=embed">#contentcreator</a> <a target="_blank" title="♬ original sound  - dpr saii" href="https://www.tiktok.com/music/original-sound-dpr-saii-7237729173648378629?refer=embed">♬ original sound  - dpr saii</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+
+        <div id="mainGS" class="flex flex-col justify-center items-center my-24" >
+                <img class="md:h-36 px-2" src="/images/TIMELINE-VOC.webp" alt="" />
+        </div>
+
+        <div id="button1" class="flex justify-center md:py-0 items-center mt-8" >
+            <a href="#ticket" class="no-underline">
+                <button class="bg-[#0E0EC0] text-white border-white p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                    DOWNLOAD HANDBOOK
+                </button>
+            </a>
+            
+        </div>
+
+    <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
             <div class="flex flex-col w-full justify-center md:items-center md:flex-row">
                 <div class="flex justify-center lg:container w-full">
                     <img src="/images/LOGO RA.webp" alt="" class="h-40 object-contain">
                 </div>
+
                 <div
                     class="lg:container flex flex-col justify-evenly py-3 my-10 gap-4 text-center md:text-left">
                     <a href="/"
@@ -233,6 +129,7 @@
                         </h5>
                     </a>
                 </div>
+
                 <div class="mx-auto flex flex-wrap content-center mb-12 md:mb-0">
                     <div class="flex space-x-4 mt-4 sm:mt-0">
                         <a href="mailto:mediarelation.radioactive@gmail.com" target="_blank" class="text-white">
@@ -279,6 +176,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="flex justify-center md:justify-end items-center w-full mb-10 md:mb-0">
                     <img src="/images/LOGO UMN RADIO.webp" alt="" class="h-12 lg:h-16">
                 </div>
@@ -287,9 +185,11 @@
                 </div>
 
             </div>
+
             <div class="flex justify-center align-middle mt-10 text-center">
                 <p class="mb-2 text-xs font-taruno font-medium text-white">&copy; UMN RADIOACTIVE 2023</p>
             </div>
+            
         </footer>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -297,18 +197,7 @@
             AOS.init();
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-        <script>
-            window.addEventListener('scroll', function() {
-                var header = document.getElementById('header');
-                if (window.scrollY > 0) {
-                    header.classList.remove('bg-transparent');
-                    header.classList.add('bg-[#0E0EC0]');
-                } else {
-                    header.classList.add('bg-transparent');
-                    header.classList.remove('bg-[#0E0EC0]');
-                }
-            });
-        </script>
 </body>
 
 </html>
+
