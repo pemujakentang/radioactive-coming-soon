@@ -14,7 +14,7 @@ class VocController extends Controller
      */
     public function index()
     {
-        $voc = voc::all();
+        $voc = voc::all(); 
         return view('voc.index', ['voc'=>$voc]);
     }
 

@@ -37,7 +37,7 @@
                                     <span class="">Penyiar 1</span>
                                 </label>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_penyiar1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Nama Lengkap Penyiar 1" name="tim1_penyiar1"
                                         value="{{ old('tim1_penyiar1') }}">
@@ -52,7 +52,7 @@
                                         2</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Nama Lengkap Penyiar 2" name="tim1_penyiar2"
                                         value="{{ old('tim1_penyiar2') }}">
@@ -66,7 +66,7 @@
                                     <label class="block form-label text-sm mb-0" for="">Operator</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_operator') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Nama Lengkap Operator" name="tim1_operator"
                                         value="{{ old('tim1_operator') }}">
@@ -83,7 +83,7 @@
                                     Asal</label>
                             </div>
                             <div>
-                                <input
+                                <input required
                                     class="block @error('tim1_institusi') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                     type="text" placeholder="Institusi/Organisasi Asal" name="tim1_institusi"
                                     value="{{ old('tim1_institusi') }}">
@@ -101,7 +101,7 @@
                                         1</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_nims1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="'-' untuk luar UMN" name="tim1_nims1"
                                         value="{{ old('tim1_nims1') }}">
@@ -117,7 +117,7 @@
                                         2</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
                                         value="{{ old('tim1_nims2') }}">
@@ -132,7 +132,7 @@
                                         Operator</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_nimop') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="'-' untuk luar UMN" name="tim1_nimop"
                                         value="{{ old('tim1_nimop') }}">
@@ -150,7 +150,7 @@
                                         Perwakilan</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="" name="tim1_contact_wa"
                                         value="{{ old('tim1_contact_wa') }}">
@@ -165,7 +165,7 @@
                                         Perwakilan</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="" name="tim1_contact_line"
                                         value="{{ old('tim1_contact_line') }}">
@@ -188,7 +188,7 @@
                                     class="text-sm">
                             </div>
                             <div>
-                                <input
+                                <input required
                                     class="block @error('payment_proof') border-red-500 @enderror w-full mb-5 text-xs text-gray-900 border  cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                                     type="file" accept="image/*" name="payment_proof">
                                 @error('payment_proof')
@@ -227,7 +227,7 @@
                                         <span class="">Penyiar 1</span>
                                     </label>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_penyiar1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 1" name="tim1_penyiar1"
                                             value="{{ old('tim1_penyiar1') }}">
@@ -242,7 +242,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 2" name="tim1_penyiar2"
                                             value="{{ old('tim1_penyiar2') }}">
@@ -256,7 +256,7 @@
                                         <label class="block form-label text-sm mb-0" for="">Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_operator') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Operator" name="tim1_operator"
                                             value="{{ old('tim1_operator') }}">
@@ -273,7 +273,7 @@
                                         Asal</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_institusi') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Institusi/Organisasi Asal" name="tim1_institusi"
                                         value="{{ old('tim1_institusi') }}">
@@ -291,7 +291,7 @@
                                             1</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_nims1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nims1"
                                             value="{{ old('tim1_nims1') }}">
@@ -307,7 +307,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
                                             value="{{ old('tim1_nims2') }}">
@@ -322,7 +322,7 @@
                                             Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_nimop') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nimop"
                                             value="{{ old('tim1_nimop') }}">
@@ -340,7 +340,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim1_contact_wa"
                                             value="{{ old('tim1_contact_wa') }}">
@@ -356,7 +356,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim1_contact_line"
                                             value="{{ old('tim1_contact_line') }}">
@@ -376,7 +376,7 @@
                                         <span class="">Penyiar 1</span>
                                     </label>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_penyiar1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 1" name="tim2_penyiar1"
                                             value="{{ old('tim2_penyiar1') }}">
@@ -391,7 +391,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 2" name="tim2_penyiar2"
                                             value="{{ old('tim2_penyiar2') }}">
@@ -405,7 +405,7 @@
                                         <label class="block form-label text-sm mb-0" for="">Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_operator') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Operator" name="tim2_operator"
                                             value="{{ old('tim2_operator') }}">
@@ -422,7 +422,7 @@
                                         Asal</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim2_institusi') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Institusi/Organisasi Asal" name="tim2_institusi"
                                         value="{{ old('tim2_institusi') }}">
@@ -440,7 +440,7 @@
                                             1</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_nims1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nims1"
                                             value="{{ old('tim2_nims1') }}">
@@ -456,7 +456,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nims2"
                                             value="{{ old('tim2_nims2') }}">
@@ -471,7 +471,7 @@
                                             Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_nimop') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nimop"
                                             value="{{ old('tim2_nimop') }}">
@@ -489,7 +489,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim2_contact_wa"
                                             value="{{ old('tim2_contact_wa') }}">
@@ -505,7 +505,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim2_contact_line"
                                             value="{{ old('tim2_contact_line') }}">
@@ -530,7 +530,7 @@
                                     <h6 class="text-sm">Pembayaran sebesar Rp 200.000,~ ke xxxxx a/n xxxxx</h6>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('payment_proof') border-red-500 @enderror w-full mb-5 text-xs text-gray-900 border  cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                                         type="file" accept="image/*" name="payment_proof">
                                     @error('payment_proof')
@@ -573,7 +573,7 @@
                                         <span class="">Penyiar 1</span>
                                     </label>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_penyiar1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 1" name="tim1_penyiar1"
                                             value="{{ old('tim1_penyiar1') }}">
@@ -588,7 +588,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 2" name="tim1_penyiar2"
                                             value="{{ old('tim1_penyiar2') }}">
@@ -602,7 +602,7 @@
                                         <label class="block form-label text-sm mb-0" for="">Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_operator') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Operator" name="tim1_operator"
                                             value="{{ old('tim1_operator') }}">
@@ -619,7 +619,7 @@
                                         Asal</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim1_institusi') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Institusi/Organisasi Asal" name="tim1_institusi"
                                         value="{{ old('tim1_institusi') }}">
@@ -637,7 +637,7 @@
                                             1</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_nims1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nims1"
                                             value="{{ old('tim1_nims1') }}">
@@ -653,7 +653,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nims2"
                                             value="{{ old('tim1_nims2') }}">
@@ -668,7 +668,7 @@
                                             Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_nimop') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim1_nimop"
                                             value="{{ old('tim1_nimop') }}">
@@ -686,7 +686,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim1_contact_wa"
                                             value="{{ old('tim1_contact_wa') }}">
@@ -702,7 +702,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim1_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim1_contact_line"
                                             value="{{ old('tim1_contact_line') }}">
@@ -722,7 +722,7 @@
                                         <span class="">Penyiar 1</span>
                                     </label>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_penyiar1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 1" name="tim2_penyiar1"
                                             value="{{ old('tim2_penyiar1') }}">
@@ -737,7 +737,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 2" name="tim2_penyiar2"
                                             value="{{ old('tim2_penyiar2') }}">
@@ -751,7 +751,7 @@
                                         <label class="block form-label text-sm mb-0" for="">Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_operator') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Operator" name="tim2_operator"
                                             value="{{ old('tim2_operator') }}">
@@ -768,7 +768,7 @@
                                         Asal</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim2_institusi') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Institusi/Organisasi Asal" name="tim2_institusi"
                                         value="{{ old('tim2_institusi') }}">
@@ -786,7 +786,7 @@
                                             1</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_nims1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nims1"
                                             value="{{ old('tim2_nims1') }}">
@@ -802,7 +802,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nims2"
                                             value="{{ old('tim2_nims2') }}">
@@ -817,7 +817,7 @@
                                             Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_nimop') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim2_nimop"
                                             value="{{ old('tim2_nimop') }}">
@@ -835,7 +835,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim2_contact_wa"
                                             value="{{ old('tim2_contact_wa') }}">
@@ -851,7 +851,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim2_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim2_contact_line"
                                             value="{{ old('tim2_contact_line') }}">
@@ -871,7 +871,7 @@
                                         <span class="">Penyiar 1</span>
                                     </label>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_penyiar1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 1" name="tim3_penyiar1"
                                             value="{{ old('tim3_penyiar1') }}">
@@ -886,7 +886,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_penyiar2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Penyiar 2" name="tim3_penyiar2"
                                             value="{{ old('tim3_penyiar2') }}">
@@ -900,7 +900,7 @@
                                         <label class="block form-label text-sm mb-0" for="">Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_operator') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="Nama Lengkap Operator" name="tim3_operator"
                                             value="{{ old('tim3_operator') }}">
@@ -917,7 +917,7 @@
                                         Asal</label>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('tim3_institusi') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                         type="text" placeholder="Institusi/Organisasi Asal" name="tim3_institusi"
                                         value="{{ old('tim3_institusi') }}">
@@ -935,7 +935,7 @@
                                             1</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_nims1') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim3_nims1"
                                             value="{{ old('tim3_nims1') }}">
@@ -951,7 +951,7 @@
                                             2</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_nims2') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim3_nims2"
                                             value="{{ old('tim3_nims2') }}">
@@ -966,7 +966,7 @@
                                             Operator</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_nimop') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="'-' untuk luar UMN" name="tim3_nimop"
                                             value="{{ old('tim3_nimop') }}">
@@ -984,7 +984,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim3_contact_wa"
                                             value="{{ old('tim3_contact_wa') }}">
@@ -1000,7 +1000,7 @@
                                             Perwakilan</label>
                                     </div>
                                     <div>
-                                        <input
+                                        <input required
                                             class="block @error('tim3_contact_line') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
                                             type="text" placeholder="" name="tim3_contact_line"
                                             value="{{ old('tim3_contact_line') }}">
@@ -1025,7 +1025,7 @@
                                     <h6 class="text-sm">Pembayaran sebesar Rp 300.000,~ ke xxxxx a/n xxxxx</h6>
                                 </div>
                                 <div>
-                                    <input
+                                    <input required
                                         class="block @error('payment_proof') border-red-500 @enderror w-full mb-5 text-xs text-gray-900 border  cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                                         type="file" accept="image/*" name="payment_proof">
                                     @error('payment_proof')

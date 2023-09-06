@@ -9,5 +9,7 @@ class voc extends Model
 {
     use HasFactory;
 
+    protected $guarded = ['id'];
+
     protected $fillable = ['nama', 'usia', 'no_telp', 'email', 'nim', 'institusi', 'uname', 'link'];
 }
