@@ -8,17 +8,17 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                pathway: ['Pathway Extreme'],
-                taruno: ['Taruno Wide'],
-                taruno2: ['Taruno Wide Outline']
+                pathway: ["Pathway Extreme"],
+                taruno: ["Taruno Wide"],
+                taruno2: ["Taruno Wide Outline"],
             },
             spacing: {
-                '76' : '19rem',
-                '500': '31rem',
+                76: "19rem",
+                500: "31rem",
             },
             objectPosition: {
-                'center-bottom': 'center bottom',
-            }
+                "center-bottom": "center bottom",
+            },
         },
     },
     plugins: [require("daisyui")],

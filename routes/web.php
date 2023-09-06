@@ -10,6 +10,8 @@ use App\Http\Controllers\MailController;
 use App\Http\Controllers\MerchController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamDataController;
+use App\Http\Controllers\VocController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +28,9 @@ Route::get('/', function () {
     return view('Home.index');
 });
 
-Route::get('/voc', function () {
-    return view('VOC.index');
-});
+// Route::get('/voc', function () {
+//     return view('VOC.index');
+// });
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
@@ -83,3 +85,14 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
+Route::get('/ticket', function () {
+    return view('Tickets.index');
+});
+
+Route::resource('teams', TeamDataController::class);
+
+Route::controller(TeamDataController::class)->group(function(){
+    Route::get('form/{amount}', 'form');
+});
+
+Route::resource('voc', VocController::class);
