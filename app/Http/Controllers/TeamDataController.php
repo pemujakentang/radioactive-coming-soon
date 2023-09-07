@@ -23,7 +23,8 @@ class TeamDataController extends Controller
     public function create()
     {
         //
-        return view('teams.create');
+        $rac_teams = rac_teams::all();
+        return view('teams.create', ['count'=>$rac_teams->count(), 'rac_teams'=>$rac_teams]);
     }
 
     /**
