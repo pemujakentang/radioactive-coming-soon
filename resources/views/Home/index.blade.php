@@ -167,28 +167,32 @@
         <div id="section4" class="-mb-20   lg:-mb-0 lg:my-16" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center my-12">MEDIA PARTNERS</h2>
             <div id="medpar-L" class="grid grid-cols-2 w-4/5 md:w-2/5 gap-2 items-center justify-center text-center mx-auto">
-                <img class="h-auto max-w-12 md:w-48 md:mx-8" src="/images/LOGO-BEM-UMN.webp" alt="" />
+                <img class="h-auto max-w-12 md:w-48 md:mx-8 bg-white" src="/images/LOGO-BEM-UMN.webp" alt="" />
                 <img class="h-auto max-w-12 md:w-48 md:mx-8" src="/images/lsr.webp" alt="" />
             </div>
 
             <div id="medpar-S" class="grid grid-cols-3 md:grid-cols-5 w-4/5 md:w-2/3 gap-2 items-center justify-center text-center mx-auto">
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/umntv.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-imkom.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/ubradio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/ultimagz.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/funradio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/radiountar.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/LOGO-ERAFM-UNJ.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Logo-Eventhunter.id.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/fourtyfiveradio.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/ubradio.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventapaaja.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/infolombasch.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/medialomba.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/infoevent.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcenter.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventnetwork.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/medialomba.webp" alt="" />     
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-event.list.webp" alt="" />        
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcampus.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/moestopo.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/t-radio.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-eventmahasiswa8.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcenter.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2 bg-white" src="/images/eventnetwork.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Logo-Eventhunter.id.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/umntv.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/fourtyfiveradio.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventapaaja.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/infoevent.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/LOGO-UBV-Radio.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2 bg-white" src="/images/moestopo.webp" alt="" />
             </div>
         </div>
 
@@ -196,23 +200,24 @@
             <h2 class="font-taruno2 text-white text-center my-12">SPONSORS</h2>
             <div id="sponsor-M" class="grid grid-cols-1 w-4/5 md:w-2/5 gap-2 items-center justify-center text-center mx-auto md:mb-6">
                 <div class="w-full flex justify-center">
-                    <img class="md:w-3/5 w-4/5 md:mx-8 bg-white mb-5" src="/images/somethinc-m.webp" alt="" />
+                    <img class="md:w-3/5 w-4/5 md:mx-8 mb-5 bg-white" src="/images/somethinc-m.webp" alt="" />
                 </div>
             </div>
 
-            <div id="medpar-S" class="grid grid-cols-3 md:grid-cols-3 w-4/5 md:w-1/2 gap-2 items-center justify-center text-center mx-auto md:mb-6">
-                <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/aice-s.webp" alt="" />
-                <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/blu-s.webp" alt="" />
+            <div id="medpar-S" class="grid grid-cols-3 md:grid-cols-3 w-11/12 md:w-1/2 gap-2 items-center justify-center text-center mx-auto mb-4 md:mb-6">
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/kino-s.webp" alt="" />
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/panda-s.webp" alt="" />
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/pia100-s.webp" alt="" />
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/snackit-s.webp" alt="" />
+                <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/aice-s.webp" alt="" />
+                <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/blu-s.webp" alt="" />
             </div>
 
-            <div id="medpar-XS" class="grid grid-cols-4 md:grid-cols-5 w-4/5 md:w-2/3 gap-2 items-center justify-center text-center mx-auto">
+            <div id="medpar-XS" class="grid grid-cols-4 md:grid-cols-5 w-11/12 md:w-2/3 gap-2 items-center justify-center text-center mx-auto">
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/artha-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/chuga-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/puyo-xs.webp" alt="" />
+                <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/pandaboo-xs.webp" alt="" />
             </div>
         </div>
 
