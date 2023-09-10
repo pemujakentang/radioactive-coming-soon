@@ -63,11 +63,11 @@
             </div>
 
     <div id="timeline" class="hidden md:flex flex-col justify-center items-center my-32 mb-28" data-aos="fade-up">
-        <img class="md:h-96 sm:h-0 px-2" src="/images/TIMELINE RAC.png" alt="" />
+        <img class="md:h-96 sm:h-0 px-2 max-w-[90%] object-contain" src="/images/TIMELINE RAC.png" alt="" />
     </div>
 
     <div id="timelineHP" class="flex flex-col justify-center items-center my-32 mb-28 md:hidden" data-aos="fade-up">
-        <img class="w-80 sm:w-40 px-2" src="/images/TIMELINE RAC HP.png" alt="" />
+        <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/TIMELINE RAC HP.png" alt="" />
     </div>
 
     <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
