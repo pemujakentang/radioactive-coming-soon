@@ -19,7 +19,7 @@
 
 <body class="antialiased">
     <div class="w-full max-w-xs">
-        <form action="/teams/{{ $team->id }}" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        <form action="/rac/{{ $team->id }}" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
             enctype="multipart/form-data" method="post">
             @method('put')
             @csrf

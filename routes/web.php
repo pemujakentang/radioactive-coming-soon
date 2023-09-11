@@ -89,14 +89,22 @@ Route::get('/ticket', function () {
     return view('Tickets.index');
 });
 
-Route::resource('teams', TeamDataController::class);
+// Route::resource('rac', TeamDataController::class);
 
 Route::controller(TeamDataController::class)->group(function(){
-    Route::get('form/{amount}', 'form');
+    Route::get('/rac', 'index');
+    Route::get('/rac/create', 'create');
+    Route::post('/rac/store', 'store');
+    Route::get('/rac/show', 'show');
+    Route::get('/rac/{id}/edit', 'edit');
+    Route::post('/rac/update', 'update');
+    Route::post('/rac/delete', 'destroy');
+    Route::get('/rac/form/{amount}', 'form');
+    Route::get('/rac/dashboard', 'dashboard');
 });
 
 Route::resource('voc', VocController::class);
 
-Route::get('/rac', function(){
-    return view('Rac.index');
-});
+// Route::get('/rac', function(){
+//     return view('Rac.index');
+// });

@@ -55,61 +55,61 @@
                 @if ($count >= 20)
                     <h2 class="w-full text-center font-taruno">Kuota Tim Habis</h2>
                 @elseif ($count >= 19)
-                    <a href="/form/1">
+                    <a href="/rac/form/1">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Satu Tim
                         </button>
                     </a>
                 @elseif($count >= 18)
-                    <a href="/form/1">
+                    <a href="/rac/form/1">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Satu Tim
                         </button>
                     </a>
-                    <a href="/form/2">
+                    <a href="/rac/form/2">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Dua Tim
                         </button>
                     </a>
                 @else
-                    <a href="/form/1">
+                    <a href="/rac/form/1">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Satu Tim
                         </button>
                     </a>
-                    <a href="/form/2">
+                    <a href="/rac/form/2">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Dua Tim
                         </button>
                     </a>
-                    <a href="/form/3">
+                    <a href="/rac/form/3">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Tiga Tim
                         </button>
                     </a>
                 @endif
             @else
-                <a href="/form/1">
+                <a href="/rac/form/1">
                     <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                        type="submit">
                         Satu Tim
                     </button>
                 </a>
-                <a href="/form/2">
+                <a href="/rac/form/2">
                     <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                        type="submit">
                         Dua Tim
                     </button>
                 </a>
-                <a href="/form/3">
+                <a href="/rac/form/3">
                     <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                        type="submit">
                         Tiga Tim
                     </button>
                 </a>
