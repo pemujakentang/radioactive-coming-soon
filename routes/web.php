@@ -96,3 +96,7 @@ Route::controller(TeamDataController::class)->group(function(){
 });
 
 Route::resource('voc', VocController::class);
+
+Route::get('/rac', function(){
+    return view('Rac.index');
+});
