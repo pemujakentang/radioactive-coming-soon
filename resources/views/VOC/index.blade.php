@@ -88,13 +88,17 @@
                 <img class="md:hidden w-5/6" src="/images/TIMELINE-VOC-HP.webp" alt="">
         </div>
 
-        <div id="button1" class="flex justify-center md:py-0 items-center mt-8" >
+        <div id="button1" class="flex justify-center md:py-0 items-center mt-8 gap-4" >
             <a href="#ticket" class="no-underline">
-                <button class="bg-[#0E0EC0] text-white border-white p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                <button class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                     DOWNLOAD HANDBOOK
                 </button>
             </a>
-            
+            <a href="/voc/submission" class="no-underline">
+                <button class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                    SUBMISSION
+                </button>
+            </a>
         </div>
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
