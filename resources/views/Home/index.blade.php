@@ -165,7 +165,7 @@
             </div>
         </div>
         <div id="section4" class="-mb-20   md:-mb-0 md:my-24" data-aos="fade-up">
-            <h2 class="font-taruno2 text-white text-center mb-6 mt-12">OFFICIAL MEDIA PARTNER</h2>
+            <h2 class="font-taruno2 text-white text-center mb-6 mt-12">EXCLUSIVE MEDIA PARTNER</h2>
                 <div class="w-4/6 mb-4 md:w-1/4 items-center justify-center text-center mx-auto md:mb-6">
                     <img class="" src="/images/prambors.webp" alt="" />
                 </div>
