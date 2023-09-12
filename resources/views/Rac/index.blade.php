@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
     <title>UMN Radioactive 2023</title>
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 </head>
 
 <body class="antialiased bg-black min-h-screen">
@@ -20,7 +18,7 @@
             <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
         </video>
     </div> --}}
-    {{-- <nav id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
+    <nav id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
         <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
             href="/">HOME</a>
         <a
@@ -34,86 +32,35 @@
         @auth
             <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
         @endauth
-    </nav> --}}
-    <div id="header" x-data="{ isOpen: false }"
-        class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
-        <div class="flex items-center justify-between">
-            <button @click="isOpen = !isOpen" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <div class="pr-4 hidden space-x-6 lg:inline-block">
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="/">HOME</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="/voc">VO
-                    CHALLENGE</a>
-                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
-                    href="/rac">RAC</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
-                    NIGHT</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="#">MERCHANDISE</a>
-            </div>
+    </nav>
 
-            <div class="mobile-navbar">
-                <div class="fixed left-0 w-full h-52 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
-                    @click.away=" isOpen = false">
-                    <div class="flex flex-col space-y-6">
-                        <a class="font-taruno text-black text-xs no-underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
-                            href="/">HOME</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/voc">VO
-                            CHALLENGE</a>
-                        <a class="font-taruno text-black text-xs underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/rac">RAC</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
-                            NIGHT</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="#">MERCHANDISE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="banner" class="w-full">
+        <img class="banner-image w-full object-cover" src="{{ asset('images/FOTO RAC.webp') }}" alt="">
     </div>
 
-    <div id="banner" class="w-full pt-16">
-        <img class="w-full h-48 md:h-80 object-cover object-center" src="{{ asset('images/FOTO RAC.webp') }}"
-            alt="">
-    </div>
-
-    <div class=" lg:-mb-0 lg:my-16">
-        <h2 id="title" class="font-taruno2 text-white text-center my-12">RADIO ANNOUNCING COMPETITION</h2>
-        <div id="description" class="px-8 md:px-20 lg:px-80">
-            <p class="font-pathway text-sm text-white text-justify md:text-center md:pb-0">Radio Announcing Competition merupakan
-                rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa
-                se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. <br>
-                Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu get out from
-                comfort zone. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan
-                secara tidak langsung memberikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman
-                mereka.</p>
-            <br>
-            <p class="font-pathway text-sm text-white text-justify md:text-center"></p>
+    <div id="description" class="my-12 mb-28" data-aos="fade-up">
+        <h4 class="font-taruno2 text-3xl text-white text-center mt-12 mb-8">RADIO ANNOUNCING COMPETITION</h4>
+        <div class="px-8 md:px-20 lg:px-48">
+            <p class="lg:px-44 font-pathway text-lg text-white text-justify ">Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan men- gasah kemampuan di dunia broadcasting Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu get out from comfort zone. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung mem- berikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman mereka.
+            </p>
         </div>
     </div>
 
     <div id="judges" class="flex flex-col justify-center items-center my-16">
-        <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">THE JUDGES</h4>
-        <div id="judges" class="flex flex-col md:flex-row gap-12">
-            <div class="flex flex-col" data-aos="fade-up">
-                <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
-                <h4 class="font-taruno text-white text-center font-bold">SHANDY LUO</h4>
+                <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">THE JUDGES</h4>
+                <div id="judges" class="flex flex-col md:flex-row gap-12">
+                    <div class="flex flex-col" data-aos="fade-up">
+                        <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp"
+                        alt="" />
+                        <h4 class="font-taruno text-white text-center font-bold">SHANDY LUO</h4>
+                    </div>
+                    <div class="flex flex-col" data-aos="fade-up">
+                        <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp"
+                        alt="" />
+                        <h4 class="font-taruno text-white text-center font-bold">JUDGE #2</h4>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col" data-aos="fade-up">
-                <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
-                <h4 class="font-taruno text-white text-center font-bold">JUDGE #2</h4>
-            </div>
-        </div>
-    </div>
 
     <div id="timeline" class="hidden md:flex flex-col justify-center items-center my-32 mb-28" data-aos="fade-up">
         <img class="md:h-96 sm:h-0 px-2 max-w-[90%] object-contain" src="/images/TIMELINE RAC.png" alt="" />
@@ -125,24 +72,22 @@
 
     <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
         <div id="button1" class="my-3">
-            <a href="/rac/register" class="no-underline py-4 px-6">
-                <button
-                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+            <a href="#register" class="no-underline py-4 px-6">
+                <button class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                     REGISTER HERE
                 </button>
             </a>
         </div>
-
+    
         <div id="button2" class="my-3">
-            <a href="" class="no-underline py-4 px-6">
-                <button
-                    class="disable bg-[#7e7e7e] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2">
+            <a href="#handbook" class="no-underline py-4 px-6">
+                <button class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                     DOWNLOAD HANDBOOK
                 </button>
             </a>
         </div>
     </div>
-
+    
 
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
@@ -212,8 +157,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://youtube.com/channel/UCeVl4fsOVkU7yVCurgoq5Lg" target="_blank"
-                        class="text-white">
+                    <a href="https://youtube.com/channel/UCeVl4fsOVkU7yVCurgoq5Lg" target="_blank" class="text-white">
                         <svg class="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
                                 d="M12,20.55c-.3,0-7.279-.006-9.115-.5A3.375,3.375,0,0,1,.5,17.665,29.809,29.809,0,0,1,0,12,29.824,29.824,0,0,1,.5,6.334,3.375,3.375,0,0,1,2.885,3.948c1.836-.492,8.819-.5,9.115-.5s7.279.006,9.115.5A3.384,3.384,0,0,1,23.5,6.334,29.97,29.97,0,0,1,24,12a29.97,29.97,0,0,1-.5,5.666,3.384,3.384,0,0,1-2.388,2.386C19.279,20.544,12.3,20.55,12,20.55Zm0-16.1c-.072,0-7.146.006-8.857.464A2.377,2.377,0,0,0,1.464,6.593,29.566,29.566,0,0,0,1,12a29.566,29.566,0,0,0,.464,5.407,2.377,2.377,0,0,0,1.679,1.679c1.711.458,8.785.464,8.857.464s7.146-.006,8.857-.464a2.377,2.377,0,0,0,1.679-1.679A29.66,29.66,0,0,0,23,12a29.66,29.66,0,0,0-.464-5.407h0a2.377,2.377,0,0,0-1.679-1.679C19.146,4.456,12.071,4.45,12,4.45ZM9.7,15.95a.5.5,0,0,1-.5-.5V8.55a.5.5,0,0,1,.75-.433l5.975,3.45a.5.5,0,0,1,0,.866L9.95,15.883A.5.5,0,0,1,9.7,15.95Zm.5-6.534v5.168L14.675,12Z">
@@ -258,9 +202,9 @@
         background-color: black;
     }
 
-    /* .banner-image{
+    .banner-image{
         max-height: 60vh;
-    } */
+    }
 </style>
 
 </html>

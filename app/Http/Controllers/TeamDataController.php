@@ -7,14 +7,19 @@ use Illuminate\Http\Request;
 
 class TeamDataController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function index()
     {
         //
+        return view('teams.index');
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function dashboard(){
         $rac_teams = rac_teams::all();
-        return view('teams.index', ['rac_teams'=>$rac_teams]);
+        return view('teams.dashboard', ['rac_teams' => $rac_teams]);
     }
 
     /**
@@ -113,7 +118,7 @@ class TeamDataController extends Controller
         // $team->tim1_contact_line = $request->tim1_contact_line;
         // $team->payment_proof = $request->file('payment_proof')->storePublicly('payment_images', 'public');
         // $team->save();
-        return redirect('/teams/create')->with('success', "Pendaftaran berhasil.");
+        return redirect('/rac/create')->with('success', "Pendaftaran berhasil.");
     }
 
     /**

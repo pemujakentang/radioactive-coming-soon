@@ -13,12 +13,61 @@
     {{-- <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" /> --}}
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+
     @vite('resources/css/app.css')
 
 </head>
 
 <body class="antialiased bg-black min-h-screen">
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-8 mb-6">RAC Registration
+    <div id="header" x-data="{ isOpen: false }"
+        class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
+        <div class="flex items-center justify-between">
+            <button @click="isOpen = !isOpen" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="pr-4 hidden space-x-6 lg:inline-block">
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="/">HOME</a>
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="/voc">VO
+                    CHALLENGE</a>
+                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                    href="/rac">RAC</a>
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                    href="/ticket">CLOSING
+                    NIGHT</a>
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="#">MERCHANDISE</a>
+            </div>
+
+            <div class="mobile-navbar">
+                <div class="fixed left-0 w-full h-52 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
+                    @click.away=" isOpen = false">
+                    <div class="flex flex-col space-y-6">
+                        <a class="font-taruno text-black text-xs no-underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
+                            href="/">HOME</a>
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/voc">VO
+                            CHALLENGE</a>
+                        <a class="font-taruno text-black text-xs underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/rac">RAC</a>
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/ticket">CLOSING
+                            NIGHT</a>
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="#">MERCHANDISE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-20 mb-6">RAC Registration
     </div>
     <div class="flex justify-center align-middle form-container">
         <div class="content-container px-4 py-4 flex flex-col w-[400px] max-w-[95vw]">
@@ -55,61 +104,61 @@
                 @if ($count >= 20)
                     <h2 class="w-full text-center font-taruno">Kuota Tim Habis</h2>
                 @elseif ($count >= 19)
-                    <a href="/form/1">
+                    <a href="/rac/form/1">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Satu Tim
                         </button>
                     </a>
                 @elseif($count >= 18)
-                    <a href="/form/1">
+                    <a href="/rac/form/1">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Satu Tim
                         </button>
                     </a>
-                    <a href="/form/2">
+                    <a href="/rac/form/2">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Dua Tim
                         </button>
                     </a>
                 @else
-                    <a href="/form/1">
+                    <a href="/rac/form/1">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Satu Tim
                         </button>
                     </a>
-                    <a href="/form/2">
+                    <a href="/rac/form/2">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Dua Tim
                         </button>
                     </a>
-                    <a href="/form/3">
+                    <a href="/rac/form/3">
                         <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                            type="submit">
                             Tiga Tim
                         </button>
                     </a>
                 @endif
             @else
-                <a href="/form/1">
+                <a href="/rac/form/1">
                     <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                        type="submit">
                         Satu Tim
                     </button>
                 </a>
-                <a href="/form/2">
+                <a href="/rac/form/2">
                     <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                        type="submit">
                         Dua Tim
                     </button>
                 </a>
-                <a href="/form/3">
+                <a href="/rac/form/3">
                     <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit" onclick="return confirm('Pastikan data yang dimasukkan benar adanya')">
+                        type="submit">
                         Tiga Tim
                     </button>
                 </a>
@@ -146,7 +195,7 @@
         color: black;
     }
 
-    .content-container{
+    .content-container {
         background-color: rgb(45, 45, 45);
         color: white;
         border-radius: 3px;
