@@ -56,7 +56,7 @@
                     href="/ticket">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="#">MERCHANDISE</a>
+                    href="merch.umnradioactive.com">merchandise</a>
             </div>
 
             <div class="mobile-navbar">
@@ -74,7 +74,7 @@
                             href="/ticket">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="#">MERCHANDISE</a>
+                            href="merch.umnradioactive.com">merchandise</a>
                     </div>
                 </div>
             </div>
@@ -89,10 +89,12 @@
     <div class=" lg:-mb-0 lg:my-16">
         <h2 id="title" class="font-taruno2 text-white text-center my-12">RADIO ANNOUNCING COMPETITION</h2>
         <div id="description" class="px-8 md:px-20 lg:px-80">
-            <p class="font-pathway text-sm text-white text-justify md:text-center md:pb-0">Radio Announcing Competition merupakan
+            <p class="font-pathway text-sm text-white text-justify md:text-center md:pb-0">Radio Announcing Competition
+                merupakan
                 rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa
                 se-Jabodetabek untuk memperluas wawasan dan mengasah kemampuan di dunia broadcasting. <br>
-                Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu get out from
+                Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu
+                get out from
                 comfort zone. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan
                 secara tidak langsung memberikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman
                 mereka.</p>
