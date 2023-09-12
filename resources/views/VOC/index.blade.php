@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div class="mt-6">
+        <div id="tiktok" style="display:none;" class="mt-6">
             <blockquote class="tiktok-embed mx-16" cite="https://www.tiktok.com/@umnradioactive/video/7255628935868845317" data-video-id="7255628935868845317" style="max-width: 325px;min-width: 325px;" > <section> <a target="_blank" title="@umnradioactive" href="https://www.tiktok.com/@umnradioactive?refer=embed">@umnradioactive</a><a title="contentcreator" target="_blank" href="https://www.tiktok.com/tag/contentcreator?refer=embed">#contentcreator</a> <a target="_blank" title="♬ original sound  - dpr saii" href="https://www.tiktok.com/music/original-sound-dpr-saii-7237729173648378629?refer=embed">♬ original sound  - dpr saii</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
 
@@ -90,7 +90,7 @@
 
         <div id="button1" class="flex justify-center md:py-0 items-center mt-8" >
             <a href="#ticket" class="no-underline">
-                <button class="bg-[#0E0EC0] text-white border-white p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                <button id="handbookbtn" disabled class="bg-[#0E0EC0] disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0] disabled:text-white">
                     DOWNLOAD HANDBOOK
                 </button>
             </a>
@@ -198,6 +198,24 @@
             AOS.init();
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+        <script>
+                    var CurrentDate = new Date();
+                    var HandbookDate = new Date("2023-09-18");
+                    var TiktokDate = new Date('2023-09-17T19:00:00');
+                    var handbook = document.getElementById("handbookbtn");
+                    
+                    function checkTime() {
+                        if (CurrentDate >= HandbookDate) {
+                            handbookbtn.removeAttribute("disabled");
+                        }
+                        if (CurrentDate >= TiktokDate) {
+                            document.getElementById("tiktok").style.display = 'block';
+                        }
+                    }
+
+                    checkTime();
+                    setInterval(checkTime, 1000);
+                </script>
 </body>
 
 </html>
