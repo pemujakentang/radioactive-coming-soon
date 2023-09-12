@@ -41,26 +41,30 @@
     <div id="description" class="my-12 mb-28" data-aos="fade-up">
         <h4 class="font-taruno2 text-3xl text-white text-center mt-12 mb-8">RADIO ANNOUNCING COMPETITION</h4>
         <div class="px-8 md:px-20 lg:px-48">
-            <p class="lg:px-44 font-pathway text-lg text-white text-justify ">Radio Announcing Competition merupakan rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa se-Jabodetabek untuk memperluas wawasan dan men- gasah kemampuan di dunia broadcasting Radio Announcing Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu get out from comfort zone. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan secara tidak langsung mem- berikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman mereka.
+            <p class="lg:px-44 font-pathway text-lg text-white text-justify ">Radio Announcing Competition merupakan
+                rangkaian acara utama RADIOACTIVE. Lomba ini merupa kan ajang untuk siswa SMA dan mahasiswa
+                se-Jabodetabek untuk memperluas wawasan dan men- gasah kemampuan di dunia broadcasting Radio Announcing
+                Competition ini memiliki konsep yang sesuai dengan nilai utama RADIOACTIVE 2023, yaitu get out from
+                comfort zone. Tujuan dari lomba ini adalah untuk mengasah kreativitas peserta dalam membuat siaran dan
+                secara tidak langsung mem- berikan informasi hingga mengajak para peserta untuk keluar dari zona nyaman
+                mereka.
             </p>
         </div>
     </div>
 
     <div id="judges" class="flex flex-col justify-center items-center my-16">
-                <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">THE JUDGES</h4>
-                <div id="judges" class="flex flex-col md:flex-row gap-12">
-                    <div class="flex flex-col" data-aos="fade-up">
-                        <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp"
-                        alt="" />
-                        <h4 class="font-taruno text-white text-center font-bold">SHANDY LUO</h4>
-                    </div>
-                    <div class="flex flex-col" data-aos="fade-up">
-                        <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp"
-                        alt="" />
-                        <h4 class="font-taruno text-white text-center font-bold">JUDGE #2</h4>
-                    </div>
-                </div>
+        <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">THE JUDGES</h4>
+        <div id="judges" class="flex flex-col md:flex-row gap-12">
+            <div class="flex flex-col" data-aos="fade-up">
+                <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
+                <h4 class="font-taruno text-white text-center font-bold">SHANDY LUO</h4>
             </div>
+            <div class="flex flex-col" data-aos="fade-up">
+                <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
+                <h4 class="font-taruno text-white text-center font-bold">JUDGE #2</h4>
+            </div>
+        </div>
+    </div>
 
     <div id="timeline" class="hidden md:flex flex-col justify-center items-center my-32 mb-28" data-aos="fade-up">
         <img class="md:h-96 sm:h-0 px-2 max-w-[90%] object-contain" src="/images/TIMELINE RAC.png" alt="" />
@@ -73,21 +77,23 @@
     <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
         <div id="button1" class="my-3">
             <a href="#register" class="no-underline py-4 px-6">
-                <button class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                <button
+                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                     REGISTER HERE
                 </button>
             </a>
         </div>
-    
+
         <div id="button2" class="my-3">
             <a href="#handbook" class="no-underline py-4 px-6">
-                <button class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                <button
+                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                     DOWNLOAD HANDBOOK
                 </button>
             </a>
         </div>
     </div>
-    
+
 
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
@@ -157,7 +163,8 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://youtube.com/channel/UCeVl4fsOVkU7yVCurgoq5Lg" target="_blank" class="text-white">
+                    <a href="https://youtube.com/channel/UCeVl4fsOVkU7yVCurgoq5Lg" target="_blank"
+                        class="text-white">
                         <svg class="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
                                 d="M12,20.55c-.3,0-7.279-.006-9.115-.5A3.375,3.375,0,0,1,.5,17.665,29.809,29.809,0,0,1,0,12,29.824,29.824,0,0,1,.5,6.334,3.375,3.375,0,0,1,2.885,3.948c1.836-.492,8.819-.5,9.115-.5s7.279.006,9.115.5A3.384,3.384,0,0,1,23.5,6.334,29.97,29.97,0,0,1,24,12a29.97,29.97,0,0,1-.5,5.666,3.384,3.384,0,0,1-2.388,2.386C19.279,20.544,12.3,20.55,12,20.55Zm0-16.1c-.072,0-7.146.006-8.857.464A2.377,2.377,0,0,0,1.464,6.593,29.566,29.566,0,0,0,1,12a29.566,29.566,0,0,0,.464,5.407,2.377,2.377,0,0,0,1.679,1.679c1.711.458,8.785.464,8.857.464s7.146-.006,8.857-.464a2.377,2.377,0,0,0,1.679-1.679A29.66,29.66,0,0,0,23,12a29.66,29.66,0,0,0-.464-5.407h0a2.377,2.377,0,0,0-1.679-1.679C19.146,4.456,12.071,4.45,12,4.45ZM9.7,15.95a.5.5,0,0,1-.5-.5V8.55a.5.5,0,0,1,.75-.433l5.975,3.45a.5.5,0,0,1,0,.866L9.95,15.883A.5.5,0,0,1,9.7,15.95Zm.5-6.534v5.168L14.675,12Z">
@@ -202,7 +209,7 @@
         background-color: black;
     }
 
-    .banner-image{
+    .banner-image {
         max-height: 60vh;
     }
 </style>
