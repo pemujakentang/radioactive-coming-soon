@@ -126,11 +126,11 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
                                     <li>
-                                        <a href="#a"
+                                        <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
                                     </li>
                                     <li>
-                                        <a href="#b"
+                                        <a href="/order/3/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
@@ -176,11 +176,11 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
                                     <li>
-                                        <a href="#c"
+                                        <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
                                     </li>
                                     <li>
-                                        <a href="#d"
+                                        <a href="/order/3/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
