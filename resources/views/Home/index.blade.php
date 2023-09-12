@@ -186,8 +186,8 @@
             <h2 class="font-taruno2 text-white text-center my-12">MEDIA PARTNERS</h2>
             <div id="medpar-L"
                 class="grid grid-cols-2 w-4/5 md:w-2/5 gap-2 items-center justify-center text-center mx-auto">
-                <img class="h-auto max-w-12 md:w-48 md:mx-8 bg-white" src="/images/LOGO-BEM-UMN.webp"
-                    alt="" />
+                <img class="h-auto max-w-12 md:w-48 md:mx-8 bg-white bg-opacity-50 rounded-lg"
+                    src="/images/LOGO-BEM-UMN.webp" alt="" />
                 <img class="h-auto max-w-12 md:w-48 md:mx-8" src="/images/lsr.webp" alt="" />
             </div>
 
@@ -206,14 +206,16 @@
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/t-radio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-eventmahasiswa8.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcenter.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2 bg-white" src="/images/eventnetwork.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2 bg-white bg-opacity-50 rounded-lg"
+                    src="/images/eventnetwork.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Logo-Eventhunter.id.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/umntv.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/fourtyfiveradio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventapaaja.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/infoevent.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/LOGO-UBV-Radio.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2 bg-white" src="/images/moestopo.webp" alt="" />
+                <img class="h-auto md:w-40 md:mx-8 mb-2 bg-white bg-opacity-50 rounded-lg" src="/images/moestopo.webp"
+                    alt="" />
             </div>
         </div>
 
@@ -222,8 +224,8 @@
             <div id="sponsor-M"
                 class="grid grid-cols-1 w-4/5 md:w-2/5 gap-2 items-center justify-center text-center mx-auto md:mb-6">
                 <div class="w-full flex justify-center">
-                    <img class="md:w-3/5 w-4/5 md:mx-8 mb-5 bg-white" src="/images/somethinc-m.webp"
-                        alt="" />
+                    <img class="md:w-3/5 w-4/5 md:mx-8 mb-5 bg-white bg-opacity-50 rounded-lg"
+                        src="/images/somethinc-m.webp" alt="" />
                 </div>
             </div>
 

@@ -14,6 +14,7 @@
 
 <body class="overflow-x-hidden bg-black h-full">
 
+
     <div id="header" x-data="{ isOpen: false }"
         class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
         <div class="flex items-center justify-between">
@@ -128,10 +129,6 @@
                                     <li>
                                         <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="/order/3/personal-information"
-                                            class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
                             </div>
