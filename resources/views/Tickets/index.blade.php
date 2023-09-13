@@ -33,28 +33,24 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
                 <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
+                    href="/closing-night">CLOSING
                     NIGHT</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="merch.umnradioactive.com">merchandise</a>
             </div>
 
             <div class="mobile-navbar">
                 <div class="fixed left-0 w-full h-52 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
                     @click.away=" isOpen = false">
                     <div class="flex flex-col space-y-6">
-                        <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/">HOME</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/voc">VO
                             CHALLENGE</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
+                        <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
+                            href="/closing-night">CLOSING
                             NIGHT</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">merchandise</a>
                     </div>
                 </div>
             </div>
@@ -77,132 +73,7 @@
                 melakukan revolusi serta keluar dari zona nyaman mereka untuk masuk ke dunia yang baru. Musisi lokal
                 juga akan hadir memeriahkan acara RADIOACTIVE 2023.</p>
         </div>
-        <div id="button1" class="flex justify-center items-center mt-16" data-aos="fade-up">
-            <a href="#ticket" class="no-underline">
-                <button
-                    class="bg-[#0E0EC0] text-white border-white p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
-                    GET YOUR TICKETS HERE
-                </button>
-            </a>
-        </div>
-        <div id="gueststar" class="flex flex-col justify-center items-center my-16">
-            <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">GUEST STARS
-            </h4>
-            <div id="mainGS" class="flex flex-col mb-12" data-aos="fade-up">
-                <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp" alt="" />
-                <h4 class="font-taruno text-white text-center font-bold">REVEALING SOON</h4>
-            </div>
-            <div id="otherGS" class="flex flex-col md:flex-row gap-12">
-                <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp" alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">MENDADAK MANGGUNG</h4>
-                </div>
-                <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp" alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
-                </div>
-            </div>
-        </div>
-        <div id="ticket" class="flex flex-col justify-center items-center">
-            <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-16" data-aos="fade-up">GET YOUR
-                TICKETS</h4>
-            <div id="ticketType" class="flex flex-col md:flex-row gap-24">
-                <div id="ticket1" class="w-72 relative" data-aos="fade-up">
-                    <img id="ticketblue1" class="" src="/images/TICKET-BLUE.webp" alt="" />
-                    <img id="ticketblack1" class="hidden" src="/images/TICKET-BLACK.webp" alt="" />
-                    <div class="absolute top-0 bottom-0 left-0 right-0">
-                        <h4 class="font-taruno2 text-2xl text-white text-center mt-12">EARLY <br> BIRD</h4>
-                        <p class="font-pathway text-md text-white text-center">15-30 <br> September 2023</p>
-                        <h4 class="font-taruno text-white text-center font-bold mt-28">HTM <br> RP 30.000</h4>
-                        <div id="buttonearly1" class="flex justify-center items-center mt-32">
-                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                                class="bg-black text-white border-white py-4 px-6 font-taruno font-bold border-2 inline-flex items-center focus:ring-gray-300"
-                                type="button">BUY NOW <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                            <div id="dropdown"
-                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton">
-                                    <li>
-                                        <a href="/order/1/personal-information"
-                                            class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="buttonearly2" class="hidden flex justify-center items-center mt-32">
-                            <button
-                                class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
-                                type="button">SOLD OUT <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div id="ticket2" class="w-72 relative" data-aos="fade-up">
-                    <img id="ticketblack2" class="" src="/images/TICKET-BLACK.webp" alt="" />
-                    <img id="ticketblue2" class="hidden" src="/images/TICKET-BLUE.webp" alt="" />
-                    <div class="absolute top-0 bottom-0 left-0 right-0">
-                        <h4 class="font-taruno2 text-2xl text-white text-center mt-12">PRESALE</h4>
-                        <p class="font-pathway text-md text-white text-center">1 Oktober - <br> 3 November 2023</p>
-                        <h4 class="font-taruno text-white text-center font-bold mt-36">HTM <br> COMING SOON</h4>
-                        <div id="buttonpresale1" class="flex justify-center items-center mt-32">
-                            <button
-                                class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
-                                type="button">BUY NOW <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                        </div>
-                        <div id="buttonpresale2" class="hidden flex justify-center items-center mt-32">
-                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown2"
-                                class="bg-black text-white border-white py-4 px-6 font-taruno font-bold border-2 inline-flex items-center focus:ring-gray-300"
-                                type="button">BUY NOW <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                            <div id="dropdown2"
-                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownDefaultButton">
-                                    <li>
-                                        <a href="/order/1/personal-information"
-                                            class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="/order/3/personal-information"
-                                            class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="buttonpresale3" class="hidden flex justify-center items-center mt-32">
-                            <button
-                                class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
-                                type="button">SOLD OUT<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <p class="text-3xl py-8">Tickets Menu</p>
-        <div class="flex flex-col">
-            <a href="/custom-order">Custom Order</a>
-            <a href="/order/1/personal-information">Single</a>
-            <a href="/order/3/personal-information">Trio</a>
-            <a href="/order/5/personal-information">Friends Combo</a>
-        </div> -->
+      
     </div>
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
@@ -217,19 +88,19 @@
                         <b>HOME</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/voc"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>VO CHALLENGE</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/rac"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>RAC</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/closing-night"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>CLOSING NIGHT</b>

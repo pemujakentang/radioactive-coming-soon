@@ -61,7 +61,7 @@
             </div>
             <div class="flex flex-col" data-aos="fade-up">
                 <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
-                <h4 class="font-taruno text-white text-center font-bold">JUDGE #2</h4>
+                <h4 class="font-taruno text-white text-center font-bold">BELLA PRAMBORS</h4>
             </div>
         </div>
     </div>
@@ -72,26 +72,6 @@
 
     <div id="timelineHP" class="flex flex-col justify-center items-center my-32 mb-28 md:hidden" data-aos="fade-up">
         <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/TIMELINE RAC HP.png" alt="" />
-    </div>
-
-    <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
-        <div id="button1" class="my-3">
-            <a href="#register" class="no-underline py-4 px-6">
-                <button
-                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
-                    REGISTER HERE
-                </button>
-            </a>
-        </div>
-
-        <div id="button2" class="my-3">
-            <a href="#handbook" class="no-underline py-4 px-6">
-                <button
-                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
-                    DOWNLOAD HANDBOOK
-                </button>
-            </a>
-        </div>
     </div>
 
 

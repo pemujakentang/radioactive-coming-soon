@@ -38,10 +38,8 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
+                    href="/closing-night">CLOSING
                     NIGHT</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="merch.umnradioactive.com">merchandise</a>
             </div>
 
             <div class="mobile-navbar">
@@ -56,10 +54,8 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
+                            href="/closing-night">CLOSING
                             NIGHT</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">merchandise</a>
                     </div>
                 </div>
             </div>
@@ -161,7 +157,7 @@
                 <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96">
                     <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
                         <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>4</b>
+                            <b>18</b>
                         </h1>
                         <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
                             <b>Nov</b>
@@ -270,19 +266,19 @@
                             <b>HOME</b>
                         </h5>
                     </a>
-                    <a href="#"
+                    <a href="/voc"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>VO CHALLENGE</b>
                         </h5>
                     </a>
-                    <a href="#"
+                    <a href="/rac"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>RAC</b>
                         </h5>
                     </a>
-                    <a href="#"
+                    <a href="/ticket"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>CLOSING NIGHT</b>

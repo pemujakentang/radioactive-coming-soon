@@ -53,10 +53,8 @@
                 <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
+                    href="/closing-night">CLOSING
                     NIGHT</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="merch.umnradioactive.com">merchandise</a>
             </div>
 
             <div class="mobile-navbar">
@@ -71,10 +69,8 @@
                         <a class="font-taruno text-black text-xs underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
+                            href="/closing-night">CLOSING
                             NIGHT</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">merchandise</a>
                     </div>
                 </div>
             </div>
@@ -112,7 +108,7 @@
             </div>
             <div class="flex flex-col" data-aos="fade-up">
                 <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
-                <h4 class="font-taruno text-white text-center font-bold">JUDGE #2</h4>
+                <h4 class="font-taruno text-white text-center font-bold">BELLA PRAMBORS</h4>
             </div>
         </div>
     </div>
@@ -124,28 +120,6 @@
     <div id="timelineHP" class="flex flex-col justify-center items-center my-32 mb-28 md:hidden" data-aos="fade-up">
         <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/TIMELINE RAC HP.png" alt="" />
     </div>
-
-    <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
-        <div id="button1" class="my-3">
-            <a href="/rac/register" class="no-underline py-4 px-6">
-                <button
-                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
-                    REGISTER HERE
-                </button>
-            </a>
-        </div>
-
-        <div id="button2" class="my-3">
-            <a href="" class="no-underline py-4 px-6">
-                <button
-                    class="disable bg-[#7e7e7e] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2">
-                    DOWNLOAD HANDBOOK
-                </button>
-            </a>
-        </div>
-    </div>
-
-
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
         <div class="flex flex-col w-full justify-center md:items-center md:flex-row">
@@ -159,19 +133,19 @@
                         <b>HOME</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/voc"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>VO CHALLENGE</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/rac"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>RAC</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/closing-night"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>CLOSING NIGHT</b>
@@ -242,18 +216,6 @@
         AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('header');
-            if (window.scrollY > 0) {
-                header.classList.remove('bg-transparent');
-                header.classList.add('bg-[#0E0EC0]');
-            } else {
-                header.classList.add('bg-transparent');
-                header.classList.remove('bg-[#0E0EC0]');
-            }
-        });
-    </script>
 </body>
 <style>
     body {
