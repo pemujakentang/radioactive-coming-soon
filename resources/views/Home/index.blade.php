@@ -68,19 +68,19 @@
         <h4 class="font-taruno2 md:text-xl text-white text-center my-12">ABOUT US</h4>
         <div class="px-8 md:px-20 lg:px-48">
             <p class="lg:px-44 font-pathway text-sm text-white text-justify md:text-center">RADIOACTIVE merupakan acara
-                off air tahunan yang
+                off-air tahunan yang
                 diselenggarakan oleh UMN Radio, radio komunitas dari Universitas Multimedia Nusantara.
             </p>
             <br>
             <p class="font-pathway text-sm text-white text-justify md:text-center">Dimulai sejak 2015, RADIOACTIVE tahun
-                in menjadi kali
+                ini menjadi kali
                 ke-9 acara ini terselenggara. Hal tersebut menandakan bahwa RADIOACTIVE berkembang dengan baik. Lebih
                 lanjut, RADIOACTIVE
                 diadakan sebagai brand activation untuk terus menjaga eksistensi dari UMN Radio.</p>
             <br>
             <p class="font-pathway text-sm text-white text-justify md:text-center">Pada tahun ini, acara kami mengangkat
                 tema "RADIOACTIVE
-                2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber-fokus pada pengembangan diri
+                2023: Revolution" dengan tagline "New Revolution Starts with You", yang ber fokus pada pengembangan diri
                 individu dan mendorong
                 mereka untuk berani bertindak demi suatu perubahan dalam diri. Acara kami sebelumnya mengangkat tema
                 "RADIOACTIVE 2022: Radiant"
