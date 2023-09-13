@@ -178,6 +178,7 @@
             </div>
 
             <div id="medpar-S" class="grid grid-cols-3 md:grid-cols-5 w-4/5 md:w-2/3 gap-2 items-center justify-center text-center mx-auto">
+            <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/umntv.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/logo-imkom.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/ubradio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/ultimagz.webp" alt="" />
@@ -193,24 +194,23 @@
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventcenter.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2 rounded bg-[#ffffff7d]" src="/images/eventnetwork.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Logo-Eventhunter.id.webp" alt="" />
-                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/umntv.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/fourtyfiveradio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/eventapaaja.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/infoevent.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/LOGO-UBV-Radio.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2 rounded bg-[#ffffff7d]" src="/images/moestopo.webp" alt="" />
                 <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Se7enline-Radio.webp" alt="" />
-                
+                <img class="h-auto md:w-40 md:mx-8 mb-2" src="/images/Event-Nasional.webp" alt="" />
             </div>
         </div>
 
         <div id="section5" class="py-20 md:py-0 lg:-mb-0 lg:my-16" data-aos="fade-up">
-            <h2 class="font-taruno2 text-white text-center my-12">SPONSORS</h2>
+            <h2 class="font-taruno2 text-white text-center mt-12">SPONSORS</h2>
             
             <div id="sponsor-M" class="grid grid-cols-1 w-4/5 md:w-2/5 gap-2 items-center justify-center text-center mx-auto md:mb-6">
                 <div class="w-full flex justify-center">
                     
-                    <img class="md:w-3/5 w-4/5 md:mx-8 mb-5 rounded bg-[#ffffff7d]" src="/images/somethinc-m.webp" alt="" />
+                    <img class="md:w-3/5 w-4/5 md:mx-8 rounded" src="/images/Somethinc_Logo_White.webp" alt="" />
                 </div>
             </div>
 
