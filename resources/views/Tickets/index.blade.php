@@ -9,10 +9,11 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
-    <title>UMN Radioactive 2023</title>
+    <title>UMN Radioactive 2023 | Closing Night</title>
 </head>
 
 <body class="overflow-x-hidden bg-black h-full">
+
 
     <div id="header" x-data="{ isOpen: false }"
         class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
@@ -35,7 +36,7 @@
                     href="/ticket">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="#">MERCHANDISE</a>
+                    href="merch.umnradioactive.com">merchandise</a>
             </div>
 
             <div class="mobile-navbar">
@@ -53,7 +54,7 @@
                             href="/ticket">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="#">MERCHANDISE</a>
+                            href="merch.umnradioactive.com">merchandise</a>
                     </div>
                 </div>
             </div>
@@ -126,12 +127,8 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
                                     <li>
-                                        <a href="#a"
+                                        <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="#b"
-                                            class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
                             </div>
@@ -176,11 +173,11 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
                                     <li>
-                                        <a href="#c"
+                                        <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
                                     </li>
                                     <li>
-                                        <a href="#d"
+                                        <a href="/order/3/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
