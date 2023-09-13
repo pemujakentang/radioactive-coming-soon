@@ -53,9 +53,9 @@ class OrderController extends Controller
 
         // kalo cuma single buyer
             if($request->qty == 3 || $request->qty == 5){
-                $request->request->add(['total_price' => $request->qty * config('midtrans.bundle_ticket'), 'status' => 'Unpaid']);
+                $request->request->add(['total_price' => $request->qty * 30000, 'status' => 'Unpaid']);
             } else{
-                $request->request->add(['total_price' => $request->qty * config('midtrans.normal_ticket'), 'status' => 'Unpaid']);
+                $request->request->add(['total_price' => $request->qty * 30000, 'status' => 'Unpaid']);
             }
 
             $order = Order::create($request->all());
@@ -63,11 +63,13 @@ class OrderController extends Controller
             // Set your Merchant Server Key
             \Midtrans\Config::$serverKey = config('midtrans.server_key');
             // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-            \Midtrans\Config::$isProduction = false;
+            \Midtrans\Config::$isProduction = true;
             // Set sanitization on (default)
             \Midtrans\Config::$isSanitized = true;
             // Set 3DS transaction for credit card to true
             \Midtrans\Config::$is3ds = true;
+
+            // dd($order->total_price);
     
             $params = array(
                 'transaction_details' => array(
