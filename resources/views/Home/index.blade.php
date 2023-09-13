@@ -223,7 +223,7 @@
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/blu-s.webp" alt="" />
             </div>
 
-            <div id="medpar-XS" class="grid grid-cols-4 md:grid-cols-5 w-11/12 md:w-2/3 gap-2 items-center justify-center text-center mx-auto">
+            <div id="medpar-XS" class="grid grid-cols-4 md:grid-cols-4 w-11/12 md:w-1/2 gap-2 items-center justify-center text-center mx-auto">
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/artha-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/chuga-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/puyo-xs.webp" alt="" />
