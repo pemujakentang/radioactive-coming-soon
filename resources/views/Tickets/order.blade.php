@@ -35,13 +35,13 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/voc">VO
                     CHALLENGE</a>
-                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
+                <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/ticket">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="merch.umnradioactive.com">merchandise</a>
+                    href="merch.umnradioactive.com">Merchandise</a>
             </div>
 
             <div class="mobile-navbar">
@@ -53,13 +53,13 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/voc">VO
                             CHALLENGE</a>
-                        <a class="font-taruno text-black text-xs underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/rac">RAC</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="/rac">RAC</a>
+                        <a class="font-taruno text-black text-xs underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/ticket">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">merchandise</a>
+                            href="merch.umnradioactive.com">Merchandise</a>
                     </div>
                 </div>
             </div>
