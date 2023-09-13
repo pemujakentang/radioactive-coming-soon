@@ -101,6 +101,7 @@ Route::controller(TeamDataController::class)->group(function(){
     Route::post('/rac/delete', 'destroy');
     Route::get('/rac/form/{amount}', 'form');
     Route::get('/rac/dashboard', 'dashboard');
+    Route::get('/rac/confirmation', 'confirmation_redirect');
 });
 
 Route::controller(VocController::class)->group(function () {

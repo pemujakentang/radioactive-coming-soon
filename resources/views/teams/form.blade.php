@@ -82,6 +82,20 @@
                         <div>
                             <div class="mb-1">
                                 <label class="block form-label text-sm mb-0" for="">
+                                    <span class="">Nama Tim</span>
+                                </label>
+                                <div>
+                                    <input required
+                                        class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        type="text" placeholder="Nama Tim" name="tim1_nama"
+                                        value="{{ old('tim1_nama') }}">
+                                    @error('tim1_nama')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="mb-1">
+                                <label class="block form-label text-sm mb-0" for="">
                                     <span class="">Penyiar 1</span>
                                 </label>
                                 <div>
@@ -200,7 +214,7 @@
                                 <div>
                                     <input required
                                         class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                        type="text" placeholder="" name="tim1_contact_wa"
+                                        type="number" placeholder="" name="tim1_contact_wa"
                                         value="{{ old('tim1_contact_wa') }}">
                                     @error('tim1_contact_wa')
                                         <div class="text-sm text-red-600">{{ $message }}</div>
@@ -218,6 +232,20 @@
                                         type="text" placeholder="" name="tim1_contact_line"
                                         value="{{ old('tim1_contact_line') }}">
                                     @error('tim1_contact_line')
+                                        <div class="text-sm text-red-600">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="mb-1">
+                                <div>
+                                    <label class="block form-label text-sm mb-0" for="">Email</label>
+                                </div>
+                                <div>
+                                    <input required
+                                        class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                        type="email" placeholder="" name="tim1_email"
+                                        value="{{ old('tim1_email') }}">
+                                    @error('tim1_email')
                                         <div class="text-sm text-red-600">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -270,6 +298,20 @@
                         <div class="min-w-2/5 w-[340px] my-1 mx-4">
                             <div class="font-taruno text-xl">TIM 1</div>
                             <div>
+                                <div class="mb-1">
+                                    <label class="block form-label text-sm mb-0" for="">
+                                        <span class="">Nama Tim</span>
+                                    </label>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="text" placeholder="Nama Tim" name="tim1_nama"
+                                            value="{{ old('tim1_nama') }}">
+                                        @error('tim1_nama')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
                                         <span class="">Penyiar 1</span>
@@ -390,7 +432,7 @@
                                     <div>
                                         <input required
                                             class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim1_contact_wa"
+                                            type="number" placeholder="" name="tim1_contact_wa"
                                             value="{{ old('tim1_contact_wa') }}">
                                         @error('tim1_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -413,12 +455,40 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="mb-1">
+                                    <div>
+                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                    </div>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="email" placeholder="" name="tim1_email"
+                                            value="{{ old('tim1_email') }}">
+                                        @error('tim1_email')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="min-w-2/5 w-[340px] my-1 mx-4">
                             <div class="font-taruno text-xl">TIM 2</div>
                             <div>
+                                <div class="mb-1">
+                                    <label class="block form-label text-sm mb-0" for="">
+                                        <span class="">Nama Tim</span>
+                                    </label>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim2_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="text" placeholder="Nama Tim" name="tim2_nama"
+                                            value="{{ old('tim2_nama') }}">
+                                        @error('tim2_nama')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
                                         <span class="">Penyiar 1</span>
@@ -539,7 +609,7 @@
                                     <div>
                                         <input required
                                             class="block @error('tim2_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim2_contact_wa"
+                                            type="number" placeholder="" name="tim2_contact_wa"
                                             value="{{ old('tim2_contact_wa') }}">
                                         @error('tim2_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -558,6 +628,20 @@
                                             type="text" placeholder="" name="tim2_contact_line"
                                             value="{{ old('tim2_contact_line') }}">
                                         @error('tim2_contact_line')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <div>
+                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                    </div>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim2_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="email" placeholder="" name="tim2_email"
+                                            value="{{ old('tim2_email') }}">
+                                        @error('tim2_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -618,6 +702,20 @@
                             <div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
+                                        <span class="">Nama Tim</span>
+                                    </label>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim1_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="text" placeholder="Nama Tim" name="tim1_nama"
+                                            value="{{ old('tim1_nama') }}">
+                                        @error('tim1_nama')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <label class="block form-label text-sm mb-0" for="">
                                         <span class="">Penyiar 1</span>
                                     </label>
                                     <div>
@@ -736,7 +834,7 @@
                                     <div>
                                         <input required
                                             class="block @error('tim1_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim1_contact_wa"
+                                            type="number" placeholder="" name="tim1_contact_wa"
                                             value="{{ old('tim1_contact_wa') }}">
                                         @error('tim1_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -759,12 +857,40 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="mb-1">
+                                    <div>
+                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                    </div>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim1_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="email" placeholder="" name="tim1_email"
+                                            value="{{ old('tim1_email') }}">
+                                        @error('tim1_email')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="min-w-[30%] w-[340px] my-1 mx-4">
                             <div class="font-taruno text-xl">TIM 2</div>
                             <div>
+                                <div class="mb-1">
+                                    <label class="block form-label text-sm mb-0" for="">
+                                        <span class="">Nama Tim</span>
+                                    </label>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim2_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="text" placeholder="Nama Tim" name="tim2_nama"
+                                            value="{{ old('tim2_nama') }}">
+                                        @error('tim2_nama')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
                                         <span class="">Penyiar 1</span>
@@ -885,7 +1011,7 @@
                                     <div>
                                         <input required
                                             class="block @error('tim2_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim2_contact_wa"
+                                            type="number" placeholder="" name="tim2_contact_wa"
                                             value="{{ old('tim2_contact_wa') }}">
                                         @error('tim2_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -908,12 +1034,40 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="mb-1">
+                                    <div>
+                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                    </div>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim2_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="email" placeholder="" name="tim2_email"
+                                            value="{{ old('tim2_email') }}">
+                                        @error('tim2_email')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="min-w-[30%] w-[340px] my-1 mx-4">
                             <div class="font-taruno text-xl">TIM 3</div>
                             <div>
+                                <div class="mb-1">
+                                    <label class="block form-label text-sm mb-0" for="">
+                                        <span class="">Nama Tim</span>
+                                    </label>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim3_nama') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="text" placeholder="Nama Tim" name="tim3_nama"
+                                            value="{{ old('tim3_nama') }}">
+                                        @error('tim3_nama')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="mb-1">
                                     <label class="block form-label text-sm mb-0" for="">
                                         <span class="">Penyiar 1</span>
@@ -1034,7 +1188,7 @@
                                     <div>
                                         <input required
                                             class="block @error('tim3_contact_wa') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                            type="text" placeholder="" name="tim3_contact_wa"
+                                            type="number" placeholder="" name="tim3_contact_wa"
                                             value="{{ old('tim3_contact_wa') }}">
                                         @error('tim3_contact_wa')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
@@ -1053,6 +1207,20 @@
                                             type="text" placeholder="" name="tim3_contact_line"
                                             value="{{ old('tim3_contact_line') }}">
                                         @error('tim3_contact_line')
+                                            <div class="text-sm text-red-600">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="mb-1">
+                                    <div>
+                                        <label class="block form-label text-sm mb-0" for="">Email</label>
+                                    </div>
+                                    <div>
+                                        <input required
+                                            class="block @error('tim3_email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                                            type="email" placeholder="" name="tim3_email"
+                                            value="{{ old('tim3_email') }}">
+                                        @error('tim3_email')
                                             <div class="text-sm text-red-600">{{ $message }}</div>
                                         @enderror
                                     </div>

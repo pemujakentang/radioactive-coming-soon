@@ -22,6 +22,10 @@ class TeamDataController extends Controller
         return view('teams.dashboard', ['rac_teams' => $rac_teams]);
     }
 
+    public function confirmation_redirect(){
+        return view('teams.redirect');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -48,6 +52,8 @@ class TeamDataController extends Controller
             'tim1_nimop' => 'required|max:255',
             'tim1_contact_wa' => 'required|max:255',
             'tim1_contact_line' => 'required|max:255',
+            'tim1_nama'=>'required|max:255',
+            'tim1_email'=>'required|max:255',
 
             'tim2_penyiar1' => 'max:255',
             'tim2_penyiar2' => 'max:255',
@@ -58,6 +64,8 @@ class TeamDataController extends Controller
             'tim2_nimop' => 'max:255',
             'tim2_contact_wa' => 'max:255',
             'tim2_contact_line' => 'max:255',
+            'tim2_nama' => 'max:255',
+            'tim2_email' => 'max:255',
 
             'tim3_penyiar1' => 'max:255',
             'tim3_penyiar2' => 'max:255',
@@ -68,6 +76,8 @@ class TeamDataController extends Controller
             'tim3_nimop' => 'max:255',
             'tim3_contact_wa' => 'max:255',
             'tim3_contact_line' => 'max:255',
+            'tim3_nama' => 'max:255',
+            'tim3_email' => 'max:255',
 
             'payment_proof' => 'required|image|file|max:10240'
         ]);
@@ -83,6 +93,8 @@ class TeamDataController extends Controller
             'tim1_nimop'=>$request->tim1_nimop,
             'tim1_contact_wa'=>$request->tim1_contact_wa,
             'tim1_contact_line'=>$request->tim1_contact_line,
+            'tim1_nama'=>$request->tim1_nama,
+            'tim1_email'=>$request->tim1_email,
 
             'tim2_penyiar1'=>$request->tim2_penyiar1,
             'tim2_penyiar2'=>$request->tim2_penyiar2,
@@ -93,6 +105,8 @@ class TeamDataController extends Controller
             'tim2_nimop'=>$request->tim2_nimop,
             'tim2_contact_wa'=>$request->tim2_contact_wa,
             'tim2_contact_line'=>$request->tim2_contact_line,
+            'tim2_nama' => $request->tim2_nama,
+            'tim2_email' => $request->tim2_email,
 
             'tim3_penyiar1'=>$request->tim3_penyiar1,
             'tim3_penyiar2'=>$request->tim3_penyiar2,
@@ -103,6 +117,8 @@ class TeamDataController extends Controller
             'tim3_nimop'=>$request->tim3_nimop,
             'tim3_contact_wa'=>$request->tim3_contact_wa,
             'tim3_contact_line'=>$request->tim3_contact_line,
+            'tim3_nama' => $request->tim3_nama,
+            'tim3_email' => $request->tim3_email,
 
             'payment_proof'=>$request->file('payment_proof')->storePublicly('payment_images', 'public'),
             'status'=>'Pending'
@@ -118,7 +134,16 @@ class TeamDataController extends Controller
         // $team->tim1_contact_line = $request->tim1_contact_line;
         // $team->payment_proof = $request->file('payment_proof')->storePublicly('payment_images', 'public');
         // $team->save();
-        return redirect('/rac/create')->with('success', "Pendaftaran berhasil.");
+        return redirect('/rac/register')->with(array('success'=> "Pendaftaran berhasil."
+        // ,
+            // 'tim1_nama' => $request->tim1_nama,
+            // 'tim1_email' => $request->tim1_email,
+            // 'tim2_nama' => $request->tim2_nama,
+            // 'tim2_email' => $request->tim2_email,
+            // 'tim3_nama' => $request->tim3_nama,
+            // 'tim3_email' => $request->tim3_email,
+            // 'payment_proof'=>$request->payment_proof    
+        ));
     }
 
     /**

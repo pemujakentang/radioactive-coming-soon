@@ -67,105 +67,110 @@
             </div>
         </div>
     </div>
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-20 mb-6">RAC Registration
+    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-20 mb-6">Confirmation
+        Page
     </div>
     <div class="flex justify-center align-middle form-container">
         <div class="content-container px-4 py-4 flex flex-col w-[400px] max-w-[95vw]">
             @if (session()->has('success'))
                 <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
             @endif
-            @if ($rac_teams->count() > 0)
 
-                @php
-                    $count = $rac_teams->count();
-                @endphp
-
-                @foreach ($rac_teams as $team)
-                    @if (
-                        $team->tim3_institusi &&
-                            $team->tim3_penyiar1 &&
-                            $team->tim3_penyiar2 &&
-                            $team->tim3_operator &&
-                            $team->tim3_contact_wa)
-                        @php
-                            $count += 2;
-                        @endphp
-                    @elseif(
-                        $team->tim2_institusi &&
-                            $team->tim2_penyiar1 &&
-                            $team->tim2_penyiar2 &&
-                            $team->tim2_operator &&
-                            $team->tim2_contact_wa)
-                        @php
-                            $count++;
-                        @endphp
-                    @endif
-                @endforeach
-
-                <h2 class="w-full text-center font-taruno text-white">Remaining Slots: {{ 20 - $count }}</h2>
-
-                @if ($count >= 20)
-                    <h2 class="w-full text-center font-taruno">Kuota Tim Habis</h2>
-                @elseif ($count >= 19)
-                    <a href="/rac/form/1">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Satu Tim
-                        </button>
-                    </a>
-                @elseif($count >= 18)
-                    <a href="/rac/form/1">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Satu Tim
-                        </button>
-                    </a>
-                    <a href="/rac/form/2">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Dua Tim
-                        </button>
-                    </a>
-                @else
-                    <a href="/rac/form/1">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Satu Tim
-                        </button>
-                    </a>
-                    <a href="/rac/form/2">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Dua Tim
-                        </button>
-                    </a>
-                    <a href="/rac/form/3">
-                        <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                            type="submit">
-                            Tiga Tim
-                        </button>
-                    </a>
-                @endif
-            @else
-                <a href="/rac/form/1">
-                    <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit">
-                        Satu Tim
-                    </button>
-                </a>
-                <a href="/rac/form/2">
-                    <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit">
-                        Dua Tim
-                    </button>
-                </a>
-                <a href="/rac/form/3">
-                    <button class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1 my-1"
-                        type="submit">
-                        Tiga Tim
-                    </button>
-                </a>
+            {{-- @if (session()->has('tim1_nama'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Nama Tim 1</span>
+                    </label>
+                    <div>
+                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                            type="text">
+                            {{ session('tim1_nama') }}
+                        </div>
+                    </div>
+                </div>
             @endif
+
+            @if (session()->has('tim1_email'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Email Tim 1</span>
+                    </label>
+                    <div>
+                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                            type="text">
+                            {{ session('tim1_email') }}
+                        </div>
+                    </div>
+                </div>
+            @endif
+
+            @if (session()->has('tim2_nama'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Nama Tim 2</span>
+                    </label>
+                    <div>
+                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                            type="text">
+                            {{ session('tim2_nama') }}
+                        </div>
+                    </div>
+                </div>
+            @endif
+
+            @if (session()->has('tim2_email'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Email Tim 2</span>
+                    </label>
+                    <div>
+                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                            type="text">
+                            {{ session('tim2_email') }}
+                        </div>
+                    </div>
+                </div>
+            @endif
+
+            @if (session()->has('tim3_nama'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Nama Tim 3</span>
+                    </label>
+                    <div>
+                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                            type="text">
+                            {{ session('tim3_nama') }}
+                        </div>
+                    </div>
+                </div>
+            @endif
+
+            @if (session()->has('tim3_email'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Email Tim 3</span>
+                    </label>
+                    <div>
+                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                            type="text">
+                            {{ session('tim3_email') }}
+                        </div>
+                    </div>
+                </div>
+            @endif --}}
+
+            {{-- @if (session()->has('payment_proof'))
+                <div class="mb-1">
+                    <label class="block form-label text-sm mb-0" for="">
+                        <span class="">Payment Proof</span>
+                    </label>
+                    <div>
+                        <img src={{ asset('storage/' . $team->payment_proof) }}
+                            style="width:100%;height:100%;object-fit:contain;" alt="">
+                    </div>
+                </div>
+            @endif --}}
         </div>
     </div>
 </body>

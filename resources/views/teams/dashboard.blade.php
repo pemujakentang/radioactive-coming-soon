@@ -27,17 +27,19 @@
             <table id="teamdata_table" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
                 <thead>
                     <tr>
-                        <th data-priority="1">Reg ID</th>
-                        <th data-priority="2">Institusi Asal</th>
-                        <th data-priority="3">Penyiar 1</th>
-                        <th data-priority="4">Penyiar 2</th>
-                        <th data-priority="5">Operator</th>
-                        <th data-priority="6">NIM Penyiar 1</th>
-                        <th data-priority="7">NIM Penyiar 2</th>
-                        <th data-priority="8">NIM Operator</th>
-                        <th data-priority="9">WA</th>
-                        <th data-priority="10">LINE</th>
-                        <th data-priority="11">Bukti Pembayaran</th>
+                        <th data-priority="0">Reg ID</th>
+                        <th data-priority="1">Institusi Asal</th>
+                        <th data-priority="2">Nama Tim</th>
+                        <th data-priority="3">Email</th>
+                        <th data-priority="4">Penyiar 1</th>
+                        <th data-priority="5">Penyiar 2</th>
+                        <th data-priority="6">Operator</th>
+                        <th data-priority="7">NIM Penyiar 1</th>
+                        <th data-priority="8">NIM Penyiar 2</th>
+                        <th data-priority="9">NIM Operator</th>
+                        <th data-priority="10">WA</th>
+                        <th data-priority="11">LINE</th>
+                        <th data-priority="12">Bukti Pembayaran</th>
                         {{-- <th data-priority="12">Status</th> --}}
                     </tr>
                 </thead>
@@ -53,22 +55,66 @@
                                 {{ $team->tim1_institusi }}
                             </td>
 
+                            {{-- Nama Tim --}}
+                            <td>
+                                <div>
+                                    @if($team->tim1_nama)
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
+                                            {{ $team->tim1_nama }}
+                                        </div>
+                                    @endif
+
+                                    @if($team->tim2_nama)
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
+                                            {{ $team->tim2_nama }}
+                                        </div>
+                                    @endif
+                                    @if($team->tim3_nama)
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
+                                            {{ $team->tim3_nama }}
+                                        </div>
+                                    @endif
+                                </div>
+                            </td>
+                            
+                            {{-- Nama Tim --}}
+                            <td>
+                                <div>
+                                    @if($team->tim1_email)
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
+                                            {{ $team->tim1_email }}
+                                        </div>
+                                    @endif
+
+                                    @if($team->tim2_email)
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
+                                            {{ $team->tim2_email }}
+                                        </div>
+                                    @endif
+                                    @if($team->tim3_email)
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
+                                            {{ $team->tim3_email }}
+                                        </div>
+                                    @endif
+                                </div>
+                            </td>
+
                             {{-- Penyiar 1 --}}
                             <td>
                                 <div>
                                     @if($team->tim1_penyiar1)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_penyiar1 }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_penyiar1)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_penyiar1 }}
                                         </div>
                                     @endif
                                     @if($team->tim3_penyiar1)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_penyiar1 }}
                                         </div>
                                     @endif
@@ -79,19 +125,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_penyiar2)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_penyiar2 }}
                                         </div>
                                     @endif
                                     
                                     @if($team->tim2_penyiar2)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_penyiar2 }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_penyiar2)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_penyiar2 }}
                                         </div>
                                     @endif
@@ -102,19 +148,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_operator)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_operator }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_operator)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_operator }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_operator)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_operator }}
                                         </div>
                                     @endif
@@ -125,19 +171,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_nims1)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_nims1 }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_nims1)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_nims1 }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_nims1)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_nims1 }}
                                         </div>
                                     @endif
@@ -148,19 +194,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_nims2)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_nims2 }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_nims2)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_nims2 }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_nims2)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_nims2 }}
                                         </div>
                                     @endif
@@ -171,19 +217,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_nimop)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_nimop }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_nimop)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_nimop }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_nimop)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_nimop }}
                                         </div>
                                     @endif
@@ -194,19 +240,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_contact_wa)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_contact_wa }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_contact_wa)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_contact_wa }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_contact_wa)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_contact_wa }}
                                         </div>
                                     @endif
@@ -217,19 +263,19 @@
                             <td>
                                 <div>
                                     @if($team->tim1_contact_line)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-yellow-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim1_contact_line }}
                                         </div>
                                     @endif
 
                                     @if($team->tim2_contact_line)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-red-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim2_contact_line }}
                                         </div>
                                     @endif
 
                                     @if($team->tim3_contact_line)
-                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto">
+                                        <div class="flex justify-start overflow-x-auto py-2 my-2 px-2 bg-blue-200 min-h-0 h-auto w-auto whitespace-nowrap">
                                             {{ $team->tim3_contact_line }}
                                         </div>
                                     @endif
