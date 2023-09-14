@@ -205,12 +205,11 @@
         </div>
 
         <div id="section5" class="py-20 md:py-0 lg:-mb-0 lg:my-16" data-aos="fade-up">
-            <h2 class="font-taruno2 text-white text-center mt-12">SPONSORS</h2>
+            <h2 class="font-taruno2 text-white text-center mt-12 my-6">SPONSORS</h2>
             
             <div id="sponsor-M" class="grid grid-cols-1 w-4/5 md:w-2/5 gap-2 items-center justify-center text-center mx-auto md:mb-6">
                 <div class="w-full flex justify-center">
-                    
-                    <img class="md:w-3/5 w-4/5 md:mx-8 rounded" src="/images/Somethinc_Logo_White.webp" alt="" />
+                    <img class="md:w-[90%] w-4/5 h-40 object-cover rounded" src="/images/Somethinc_Logo_White.webp" alt="" />
                 </div>
             </div>
 
@@ -219,11 +218,11 @@
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/panda-s.webp" alt="" />
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/pia100-s.webp" alt="" />
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/snackit-s.webp" alt="" />
-                <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/aice-s.webp" alt="" />
                 <img class="h-auto md:w-48 md:mx-8 mb-2" src="/images/blu-s.webp" alt="" />
             </div>
 
-            <div id="medpar-XS" class="grid grid-cols-4 md:grid-cols-4 w-11/12 md:w-1/2 gap-2 items-center justify-center text-center mx-auto">
+            <div id="medpar-XS" class="grid grid-cols-4 md:grid-cols-5 w-11/12 md:w-[60%] gap-2 items-center justify-center text-center mx-auto">
+                <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/aice-s.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/artha-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/chuga-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/puyo-xs.webp" alt="" />
