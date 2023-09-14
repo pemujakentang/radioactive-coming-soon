@@ -34,10 +34,10 @@
                     class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
+                    href="/closing-night">CLOSING
                     NIGHT</a>
                     <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="#">MERCHANDISE</a>
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                 </div>
 
                 <div class="mobile-navbar">
@@ -54,10 +54,10 @@
                             class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
+                            href="/closing-night">CLOSING
                             NIGHT</a>
                             <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="#">MERCHANDISE</a>
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                         </div>
                     </div>
                 </div>
@@ -115,22 +115,28 @@
                             <b>HOME</b>
                         </h5>
                     </a>
-                    <a href="#"
+                    <a href="/voc"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>VO CHALLENGE</b>
                         </h5>
                     </a>
-                    <a href="#"
+                    <a href="/rac"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>RAC</b>
                         </h5>
                     </a>
-                    <a href="#"
+                    <a href="/closing-night"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>CLOSING NIGHT</b>
+                        </h5>
+                    </a>
+                    <a href="https://merch.umnradioactive.com/"
+                        class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
+                        <h5 class="text-xs font-taruno font-medium text-white">
+                            <b>MERCHANDISE</b>
                         </h5>
                     </a>
                 </div>

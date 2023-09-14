@@ -32,10 +32,10 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
                 <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
+                    href="/closing-night">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="#">MERCHANDISE</a>
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -50,10 +50,10 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
+                            href="/closing-night">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="#">MERCHANDISE</a>
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
@@ -93,11 +93,15 @@
             </div>
             <div id="otherGS" class="flex flex-col md:flex-row gap-12">
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp" alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">MENDADAK MANGGUNG</h4>
+                    <img class="h-80 md:h-72" src="/images/BG-JURI-GS.webp" alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">LAIDBACK HORSES</h4>
                 </div>
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp" alt="" />
+                    <img class="h-80 md:h-72" src="/images/BG-JURI-GS.webp" alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
+                </div>
+                <div class="flex flex-col" data-aos="fade-up">
+                    <img class="h-80 md:h-72" src="/images/BG-JURI-GS.webp" alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
                 </div>
             </div>
@@ -126,12 +130,8 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
                                     <li>
-                                        <a href="#a"
+                                        <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="#b"
-                                            class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
                             </div>
@@ -152,8 +152,9 @@
                     <img id="ticketblue2" class="hidden" src="/images/TICKET-BLUE.webp" alt="" />
                     <div class="absolute top-0 bottom-0 left-0 right-0">
                         <h4 class="font-taruno2 text-2xl text-white text-center mt-12">PRESALE</h4>
-                        <p class="font-pathway text-md text-white text-center">1 Oktober - <br> 3 November 2023</p>
-                        <h4 class="font-taruno text-white text-center font-bold mt-36">HTM <br> COMING SOON</h4>
+                        <p class="font-pathway text-md text-white text-center">1 Oktober - <br> 17 November 2023</p>
+                        <h4 id="presalecomingsoon" class="font-taruno text-white text-center font-bold mt-36">HTM <br> COMING SOON</h4>
+                        <h4 id="presalestartsoon" class="hidden font-taruno text-white text-center font-bold mt-36">HTM <br> Rp 45.000</h4>
                         <div id="buttonpresale1" class="flex justify-center items-center mt-32">
                             <button
                                 class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
@@ -176,11 +177,11 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
                                     <li>
-                                        <a href="#c"
+                                        <a href="/order/1/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Single</a>
                                     </li>
                                     <li>
-                                        <a href="#d"
+                                        <a href="/order/3/personal-information"
                                             class="block font-pathway px-4 py-2 hover:bg-gray-100 no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000]">Bundle</a>
                                     </li>
                                 </ul>
@@ -220,22 +221,28 @@
                         <b>HOME</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/voc"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>VO CHALLENGE</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/rac"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>RAC</b>
                     </h5>
                 </a>
-                <a href="#"
+                <a href="/closing-night"
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>CLOSING NIGHT</b>
+                    </h5>
+                </a>
+                <a href="https://merch.umnradioactive.com/"
+                    class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
+                    <h5 class="text-xs font-taruno font-medium text-white">
+                        <b>MERCHANDISE</b>
                     </h5>
                 </a>
             </div>
@@ -306,10 +313,9 @@
     <script>
         var today = new Date();
         var presaleStart = new Date('2023-10-01');
-        var presaleEnd = new Date('2023-11-03');
+        var presaleEnd = new Date('2023-11-17');
 
-        var earlySold = 0;
-        var presaleSold = 0;
+        var earlySold = 0; //ger help!
 
         var ticketBlue1 = document.getElementById("ticketblue1");
         var ticketBlue2 = document.getElementById("ticketblue2");
@@ -320,8 +326,10 @@
         var buttonPresale1 = document.getElementById("buttonpresale1");
         var buttonPresale2 = document.getElementById("buttonpresale2");
         var buttonPresale3 = document.getElementById("buttonpresale3");
+        var presaleComing = document.getElementById("presalecomingsoon");
+        var presaleStart = document.getElementById("presalestartsoon");
 
-        if (earlySold >= 10) {
+        if (earlySold) {
             ticketBlue1.classList.add('hidden');
             ticketBlack1.classList.remove('hidden');
             ticketBlue2.classList.remove('hidden');
@@ -330,16 +338,15 @@
             buttonEarly2.classList.remove('hidden');
             buttonPresale1.classList.add('hidden');
             buttonPresale2.classList.remove('hidden');
-            if (presaleSold >= 10) {
+            presaleComing.classList.add('hidden');
+            presaleStart.classList.remove('hidden');
+            if (today >= presaleEnd) {
                 ticketBlue2.classList.add('hidden');
                 ticketBlack2.classList.remove('hidden');
                 buttonPresale2.classList.add('hidden');
                 buttonPresale3.classList.remove('hidden');
-            } else if (today >= presaleEnd) {
-                ticketBlue2.classList.add('hidden');
-                ticketBlack2.classList.remove('hidden');
-                buttonPresale2.classList.add('hidden');
-                buttonPresale3.classList.remove('hidden');
+                presaleComing.classList.add('hidden');
+                presaleStart.classList.remove('hidden');
             }
         } else if (today >= presaleStart) {
             ticketBlue1.classList.add('hidden');
@@ -350,12 +357,7 @@
             buttonEarly2.classList.remove('hidden');
             buttonPresale1.classList.add('hidden');
             buttonPresale2.classList.remove('hidden');
-            if (presaleSold >= 10) {
-                ticketBlue2.classList.add('hidden');
-                ticketBlack2.classList.remove('hidden');
-                buttonPresale2.classList.add('hidden');
-                buttonPresale3.classList.remove('hidden');
-            } else if (today >= presaleEnd) {
+            if (today >= presaleEnd) {
                 ticketBlue2.classList.add('hidden');
                 ticketBlack2.classList.remove('hidden');
                 buttonPresale2.classList.add('hidden');
