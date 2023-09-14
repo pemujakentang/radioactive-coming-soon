@@ -39,10 +39,10 @@
                 <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/rac">RAC</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
-                    href="/ticket">CLOSING
+                    href="/closing-night">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="merch.umnradioactive.com">merchandise</a>
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -57,10 +57,10 @@
                         <a class="font-taruno text-black text-xs underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="/ticket">CLOSING
+                            href="/closing-night">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">merchandise</a>
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
@@ -260,8 +260,7 @@
                                     for="">Bukti Pembayaran</label>
                             </div>
                             <div>
-                                <h6 class="text-sm">Pembayaran sebesar Rp 150.000,~ ke xxxxx a/n xxxxx</h6
-                                    class="text-sm">
+                                <h6 class="text-sm">Pembayaran sebesar Rp 125.000,~ ke xxxxx a/n xxxxx</h6>
                             </div>
                             <div>
                                 <input required

@@ -20,8 +20,15 @@ class OrderController extends Controller
      */
     
     public function index()
-    {
-        return view('Tickets.index');
+    {   
+        $ticket_sold = Ticket::count();
+        $isEarlyBird = true;
+
+        if ($ticket_sold >= 69) {
+            $isEarlyBird = false;
+        }
+
+        return view('Tickets.index', compact('isEarlyBird'));
     }
 
     public function custom_order()
@@ -51,11 +58,19 @@ class OrderController extends Controller
             'phone' => 'required'
         ]);
 
+        $ticket_sold = Ticket::count();
+        $isEarlyBird = true;
+        $harga_ticket = 30000;
+
+        if ($ticket_sold >= 70) {
+            $isEarlyBird = 45000;
+        }
+
         // kalo cuma single buyer
-            if($request->qty == 3 || $request->qty == 5){
-                $request->request->add(['total_price' => $request->qty * 30000, 'status' => 'Unpaid']);
+            if($request->qty == 3){
+                $request->request->add(['total_price' => 115000 , 'status' => 'Unpaid']);
             } else{
-                $request->request->add(['total_price' => $request->qty * 30000, 'status' => 'Unpaid']);
+                $request->request->add(['total_price' => $request->qty * $harga_ticket, 'status' => 'Unpaid']);
             }
 
             $order = Order::create($request->all());
@@ -130,10 +145,19 @@ class OrderController extends Controller
             $ticket_code_packed = $ticket_code_packed . "staging.umnradioactive.com/show-qr/" . $ticket . ', ';
         }
 
+        $ticket_sold = Ticket::count();
+        $isEarlyBird = true;
+
+        if ($ticket_sold >= 69) {
+            $isEarlyBird = false;
+        }
+
+        $ticket_type = $isEarlyBird? 'Early Bird' : 'Pre-sale';
+
         $data = [
             'subject' => '[UMN RadioActive 2023 - Your Ticket Order is Confirmed]',
             'receiver' => $receiver,
-            'ticket_type' => 'Early Bird',
+            'ticket_type' => $ticket_type,
             'quantity' => $quantity,
             'ticket_code' => $ticket_code->implode(', '),
             'ticket_code_packed' => $ticket_code_packed,

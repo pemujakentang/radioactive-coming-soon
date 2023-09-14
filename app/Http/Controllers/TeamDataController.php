@@ -134,14 +134,14 @@ class TeamDataController extends Controller
         // $team->tim1_contact_line = $request->tim1_contact_line;
         // $team->payment_proof = $request->file('payment_proof')->storePublicly('payment_images', 'public');
         // $team->save();
-        return redirect('/rac/register')->with(array('success'=> "Pendaftaran berhasil."
-        // ,
-            // 'tim1_nama' => $request->tim1_nama,
-            // 'tim1_email' => $request->tim1_email,
-            // 'tim2_nama' => $request->tim2_nama,
-            // 'tim2_email' => $request->tim2_email,
-            // 'tim3_nama' => $request->tim3_nama,
-            // 'tim3_email' => $request->tim3_email,
+        return redirect('/rac/confirmation')->with(array('success'=> "Pendaftaran berhasil."
+        ,
+            'tim1_nama' => $request->tim1_nama,
+            'tim1_email' => $request->tim1_email,
+            'tim2_nama' => $request->tim2_nama,
+            'tim2_email' => $request->tim2_email,
+            'tim3_nama' => $request->tim3_nama,
+            'tim3_email' => $request->tim3_email,
             // 'payment_proof'=>$request->payment_proof    
         ));
     }

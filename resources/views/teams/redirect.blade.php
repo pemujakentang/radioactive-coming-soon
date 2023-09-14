@@ -70,19 +70,25 @@
     <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-20 mb-6">Confirmation
         Page
     </div>
+    @if (session()->has('success'))
+    {{-- <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div> --}}
+    <div class="flex justify-center">
+        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 my-4 rounded w-[400px]" role="alert">
+            <p class="font-bold">Success</p>
+            <p>Pendaftaran Berhasil, Terimakasih Revends!</p>
+        </div>
+    </div>
+    @endif
     <div class="flex justify-center align-middle form-container">
         <div class="content-container px-4 py-4 flex flex-col w-[400px] max-w-[95vw]">
-            @if (session()->has('success'))
-                <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
-            @endif
 
-            {{-- @if (session()->has('tim1_nama'))
+            @if (session()->has('tim1_nama'))
                 <div class="mb-1">
                     <label class="block form-label text-sm mb-0" for="">
                         <span class="">Nama Tim 1</span>
                     </label>
                     <div>
-                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                        <div class="block shadow appearance-none border w-full py-2 px-1 form-input leading-tight focus:outline-none focus:shadow-outline"
                             type="text">
                             {{ session('tim1_nama') }}
                         </div>
@@ -96,7 +102,7 @@
                         <span class="">Email Tim 1</span>
                     </label>
                     <div>
-                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                        <div class="block shadow appearance-none border w-full py-2 px-1 form-input leading-tight focus:outline-none focus:shadow-outline"
                             type="text">
                             {{ session('tim1_email') }}
                         </div>
@@ -110,7 +116,7 @@
                         <span class="">Nama Tim 2</span>
                     </label>
                     <div>
-                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                        <div class="block shadow appearance-none border w-full py-2 px-1 form-input leading-tight focus:outline-none focus:shadow-outline"
                             type="text">
                             {{ session('tim2_nama') }}
                         </div>
@@ -124,7 +130,7 @@
                         <span class="">Email Tim 2</span>
                     </label>
                     <div>
-                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                        <div class="block shadow appearance-none border w-full py-2 px-1 form-input leading-tight focus:outline-none focus:shadow-outline"
                             type="text">
                             {{ session('tim2_email') }}
                         </div>
@@ -138,7 +144,7 @@
                         <span class="">Nama Tim 3</span>
                     </label>
                     <div>
-                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                        <div class="block shadow appearance-none border w-full py-2 px-1 form-input leading-tight focus:outline-none focus:shadow-outline"
                             type="text">
                             {{ session('tim3_nama') }}
                         </div>
@@ -152,13 +158,21 @@
                         <span class="">Email Tim 3</span>
                     </label>
                     <div>
-                        <div class="block shadow appearance-none border w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
+                        <div class="block shadow appearance-none border w-full py-2 px-1 form-input leading-tight focus:outline-none focus:shadow-outline"
                             type="text">
                             {{ session('tim3_email') }}
                         </div>
                     </div>
                 </div>
-            @endif --}}
+            @endif
+
+            <p class="font-pathway mx-2 my-2">Screenshot layar ini dan silahkan melakukan konfirmasi pendaftaran ke CP RAC Radioactive 2023
+                <br>
+                <ul class="text-[#FFF000] mx-2 my-2">
+                    <li class="">Line: yohanesriangto</li>
+                    <li class="">Line: anastasyagloriawijay</li>
+                </ul>
+            </p>
 
             {{-- @if (session()->has('payment_proof'))
                 <div class="mb-1">
@@ -197,6 +211,11 @@
         color: white;
         border-radius: 3px;
         border: solid 3px white;
+    }
+
+    .form-input {
+        background-color: black;
+        border: 1.5px solid white;
     }
 </style>
 

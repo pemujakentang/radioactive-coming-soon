@@ -40,6 +40,8 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/closing-night">CLOSING
                     NIGHT</a>
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -56,6 +58,8 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/closing-night">CLOSING
                             NIGHT</a>
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
@@ -106,77 +110,95 @@
         <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
         <div class="carousel carousel-center flex">
             <div class="carousel-item ml-16 lg:ml-32 border border-white">
-                <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>18-30</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Sept</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp"
-                            alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Voiceover</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Challenge</h3>
+                <a href="/voc" class="no-underline">
+                    <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
+                        <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
+                            <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
+                                <b>18-30</b>
+                            </h1>
+                            <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
+                                <b>Sept</b>
+                            </h3>
+                        </div>
+                        <div class="relative">
+                            <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO VO CHALLENGE.webp"
+                                alt="" />
+                            <div
+                                class="flex flex-row justify-between items-center md:items-start absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black lg:from-50% from-30%">
+                                <div class="lg:px-4 lg:pb-6 pb-3">
+                                    <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
+                                        Voiceover</h3>
+                                    <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
+                                        Challenge</h3>
+                                </div>
+                                <div class="lg:px-4">
+                                    <img class="h-10 md:h-16" src="/images/BUTTON.webp" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="carousel-item border border-white ml-16">
-                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96 flex-row">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>28</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Oct</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO RAC.webp"
-                            alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Announcing</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Competition</h3>
+                <a href="/rac" class="no-underline">
+                    <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96 flex-row">
+                        <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
+                            <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
+                                <b>28</b>
+                            </h1>
+                            <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
+                                <b>Oct</b>
+                            </h3>
+                        </div>
+                        <div class="relative">
+                            <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO RAC.webp"
+                                alt="" />
+                            <div
+                                class="flex flex-row justify-between items-center md:items-start absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black lg:from-50% from-30%">
+                                <div class="lg:px-4 lg:pb-6 pb-3">
+                                    <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
+                                        Announcing</h3>
+                                    <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
+                                        Competition</h3>
+                                </div>
+                                <div class="lg:px-4">
+                                    <img class="h-10 md:h-16" src="/images/BUTTON.webp" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="carousel-item border border-white ml-16 mr-32">
-                <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96">
-                    <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
-                        <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
-                            <b>18</b>
-                        </h1>
-                        <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
-                            <b>Nov</b>
-                        </h3>
-                    </div>
-                    <div class="relative">
-                        <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover" src="/images/FOTO CLOSING NIGHT.webp"
-                            alt="" />
-                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black">
-                            <div class="lg:px-4">
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Closing</h3>
-                                <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
-                                    Night</h3>
+                <a href="/closing-night" class="no-underline">
+                    <div class="flex bg-[#0E0EC0] max-h-44 lg:max-h-96">
+                        <div class="flex flex-col justify-start p-4 lg:p-6 w-24 lg:w-56">
+                            <h1 class="mb-2 text-xs lg:text-4xl font-taruno font-medium text-white pt-4">
+                                <b>18</b>
+                            </h1>
+                            <h3 class="mb-2 text-xs lg:text-3xl font-taruno font-medium text-white">
+                                <b>Nov</b>
+                            </h3>
+                        </div>
+                        <div class="relative">
+                            <img class="h-44 lg:h-96 w-56 lg:w-auto object-cover"
+                                src="/images/FOTO CLOSING NIGHT.webp" alt="" />
+                            <div
+                                class="flex flex-row justify-between items-center md:items-start absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black lg:from-50% from-30%">
+                                <div class="lg:px-4 lg:pb-6 pb-3">
+                                    <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
+                                        Closing</h3>
+                                    <h3 class="text-md lg:text-3xl font-taruno text-white font-bold">
+                                        Night</h3>
+                                </div>
+                                <div class="lg:px-4">
+                                    <img class="h-10 md:h-16" src="/images/BUTTON.webp" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
+            </a>
         </div>
         <div id="section4" class="-mb-20   md:-mb-0 md:my-24" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center mb-6 mt-12">EXCLUSIVE MEDIA PARTNER</h2>
@@ -278,10 +300,16 @@
                             <b>RAC</b>
                         </h5>
                     </a>
-                    <a href="/ticket"
+                    <a href="/closing-night"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>CLOSING NIGHT</b>
+                        </h5>
+                    </a>
+                    <a href="https://merch.umnradioactive.com/"
+                        class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
+                        <h5 class="text-xs font-taruno font-medium text-white">
+                            <b>MERCHANDISE</b>
                         </h5>
                     </a>
                 </div>

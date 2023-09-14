@@ -49,7 +49,7 @@ class VocController extends Controller
 
         voc::create($validData);
 
-        return redirect('/voc/create')->with('success', 'Pengumpulan Berhasil');
+        return redirect('/voc/submission')->with('success', 'Pengumpulan Berhasil');
     }
 
     /**

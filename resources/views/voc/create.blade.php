@@ -21,15 +21,19 @@
     <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-8 mb-6">
         FORM PENGUMPULAN VOC
     </div>
-    <form action="/voc" class="" enctype="multipart/form-data" method="post">
+    <form action="/voc/store" class="" enctype="multipart/form-data" method="post">
         <div class="flex justify-center align-middle form-container">
             <div class="flex flex-col w-[400px] max-w-[95vw]">
+                {{-- @if (session()->has('success')) --}}
+                    {{-- <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div> --}}
+                    <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 my-4 rounded" role="alert">
+                        <p class="font-bold">Success</p>
+                        <p>Pengumpulan Berhasil, Terimakasih Revends!</p>
+                    </div>
+                {{-- @endif --}}
                 <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#FFF000]">
                     <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data VOC</div>
                     @csrf
-                    @if (session()->has('success'))
-                        <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
-                    @endif
                     <div>
                         <div class="mb-1">
                             <label class="block form-label text-sm mb-0" for="">
@@ -52,7 +56,8 @@
                             <div>
                                 <input
                                     class="block @error('usia') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="number" onkeypress="return isNumberKey(event)" placeholder="Usia" name="usia" value="{{ old('usia') }}">
+                                    type="number" onkeypress="return isNumberKey(event)" placeholder="Usia"
+                                    name="usia" value="{{ old('usia') }}">
                                 @error('usia')
                                     <div class="text-sm text-red-600">{{ $message }}</div>
                                 @enderror
@@ -65,7 +70,7 @@
                             <div>
                                 <input
                                     class="block @error('no_telp') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="text" placeholder="Nomor Telepon/WA" name="no_telp"
+                                    type="number" placeholder="Nomor Telepon/WA" name="no_telp"
                                     value="{{ old('no_telp') }}">
                                 @error('no_telp')
                                     <div class="text-sm text-red-600">{{ $message }}</div>
@@ -112,8 +117,7 @@
                             <div>
                                 <input
                                     class="block @error('email') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"class="block @error('usia') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="email" placeholder="E-mail" name="email"
-                                    value="{{ old('email') }}">
+                                    type="email" placeholder="E-mail" name="email" value="{{ old('email') }}">
                                 @error('email')
                                     <div class="text-sm text-red-600">{{ $message }}</div>
                                 @enderror
@@ -126,8 +130,7 @@
                             <div>
                                 <input
                                     class="block @error('uname') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="text" placeholder="@username" name="uname"
-                                    value="{{ old('uname') }}">
+                                    type="text" placeholder="@username" name="uname" value="{{ old('uname') }}">
                                 @error('uname')
                                     <div class="text-sm text-red-600">{{ $message }}</div>
                                 @enderror
@@ -143,7 +146,8 @@
                             <div>
                                 <input
                                     class="block @error('link') border-red-500 @enderror shadow appearance-none border  w-full py-2 px-3 form-input leading-tight focus:outline-none focus:shadow-outline"
-                                    type="text" placeholder="https://www.tiktok.com/@username/video/" name="link" value="{{ old('link') }}">
+                                    type="text" placeholder="https://www.tiktok.com/@username/video/" name="link"
+                                    value="{{ old('link') }}">
                                 @error('link')
                                     <div class="text-sm text-red-600">{{ $message }}</div>
                                 @enderror

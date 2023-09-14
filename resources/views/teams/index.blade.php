@@ -14,27 +14,6 @@
 </head>
 
 <body class="antialiased bg-black min-h-screen">
-    {{-- <div>
-        <video autoplay loop muted class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover"
-            loading="lazy">
-            <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
-        </video>
-    </div> --}}
-    {{-- <nav id="header" class="fixed navbar bg-transparent justify-center gap-16 z-40 transition-all duration-700">
-        <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
-            href="/">HOME</a>
-        <a
-            class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">VO
-            CHALLENGE</a>
-        <a
-            class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">RAC</a>
-        <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-            href="ticket">CLOSING
-            NIGHT</a>
-        @auth
-            <a class="font-taruno text-white text-xs no-underline hover:underline cursor-pointer" href="/logout">LOGOUT</a>
-        @endauth
-    </nav> --}}
     <div id="header" x-data="{ isOpen: false }"
         class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
         <div class="flex items-center justify-between">
@@ -55,6 +34,8 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/closing-night">CLOSING
                     NIGHT</a>
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -71,6 +52,8 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/closing-night">CLOSING
                             NIGHT</a>
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
@@ -121,6 +104,25 @@
         <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/racHP.webp" alt="" />
     </div>
 
+    <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
+        <div id="button2" class="my-3">
+            <a href="" class="no-underline py-4 px-6">
+                <button
+                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2">
+                    DOWNLOAD HANDBOOK
+                </button>
+            </a>
+        </div>
+        <div id="button1" class="my-3">
+            <a href="/rac/register" class="no-underline py-4 px-6">
+                <button
+                    class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                    REGISTER HERE
+                </button>
+            </a>
+        </div>
+    </div>
+
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">
         <div class="flex flex-col w-full justify-center md:items-center md:flex-row">
             <div class="flex justify-center lg:container w-full">
@@ -149,6 +151,12 @@
                     class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                     <h5 class="text-xs font-taruno font-medium text-white">
                         <b>CLOSING NIGHT</b>
+                    </h5>
+                </a>
+                <a href="https://merch.umnradioactive.com/"
+                    class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
+                    <h5 class="text-xs font-taruno font-medium text-white">
+                        <b>MERCHANDISE</b>
                     </h5>
                 </a>
             </div>
