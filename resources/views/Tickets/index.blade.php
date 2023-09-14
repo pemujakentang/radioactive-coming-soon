@@ -85,7 +85,7 @@
                 </button>
             </a>
         </div>
-        <div id="gueststar" class="flex flex-col justify-center items-center my-16">
+        {{-- <div id="gueststar" class="flex flex-col justify-center items-center my-16">
             <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">GUEST STARS
             </h4>
             <div id="mainGS" class="flex flex-col mb-12" data-aos="fade-up">
@@ -106,8 +106,8 @@
                     <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
                 </div>
             </div>
-        </div>
-        <div id="ticket" class="flex flex-col justify-center items-center">
+        </div> --}}
+        <div id="ticket" class="flex flex-col justify-center items-center mt-16">
             <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-16" data-aos="fade-up">GET YOUR
                 TICKETS</h4>
             <div id="ticketType" class="flex flex-col md:flex-row gap-24">
