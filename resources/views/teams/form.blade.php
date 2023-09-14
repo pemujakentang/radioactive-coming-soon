@@ -260,15 +260,7 @@
                                     for="">Bukti Pembayaran</label>
                             </div>
                             <div>
-                                <h6 class="text-sm pb-4">P
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    embayaran sebesar Rp 150.000,~ ke 8831917474 a/n Raudhah Salsabila</h6
-                                    class="text-sm">
+                                <h6 class="text-sm">Pembayaran sebesar Rp 125.000,~ ke xxxxx a/n xxxxx</h6>
                             </div>
                             <div>
                                 <input required
