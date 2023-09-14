@@ -85,9 +85,9 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
-Route::get('/ticket', function () {
-    return view('Tickets.index');
-});
+// Route::get('/ticket', function () {
+//     return view('Tickets.index');
+// });
 
 // Route::resource('rac', TeamDataController::class);
 

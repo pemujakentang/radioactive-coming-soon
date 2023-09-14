@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
     @vite('resources/css/app.css')
-    <title>RadioActive 2023 | Checkout</title>
+    <title>UMN Radioactive 2023 | Checkout</title>
 </head>
 
 <body class="antialiased bg-black min-h-screen">
@@ -37,7 +37,7 @@
                     href="/ticket">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="merch.umnradioactive.com">Merchandise</a>
+                    href="merch.umnradioactive.com">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -55,17 +55,17 @@
                             href="/ticket">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">Merchandise</a>
+                            href="merch.umnradioactive.com">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container max-w-sm md:max-w-md mx-auto">
+    <div class="container max-w-sm md:max-w-md mx-auto md:py-40">
         <div
             class="bg-[#333333] text-white flex flex-col items-center  px-8 shadow-[#FFF000] border-white border-[3px]">
-            <h2 class="font-taruno">Data Diri</h2>
+            <h2 class="font-taruno mt-10">Data Diri</h2>
             <div class="mb-1 flex flex-col font-pathway text-sm w-full">
                 <label for="name" class="">Nama</label>
                 <input class="focus:outline-none focus:shadow-outline bg-black" type="text" name="name"
@@ -87,7 +87,7 @@
                     id="name" value={{ $order->qty }} disabled>
             </div>
             <button type="submit" id="pay-button"
-                class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1">Pay</button>
+                class="my-6 button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1">Pay</button>
         </div>
     </div>
 
@@ -121,6 +121,23 @@
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <style>
+        .button-submit {
+            transition: background-color 0.25s, transform 0.25s;
+            border: 2px solid white;
+        }
+
+        .button-submit:hover {
+            background-color: #FFF000;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        .button-submit:active {
+            background-color: white;
+            color: black;
+        }
+    </style>
 
 </body>
 
