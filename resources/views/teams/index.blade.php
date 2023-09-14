@@ -103,11 +103,11 @@
         <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">THE JUDGES</h4>
         <div id="judges" class="flex flex-col md:flex-row gap-12">
             <div class="flex flex-col" data-aos="fade-up">
-                <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
+                <img class="h-64 md:h-80 w-80 md:w-96 object-cover" src="images/FOTO-JURI-shandy.webp" alt="" />
                 <h4 class="font-taruno text-white text-center font-bold">SHANDY LUO</h4>
             </div>
             <div class="flex flex-col" data-aos="fade-up">
-                <img class="h-80 md:h-96" src="images/BACKGROUND LOGO.webp" alt="" />
+                <img class="h-64 md:h-80 w-80 md:w-96 object-cover" src="images/FOTO-JURI-BELLA.webp" alt="" />
                 <h4 class="font-taruno text-white text-center font-bold">BELLA PRAMBORS</h4>
             </div>
         </div>
