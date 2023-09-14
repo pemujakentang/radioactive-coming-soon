@@ -114,11 +114,11 @@
     </div>
 
     <div id="timeline" class="hidden md:flex flex-col justify-center items-center my-32 mb-28" data-aos="fade-up">
-        <img class="md:h-96 sm:h-0 px-2 max-w-[90%] object-contain" src="/images/TIMELINE RAC.png" alt="" />
+        <img class="md:h-96 sm:h-0 px-2 max-w-[90%] object-contain" src="/images/rac.webp" alt="" />
     </div>
 
     <div id="timelineHP" class="flex flex-col justify-center items-center my-32 mb-28 md:hidden" data-aos="fade-up">
-        <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/TIMELINE RAC HP.png" alt="" />
+        <img class="w-80 sm:w-[60%] sm:min-w-40 px-2" src="/images/racHP.webp" alt="" />
     </div>
 
     <footer class="bg-gradient-to-b from-transparent to-[#0E0EC0] pt-56 pb-16">

@@ -91,8 +91,8 @@
     </div>
 
     <div id="mainGS" class="flex flex-col justify-center items-center my-24">
-        <img class="hidden md:block h-36 px-2" src="/images/TIMELINE-VOC.webp" alt="" />
-        <img class="md:hidden w-5/6" src="/images/TIMELINE-VOC-HP.webp" alt="">
+        <img class="hidden md:block h-36 px-2" src="/images/voc.webp" alt="" />
+        <img class="md:hidden w-5/6" src="/images/vocHP.webp" alt="">
     </div>
 
     {{-- <div id="button1" class="flex justify-center md:py-0 items-center mt-8">
