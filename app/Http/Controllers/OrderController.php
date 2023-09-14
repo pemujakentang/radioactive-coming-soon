@@ -58,11 +58,19 @@ class OrderController extends Controller
             'phone' => 'required'
         ]);
 
+        $ticket_sold = Ticket::count();
+        $isEarlyBird = true;
+        $harga_ticket = 30000;
+
+        if ($ticket_sold >= 70) {
+            $isEarlyBird = 45000;
+        }
+
         // kalo cuma single buyer
-            if($request->qty == 3 || $request->qty == 5){
-                $request->request->add(['total_price' => $request->qty * 2 , 'status' => 'Unpaid']);
+            if($request->qty == 3){
+                $request->request->add(['total_price' => 115000 , 'status' => 'Unpaid']);
             } else{
-                $request->request->add(['total_price' => $request->qty * 2, 'status' => 'Unpaid']);
+                $request->request->add(['total_price' => $request->qty * $harga_ticket, 'status' => 'Unpaid']);
             }
 
             $order = Order::create($request->all());
