@@ -71,6 +71,9 @@
     </div>
     <div class="flex justify-center align-middle form-container">
         <div class="content-container px-4 py-4 flex flex-col w-[400px] max-w-[95vw]">
+            @if (session()->has('success'))
+                <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div>
+            @endif
             @if ($rac_teams->count() > 0)
 
                 @php
@@ -99,7 +102,8 @@
                     @endif
                 @endforeach
 
-                <h2 class="w-full text-center font-taruno text-white">Remaining Slots: {{ 20 - $count }}</h2>
+                <h2 class="w-full text-center font-taruno text-white hidden">Remaining Slots: {{ 20 - $count }}</h2>
+                <h2 class="w-full text-center font-taruno text-white text-sm py-2">Select Number Of Teams To Be Registered</h2>
 
                 @if ($count >= 20)
                     <h2 class="w-full text-center font-taruno">Kuota Tim Habis</h2>
@@ -164,17 +168,6 @@
                 </a>
             @endif
         </div>
-    </div>
-    <div class="w-full flex justify-center">
-        <div class="w-[90%]">
-
-            <div class="w-full flex justify-center">
-
-            </div>
-        </div>
-
-        {{-- <h2>{{ $rac_teams->count() }}</h2> --}}
-
     </div>
 </body>
 

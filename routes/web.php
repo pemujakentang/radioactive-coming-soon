@@ -85,9 +85,9 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
-// Route::get('/ticket', function () {
-//     return view('Tickets.index');
-// });
+Route::get('/closing-night', function () {
+    return view('Tickets.index');
+});
 
 // Route::resource('rac', TeamDataController::class);
 
@@ -101,6 +101,7 @@ Route::controller(TeamDataController::class)->group(function(){
     Route::post('/rac/delete', 'destroy');
     Route::get('/rac/form/{amount}', 'form');
     Route::get('/rac/dashboard', 'dashboard');
+    Route::get('/rac/confirmation', 'confirmation_redirect');
 });
 
 Route::controller(VocController::class)->group(function () {

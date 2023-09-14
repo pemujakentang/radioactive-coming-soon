@@ -54,7 +54,7 @@
                 </div>
                 <div class="mb-0.5">
                     <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-0.5" for="">tim1_operator</label>
+                        <label class="block text-gray-700 text-sm font-bold mb-0.5" for="">Operator</label>
                     </div>
                     <div>
                         <input

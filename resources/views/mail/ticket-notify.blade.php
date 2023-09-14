@@ -22,7 +22,7 @@ Thanks,<br>
 </head>
 
 <body>
-    <h3>Dear, {{ $data['receiver'] }},</h3>
+    <h3>Dear {{ $data['receiver'] }},</h3>
     <p>We are delighted to inform you that your ticket booking has been successfully processed. Your tickets for the
         upcoming event have been issued and are ready for use. Please find the details below:</p>
 
@@ -33,7 +33,7 @@ Thanks,<br>
 
     <h3>Ticket Details:</h3>
     <p>Ticket Type: {{ $data['ticket_type'] }}</p>
-    <p> Quantity: {{ $data['quantity'] }}</p>
+    <p>Quantity: {{ $data['quantity'] }}</p>
 
     <p>Booking Reference/Confirmation Number: {{ $data['ticket_code'] }}
         Please make a note of this number as it will be required for any further inquiries or changes to your booking.
@@ -44,8 +44,14 @@ Thanks,<br>
         {{ $data['ticket_code_packed'] }}
     </p>
 
-    <p>See you at NEO WOLRD, Revends! ⭐️</p>
-    <p>Best regards, Revy.</p>
+    <p>For more information hit us up on DM at Instagram @umnradioactive.
+    </p>
+
+    <p>See you at Neo World Revends
+    </p>
+
+    <p>Best regards,</p>
+    <p>Revy.</p>
 </body>
 
 </html>
