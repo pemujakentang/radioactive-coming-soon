@@ -85,7 +85,7 @@ Route::get('/cart/{id}', [MerchController::class, 'removeFromCart']);
 Route::get('/merch-checkout', [MerchController::class, 'checkout']);
 
 Route::get('/send', [MailController::class, 'index']);
-Route::get('/ticket', function () {
+Route::get('/closing-night', function () {
     return view('Tickets.index');
 });
 
