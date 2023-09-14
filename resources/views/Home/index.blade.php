@@ -40,8 +40,8 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/closing-night">CLOSING
                     NIGHT</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                {{-- <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
             </div>
 
             <div class="mobile-navbar">
@@ -58,8 +58,8 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/closing-night">CLOSING
                             NIGHT</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                        {{-- <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
                     </div>
                 </div>
             </div>
@@ -306,12 +306,12 @@
                             <b>CLOSING NIGHT</b>
                         </h5>
                     </a>
-                    <a href="https://merch.umnradioactive.com/"
+                    {{-- <a href="https://merch.umnradioactive.com/"
                         class="no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer">
                         <h5 class="text-xs font-taruno font-medium text-white">
                             <b>MERCHANDISE</b>
                         </h5>
-                    </a>
+                    </a> --}}
                 </div>
                 <div class="mx-auto flex flex-wrap content-center mb-12 md:mb-0">
                     <div class="flex space-x-4 mt-4 sm:mt-0">
