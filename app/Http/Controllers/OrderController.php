@@ -24,7 +24,7 @@ class OrderController extends Controller
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
 
-        if ($ticket_sold >= 69) {
+        if ($ticket_sold >= 71) {
             $isEarlyBird = false;
         }
 
@@ -62,7 +62,7 @@ class OrderController extends Controller
         $isEarlyBird = true;
         $harga_ticket = 30000;
 
-        if ($ticket_sold >= 70) {
+        if ($ticket_sold >= 71) {
             $isEarlyBird = 45000;
         }
 
@@ -148,7 +148,7 @@ class OrderController extends Controller
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
 
-        if ($ticket_sold >= 69) {
+        if ($ticket_sold >= 71) {
             $isEarlyBird = false;
         }
 
