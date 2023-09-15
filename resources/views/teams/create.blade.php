@@ -42,8 +42,8 @@
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/ticket">CLOSING
                     NIGHT</a>
-                {{-- <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
+                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
             </div>
 
             <div class="mobile-navbar">
@@ -60,8 +60,8 @@
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/ticket">CLOSING
                             NIGHT</a>
-                        {{-- <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="merch.umnradioactive.com">MERCHANDISE</a> --}}
+                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                            href="merch.umnradioactive.com">MERCHANDISE</a>
                     </div>
                 </div>
             </div>
