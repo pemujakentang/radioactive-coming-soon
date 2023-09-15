@@ -91,11 +91,18 @@
                     <input class="focus:outline-none focus:shadow-outline bg-black" type="email" name="email"
                         id="email" placeholder="example@gmail.com">
                 </div>
-                <div class="mb-3 flex flex-col font-pathway text-sm w-full">
+                <div class="mb-1 flex flex-col font-pathway text-sm w-full">
                     <label for="phone" class="">Phone</label>
                     <input class="focus:outline-none focus:shadow-outline bg-black" type="tel" name="phone"
                         id="phone" placeholder="0812xxxxxxxx">
                 </div>
+                @if (session()->has('emailError'))
+                    <div class="mb-2">
+                        <ul class="text-red-500 text-left">
+                            <li>{{ session('emailError') }}</li>
+                        </ul>
+                    </div>
+                @endif
                 <button type="submit"
                     class="button-submit font-taruno text-white bg-[#0E0EC0] w-full text-sm px-5 py-1">Daftar</button>
             </div>

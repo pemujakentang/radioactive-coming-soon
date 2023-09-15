@@ -58,6 +58,10 @@ class OrderController extends Controller
             'phone' => 'required'
         ]);
 
+        if (Order::where('email', $request->email)->exists()) {
+            return back()->with('emailError', 'Email already exists!');
+        }
+
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
         $harga_ticket = 30000;
