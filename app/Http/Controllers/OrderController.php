@@ -24,7 +24,7 @@ class OrderController extends Controller
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
 
-        if ($ticket_sold >= 69) {
+        if ($ticket_sold >= 71) {
             $isEarlyBird = false;
         }
 
@@ -62,7 +62,7 @@ class OrderController extends Controller
         $isEarlyBird = true;
         $harga_ticket = 30000;
 
-        if ($ticket_sold >= 70) {
+        if ($ticket_sold >= 71) {
             $isEarlyBird = 45000;
         }
 
@@ -142,13 +142,13 @@ class OrderController extends Controller
         $ticket_code_array = $ticket_code->toArray();
 
         foreach($ticket_code_array as $ticket){
-            $ticket_code_packed = $ticket_code_packed . "staging.umnradioactive.com/show-qr/" . $ticket . ', ';
+            $ticket_code_packed = $ticket_code_packed . "umnradioactive.com/show-qr/" . $ticket . ', ';
         }
 
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
 
-        if ($ticket_sold >= 69) {
+        if ($ticket_sold >= 71) {
             $isEarlyBird = false;
         }
 
