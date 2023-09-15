@@ -67,14 +67,6 @@
     </div>
 
     <div class="container max-w-sm md:max-w-md mx-auto">
-        <p class="text-3xl py-8">Buyer Details</p>
-        @if ($errors->any())
-            <ul class="text-red-500 text-center">
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        @endif
         <form action="/checkout" method="POST">
             @csrf
             <div
