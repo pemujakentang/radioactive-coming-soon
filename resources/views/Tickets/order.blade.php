@@ -88,10 +88,10 @@
                     <input class="focus:outline-none focus:shadow-outline bg-black" type="tel" name="phone"
                         id="phone" placeholder="0812xxxxxxxx">
                 </div>
-                @if (session()->has('emailError'))
+                @if ($errors->has('email'))
                     <div class="mb-2">
                         <ul class="text-red-500 text-left">
-                            <li>{{ session('emailError') }}</li>
+                            <li>{{ $errors->first('email') }}</li>
                         </ul>
                     </div>
                 @endif

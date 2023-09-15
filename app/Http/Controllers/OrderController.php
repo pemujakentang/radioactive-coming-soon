@@ -59,7 +59,7 @@ class OrderController extends Controller
         ]);
 
         if (Order::where('email', $request->email)->exists()) {
-            return back()->with('emailError', 'Email already exists!');
+            return back()->withErrors('email', 'Email already exists!');
         }
 
         $ticket_sold = Ticket::count();
