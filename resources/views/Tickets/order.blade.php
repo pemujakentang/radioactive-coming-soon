@@ -66,7 +66,7 @@
         </div>
     </div>
 
-    <div class="container max-w-sm md:max-w-md mx-auto">
+    <div class="container max-w-sm md:max-w-md mx-auto py-24">
         <form action="/checkout" method="POST">
             @csrf
             <div
