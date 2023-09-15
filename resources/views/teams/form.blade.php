@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center pt-8 mb-6">
+    <div class="font-taruno2 text-lg md:text-3xl text-white flex justify-center text-center mb-6 pt-20">
         FORM PENDAFTARAN RAC
     </div>
     @if ($amount == 1)
