@@ -24,13 +24,13 @@
     <form action="/voc/store" class="" enctype="multipart/form-data" method="post">
         <div class="flex justify-center align-middle form-container">
             <div class="flex flex-col w-[400px] max-w-[95vw]">
-                {{-- @if (session()->has('success')) --}}
+                @if (session()->has('success'))
                     {{-- <div class="text-sm text-green-500" role="alert">{{ session('success') }}</div> --}}
                     <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 my-4 rounded" role="alert">
                         <p class="font-bold">Success</p>
                         <p>Pengumpulan Berhasil, Terimakasih Revends!</p>
                     </div>
-                {{-- @endif --}}
+                @endif
                 <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#FFF000]">
                     <div class="w-full font-taruno text-md md:text-lg text-white text-center">Data VOC</div>
                     @csrf
