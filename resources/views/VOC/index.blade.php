@@ -239,22 +239,22 @@
             </script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
             <script>
-                var CurrentDate = new Date();
-                var HandbookDate = new Date("2023-09-18");
+                // var CurrentDate = new Date();
+                // var HandbookDate = new Date("2023-09-18");
                 // var TiktokDate = new Date('2023-09-17T19:00:00');
-                var handbook = document.getElementById("handbookbtn");
+                // var handbook = document.getElementById("handbookbtn");
 
-                function checkTime() {
-                    if (CurrentDate >= HandbookDate) {
-                        handbookbtn.removeAttribute("disabled");
-                    }
-                    // if (CurrentDate >= TiktokDate) {
-                    //     document.getElementById("tiktok").style.display = 'block';
-                    // }
-                }
+                // function checkTime() {
+                //     if (CurrentDate >= HandbookDate) {
+                //         handbookbtn.removeAttribute("disabled");
+                //     }
+                //     if (CurrentDate >= TiktokDate) {
+                //         document.getElementById("tiktok").style.display = 'block';
+                //     }
+                // }
 
-                checkTime();
-                setInterval(checkTime, 1000);
+                // checkTime();
+                // setInterval(checkTime, 1000);
             </script>
 </body>
 
