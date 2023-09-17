@@ -106,7 +106,7 @@
 
     <div class="flex flex-col md:flex-row justify-center sm:py-4 items-center mt-8" data-aos="fade-up">
         <div id="button2" class="my-3">
-            <a target="_" href="https://drive.google.com/file/d/1XiWD7K1PdMgT3W0C1wsX4_EaRNHUF0WV/view?usp=sharing" class="no-underline py-4 px-6">
+            <a target="_" href="https://drive.google.com/file/d/14Y0enX7wnNaMfjSnY9YLHQqdEbTJBLDI/view?usp=sharing" class="no-underline py-4 px-6">
                 <button
                     class="bg-[#0E0EC0] text-white border-white w-80 md:h-16 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
                     DOWNLOAD HANDBOOK
