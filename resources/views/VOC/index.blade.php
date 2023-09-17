@@ -111,7 +111,7 @@
     </div>
 
     <div id="button1" class="flex flex-wrap justify-center md:py-0 items-center mt-8 gap-4" data-aos="fade-up">
-        <a href="https://drive.google.com/file/d/1QmfDasf6RAbZDRiw26iO7ze-FmTkuat-/view?usp=sharing" class="no-underline">
+        <a target="_" href="https://drive.google.com/file/d/1QmfDasf6RAbZDRiw26iO7ze-FmTkuat-/view?usp=sharing" class="no-underline">
             <button id="handbookbtn"
                 class="bg-[#0E0EC0] disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white w-80 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0] disabled:text-white">
                 DOWNLOAD HANDBOOK
