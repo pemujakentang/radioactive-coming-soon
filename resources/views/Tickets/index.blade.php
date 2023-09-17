@@ -13,7 +13,12 @@
 </head>
 
 <body class="overflow-x-hidden bg-black h-full">
-
+    {{-- <div>
+        <video autoplay loop muted
+            class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">
+            <source src="/images/BACKGROUND_DESKTOP.webm" type="video/webm">
+        </video>
+    </div> --}}
 
     <div id="header" x-data="{ isOpen: false }"
         class="fixed navbar bg-[#0E0EC0] justify-center gap-16 z-40 transition-all duration-700">
@@ -50,7 +55,7 @@
                             CHALLENGE</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/rac">RAC</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        <a class="font-taruno text-black text-xs underline underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/closing-night">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"

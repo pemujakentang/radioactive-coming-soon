@@ -70,7 +70,7 @@
         FORM PENDAFTARAN RAC
     </div>
     @if ($amount == 1)
-        <form action="/rac/store" class="" enctype="multipart/form-data" method="post">
+        <form action="/rac/store" class="pb-24" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[400px] max-w-[95vw]">
                     <div class="w-full form-content shadow-md  px-8 py-3 mb-10 font-pathway shadow-[#FFF000]">
@@ -283,7 +283,7 @@
             </div>
         </form>
     @elseif($amount == 2)
-        <form action="/rac/store" class="" enctype="multipart/form-data" method="post">
+        <form action="/rac/store" class="pb-24" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[800px] max-w-[95vw]">
                     <div
@@ -685,7 +685,7 @@
 
         </form>
     @elseif($amount == 3)
-        <form action="/rac/store" class="" enctype="multipart/form-data" method="post">
+        <form action="/rac/store" class="pb-24" enctype="multipart/form-data" method="post">
             <div class="flex justify-center align-middle form-container">
                 <div class="flex flex-col w-[1200px] max-w-[95vw]">
                     <div
