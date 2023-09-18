@@ -33,7 +33,7 @@ class TicketController extends Controller
 
     public function show_qr($ticket_code)
     {
-        $url = 'https://staging.umnradioactive.com/ticket-redeem/'.$ticket_code;
+        $url = 'https://umnradioactive.com/ticket-redeem/'.$ticket_code;
         $qr_code = QrCode::size(200)->generate($url);
         return view('Admin.qr', compact('qr_code'));
     }
