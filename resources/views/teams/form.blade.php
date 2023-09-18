@@ -260,7 +260,7 @@
                                     for="">Bukti Pembayaran</label>
                             </div>
                             <div>
-                                <h6 class="text-sm">Pembayaran sebesar Rp 125.000,~ ke xxxxx a/n xxxxx</h6>
+                                <h6 class="text-sm">Pembayaran sebesar Rp 125.000,~ ke 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
                             </div>
                             <div>
                                 <input required
@@ -658,7 +658,7 @@
                                         for="">Bukti Pembayaran</label>
                                 </div>
                                 <div>
-                                    <h6 class="text-sm">Pembayaran sebesar Rp 200.000,~ ke xxxxx a/n xxxxx</h6>
+                                    <h6 class="text-sm">Pembayaran sebesar Rp 200.000,~ ke 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
                                 </div>
                                 <div>
                                     <input required
@@ -1237,7 +1237,7 @@
                                         for="">Bukti Pembayaran</label>
                                 </div>
                                 <div>
-                                    <h6 class="text-sm">Pembayaran sebesar Rp 300.000,~ ke xxxxx a/n xxxxx</h6>
+                                    <h6 class="text-sm">Pembayaran sebesar Rp 300.000,~ ke 8831917474 a/n RAUDHAH SALSABILA SURBAKTI</h6>
                                 </div>
                                 <div>
                                     <input required
