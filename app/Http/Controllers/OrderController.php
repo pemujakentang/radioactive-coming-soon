@@ -54,13 +54,13 @@ class OrderController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required|unique:tickets,email|email:dns',
+            'email' => 'required|email:dns',
             'phone' => 'required'
         ]);
 
-        if (Order::where('email', $request->email)->exists()) {
-            return back()->withErrors('email', 'Email already exists!');
-        }
+        // if (Order::where('email', $request->email)->exists()) {
+        //     return back()->withErrors('email', 'Email already exists!');
+        // }
 
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
