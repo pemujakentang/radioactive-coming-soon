@@ -90,28 +90,32 @@
                 </button>
             </a>
         </div>
-        {{-- <div id="gueststar" class="flex flex-col justify-center items-center my-16">
-            <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-12" data-aos="fade-up">GUEST STARS
+        <div id="gueststar" class="flex flex-col justify-center items-center my-16">
+            <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-8" data-aos="fade-up">GUEST STARS
             </h4>
-            <div id="mainGS" class="flex flex-col mb-12" data-aos="fade-up">
-                <img class="h-80 md:h-96" src="/images/BG-JURI-GS.webp" alt="" />
-                <h4 class="font-taruno text-white text-center font-bold">REVEALING SOON</h4>
+            <div id="mainGS" class="flex flex-col mb-12 relative" data-aos="fade-up">
+                <img class="h-80 w-80 md:h-96 md:w-96 object-cover" src="/images/BG-JURI-GS.webp" alt="" />
+                <div class="absolute top-[41.5%] w-full flex justify-center">
+                    <h4 class="font-taruno text-4xl text-white text-center font-bold">REVEALING SOON</h4>
+                </div>
+                <h4 class="font-taruno text-xl text-white text-center font-bold">???</h4>
+                
             </div>
             <div id="otherGS" class="flex flex-col md:flex-row gap-12">
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-72" src="/images/BG-JURI-GS.webp" alt="" />
+                    <img class="h-80 w-80 sm:h-72 sm:w-72 object-cover" src="/images/FOTO GS the laidback horses.webp" alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">LAIDBACK HORSES</h4>
                 </div>
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-72" src="/images/BG-JURI-GS.webp" alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
-                </div>
-                <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 md:h-72" src="/images/BG-JURI-GS.webp" alt="" />
+                    <img class="h-80 w-80 sm:h-72 sm:w-72 object-cover" src="/images/FOTO GS karaokemon.webp" alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
                 </div>
+                <div class="flex flex-col" data-aos="fade-up">
+                    <img class="h-80 w-80 sm:h-72 sm:w-72 object-cover" src="/images/FOTO GS liberal mistik.webp" alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
+                </div>
             </div>
-        </div> --}}
+        </div>
         <div id="ticket" class="flex flex-col justify-center items-center mt-16">
             <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-16" data-aos="fade-up">GET YOUR
                 TICKETS</h4>
