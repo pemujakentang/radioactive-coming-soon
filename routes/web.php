@@ -93,10 +93,10 @@ Route::get('/closing-night', function () {
 
 Route::controller(TeamDataController::class)->group(function(){
     Route::get('/rac', 'index');
-    // Route::get('/rac/register', 'create');
-    Route::get('/rac/register', function(){
-        return view('welcome');
-    });
+    Route::get('/rac/register', 'create');
+    // Route::get('/rac/register', function(){
+    //     return view('welcome');
+    // });
     Route::post('/rac/store', 'store');
     Route::get('/rac/show', 'show');
     Route::get('/rac/{id}/edit', 'edit');
@@ -109,10 +109,10 @@ Route::controller(TeamDataController::class)->group(function(){
 
 Route::controller(VocController::class)->group(function () {
     Route::get('/voc', 'index');
-    // Route::get('/voc/submission', 'create');
-    Route::get('/voc/submission', function(){
-        return view('welcome');
-    });
+    Route::get('/voc/submission', 'create');
+    // Route::get('/voc/submission', function(){
+    //     return view('welcome');
+    // });
     Route::post('/voc/store', 'store');
     Route::get('/voc/show', 'show');
     Route::get('/voc/{id}/edit', 'edit');
