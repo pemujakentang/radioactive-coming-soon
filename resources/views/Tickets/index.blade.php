@@ -100,37 +100,29 @@
             </div>
             <div id="mdGS" class="flex flex-col md:flex-row flex-wrap justify-center gap-12 mt-8">
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-64 w-64 md:h-72 md:w-72 object-cover" src="/images/FOTO GS karaokemon.webp"
+                    <img class="h-64 w-72 md:h-72 md:w-80 object-cover" src="/images/FOTO GS karaokemon.webp"
                         alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
                 </div>
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-64 w-64 md:h-72 md:w-72 object-cover" src="/images/FOTO GS 90HP.webp"
+                    <img class="h-64 w-72 md:h-72 md:w-80 object-cover" src="/images/FOTO GS 90HP.webp"
                         alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">90hp</h4>
                 </div>
             </div>
-            {{-- <div id="smGS" class="flex flex-col md:flex-row flex-wrap justify-center gap-12 mt-8">
+            <div id="smGS" class="grid grid-cols-2 gap-4 justify-center md:gap-12 mt-16 mx-2">
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS liberal mistik.webp"
+                    <div class="flex justify-center">
+                        <img class="h-56 w-64 md:h-64 md:w-72 object-cover" src="/images/FOTO GS liberal mistik.webp"
                         alt="" />
+                    </div>
                     <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
                 </div>
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS the laidback horses.webp"
+                    <div class="flex justify-center">
+                        <img class="h-56 w-64 md:h-64 md:w-72 object-cover" src="/images/FOTO GS the laidback horses.webp"
                         alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">THE LAIDBACK HORSES</h4>
-                </div>
-            </div> --}}
-            <div id="smGS" class="grid grid-cols-2 gap-4 justify-center mt-12 mx-2">
-                <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS liberal mistik.webp"
-                        alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
-                </div>
-                <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS the laidback horses.webp"
-                        alt="" />
+                    </div>
                     <h4 class="font-taruno text-white text-center font-bold">THE LAIDBACK HORSES</h4>
                 </div>
             </div>
