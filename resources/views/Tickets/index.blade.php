@@ -126,7 +126,7 @@
                     <div class="absolute top-0 bottom-0 left-0 right-0">
                         <h4 class="font-taruno2 text-2xl text-white text-center mt-12">EARLY <br> BIRD</h4>
                         <p class="font-pathway text-md text-white text-center">15-30 <br> September 2023</p>
-                        <h4 class="font-taruno text-white text-center font-bold mt-28">HTM <br> RP 30.000</h4>
+                        <h4 class="font-taruno text-white text-center font-bold mt-20">HTM <br> RP 30.000</h4>
                         <div id="buttonearly1" class="flex justify-center items-center mt-32">
                             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                                 class="bg-black text-white border-white py-4 px-6 font-taruno font-bold border-2 inline-flex items-center focus:ring-gray-300"
@@ -146,9 +146,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div id="buttonearly2" class="hidden flex justify-center items-center mt-32">
+                        <div id="buttonearly2" class="hidden flex justify-center items-center mt-36">
                             <button
-                                class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
+                                class="disable bg-slate-400 text-white border-white mt-2 py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
                                 type="button">SOLD OUT <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -165,8 +165,8 @@
                         <p class="font-pathway text-md text-white text-center">1 Oktober - <br> 17 November 2023</p>
                         <h4 id="presalecomingsoon" class="font-taruno text-white text-center font-bold mt-36">HTM <br>
                             COMING SOON</h4>
-                        <h4 id="presalestartsoon" class="hidden font-taruno text-white text-center font-bold mt-36">
-                            HTM <br> Rp 45.000</h4>
+                        <h4 id="presalestartsoon" class="hidden font-taruno text-white text-center font-bold mt-28">
+                            HTM <br>Single - Rp 45.000 <br><div class="text-sm mt-1">Bundle (3) - Rp 115.000</div></h4>
                         <div id="buttonpresale1" class="flex justify-center items-center mt-32">
                             <button
                                 class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
