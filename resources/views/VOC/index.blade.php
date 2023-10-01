@@ -117,7 +117,7 @@
                 DOWNLOAD HANDBOOK
             </button>
         </a>
-        <a href="/voc/submission" class="no-underline">
+        <a href="/voc/submission" class="no-underline hidden">
             <button id="submitbtn" disabled
                 class="bg-[#0E0EC0] disabled:bg-gray-400 disabled:cursor-not-allowed text-white border-white w-80 p-6 font-taruno text-2xs md:text-sm font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0] disabled:text-white">
                 SUBMIT YOUR VIDEO
@@ -226,20 +226,20 @@
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
         <script>
-            var CurrentDate = new Date();
-            var HandbookDate = new Date("2023-09-18");
-            var handbook = document.getElementById("handbookbtn");
-            var submitbtn = document.getElementById('submitbtn')
+            // var CurrentDate = new Date();
+            // var HandbookDate = new Date("2023-09-18");
+            // var handbook = document.getElementById("handbookbtn");
+            // var submitbtn = document.getElementById('submitbtn')
 
-            function checkTime() {
-                if (CurrentDate >= HandbookDate) {
-                    // handbookbtn.removeAttribute("disabled");
-                    submitbtn.removeAttribute("disabled");
-                }
-            }
+            // function checkTime() {
+            //     if (CurrentDate >= HandbookDate) {
+            //         // handbookbtn.removeAttribute("disabled");
+            //         submitbtn.removeAttribute("disabled");
+            //     }
+            // }
 
-            checkTime();
-            setInterval(checkTime, 1000);
+            // checkTime();
+            // setInterval(checkTime, 1000);
         </script>
 </body>
 
