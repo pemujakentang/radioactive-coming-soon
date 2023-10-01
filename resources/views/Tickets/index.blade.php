@@ -94,25 +94,44 @@
             <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-8" data-aos="fade-up">GUEST STARS
             </h4>
             <div id="mainGS" class="flex flex-col mb-12 relative" data-aos="fade-up">
-                <img class="h-80 w-80 md:h-96 md:w-96 object-cover" src="/images/BG-JURI-GS.webp" alt="" />
-                <div class="absolute top-[41.5%] w-full flex justify-center">
-                    <h4 class="font-taruno text-4xl text-white text-center font-bold">REVEALING SOON</h4>
-                </div>
-                <h4 class="font-taruno text-xl text-white text-center font-bold">???</h4>
-                
+                <img class="h-72 w-[400px] md:h-[400px] md:w-[500px] object-cover" src="/images/FOTO GS LOMBA SIHIR.webp"
+                    alt="" />
+                <h4 class="font-taruno text-xl text-white text-center font-bold">LOMBA SIHIR</h4>
             </div>
-            <div id="otherGS" class="flex flex-col md:flex-row gap-12">
+            <div id="mdGS" class="flex flex-col md:flex-row flex-wrap justify-center gap-12 mt-8">
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 w-80 sm:h-72 sm:w-72 object-cover" src="/images/FOTO GS the laidback horses.webp" alt="" />
-                    <h4 class="font-taruno text-white text-center font-bold">LAIDBACK HORSES</h4>
-                </div>
-                <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 w-80 sm:h-72 sm:w-72 object-cover" src="/images/FOTO GS karaokemon.webp" alt="" />
+                    <img class="h-64 w-64 md:h-72 md:w-72 object-cover" src="/images/FOTO GS karaokemon.webp"
+                        alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">KARAOKEMON</h4>
                 </div>
                 <div class="flex flex-col" data-aos="fade-up">
-                    <img class="h-80 w-80 sm:h-72 sm:w-72 object-cover" src="/images/FOTO GS liberal mistik.webp" alt="" />
+                    <img class="h-64 w-64 md:h-72 md:w-72 object-cover" src="/images/FOTO GS 90HP.webp"
+                        alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">90hp</h4>
+                </div>
+            </div>
+            {{-- <div id="smGS" class="flex flex-col md:flex-row flex-wrap justify-center gap-12 mt-8">
+                <div class="flex flex-col" data-aos="fade-up">
+                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS liberal mistik.webp"
+                        alt="" />
                     <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
+                </div>
+                <div class="flex flex-col" data-aos="fade-up">
+                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS the laidback horses.webp"
+                        alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">THE LAIDBACK HORSES</h4>
+                </div>
+            </div> --}}
+            <div id="smGS" class="grid grid-cols-2 gap-4 justify-center mt-12 mx-2">
+                <div class="flex flex-col" data-aos="fade-up">
+                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS liberal mistik.webp"
+                        alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">LIBERAL MISTEIK</h4>
+                </div>
+                <div class="flex flex-col" data-aos="fade-up">
+                    <img class="h-56 w-56 md:h-64 md:w-64 object-cover" src="/images/FOTO GS the laidback horses.webp"
+                        alt="" />
+                    <h4 class="font-taruno text-white text-center font-bold">THE LAIDBACK HORSES</h4>
                 </div>
             </div>
         </div>
@@ -166,7 +185,9 @@
                         <h4 id="presalecomingsoon" class="font-taruno text-white text-center font-bold mt-36">HTM <br>
                             COMING SOON</h4>
                         <h4 id="presalestartsoon" class="hidden font-taruno text-white text-center font-bold mt-28">
-                            HTM <br>Single - Rp 45.000 <br><div class="text-sm mt-1">Bundle (3) - Rp 115.000</div></h4>
+                            HTM <br>Single - Rp 45.000 <br>
+                            <div class="text-sm mt-1">Bundle (3) - Rp 115.000</div>
+                        </h4>
                         <div id="buttonpresale1" class="flex justify-center items-center mt-32">
                             <button
                                 class="disable bg-slate-400 text-white border-white py-4 px-6 font-taruno font-bold border-2 cursor-not-allowed inline-flex items-center focus:ring-gray-300"
