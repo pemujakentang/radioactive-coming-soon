@@ -64,7 +64,7 @@ class OrderController extends Controller
 
         $ticket_sold = Ticket::count();
         $isEarlyBird = true;
-        $harga_ticket = 30000;
+        $harga_ticket = 45000;
 
         if ($ticket_sold >= 71) {
             $isEarlyBird = 45000;

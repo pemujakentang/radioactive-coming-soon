@@ -324,8 +324,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script>
         var today = new Date();
-        var presaleStart = new Date('2023-10-01');
-        var presaleEnd = new Date('2023-11-17');
+        var presaleStartTime = new Date('2023-10-01');
+        var presaleEndTime = new Date('2023-11-17');
 
         var earlySold = 0; //ger help!
 
@@ -341,7 +341,7 @@
         var presaleComing = document.getElementById("presalecomingsoon");
         var presaleStart = document.getElementById("presalestartsoon");
 
-        if (earlySold) {
+        if (today >= presaleStartTime) {
             ticketBlue1.classList.add('hidden');
             ticketBlack1.classList.remove('hidden');
             ticketBlue2.classList.remove('hidden');
@@ -360,7 +360,7 @@
                 presaleComing.classList.add('hidden');
                 presaleStart.classList.remove('hidden');
             }
-        } else if (today >= presaleStart) {
+        } else if (today >= presaleStartTime) {
             ticketBlue1.classList.add('hidden');
             ticketBlack1.classList.remove('hidden');
             ticketBlue2.classList.remove('hidden');
