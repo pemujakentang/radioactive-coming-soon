@@ -94,7 +94,7 @@
             <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-8" data-aos="fade-up">GUEST STARS
             </h4>
             <div id="mainGS" class="flex flex-col mb-12 relative" data-aos="fade-up">
-                <img class="h-72 w-[400px] md:h-[400px] md:w-[500px] object-cover" src="/images/FOTO GS LOMBA SIHIR.webp"
+                <img class="h-72 w-96 md:h-[400px] md:w-[500px] object-cover" src="/images/FOTO GS LOMBA SIHIR.webp"
                     alt="" />
                 <h4 class="font-taruno text-xl text-white text-center font-bold">LOMBA SIHIR</h4>
             </div>
