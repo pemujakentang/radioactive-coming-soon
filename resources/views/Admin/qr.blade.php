@@ -26,9 +26,18 @@
             <p class="text-white font-pathway">See you at RADIOACTIVE 2023</p>
             <p class="text-white font-pathway mb-5 ">Closing Night: <em>"NEO WORLD"</em> !</p>
             <hr class="mx-auto w-3/4">
-            <p class="text-white font-pathway mt-5 pb-3"><img src="/images/ICON-CALENDAR_1.webp" class="inline h-5 pr-2" alt="">18 November 2023</p>
-            <p class="text-white font-pathway"><img src="/images/ICON-LOCATION_1.webp" class="inline translate-y-2 h-6 pr-1" alt=""> Parkiran Function Hall UMN</p>
-            <p class="text-white pl-7 font-pathway pb-5 -mt-2">Gading Serpong, Tangerang</p>
+            <div class="flex flex-row justify-center mt-5">
+                <img src="/images/ICON-CALENDAR_1.webp" class="inline h-5 mx-2" alt="">
+                <p class="text-white font-pathway text-left">18 November 2023</p>
+            </div>
+
+            <div class="flex flex-row justify-center my-3">
+                <img src="/images/ICON-LOCATION_1.webp" class="inline translate-y-2 h-6 mx-2" alt="">
+                <div>
+                    <p class="text-white font-pathway text-left">Parkiran Function Hall UMN</p>
+                    <p class="text-white font-pathway text-left">Gading Serpong, Tangerang</p>
+                </div>
+            </div>
 
             <div class="flex bg-white py-2 px-2 max-w-fit mx-auto">
                 {!! $qr_code !!}
