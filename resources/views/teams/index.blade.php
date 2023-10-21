@@ -236,12 +236,16 @@
     <script>
             var CurrentDate = new Date();
             var regDate = new Date("2023-09-18");
+            var closeDate = new Date("2023-10-20");
             var btnReg = document.getElementById('btnReg');
 
             function checkTime() {
                 if (CurrentDate >= regDate) {
                     // handbookbtn.removeAttribute("disabled");
                     btnReg.removeAttribute("disabled");
+                }
+                if(CurrentDate>=closeDate){
+                    btnReg.setAttribute("class", "hidden");
                 }
             }
 
