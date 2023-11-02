@@ -13,6 +13,14 @@
 </head>
 
 <body class="overflow-x-hidden">
+    <div id="button1" class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce" data-aos="fade-up">
+        <a href="/closing-night/#ticket" class="no-underline">
+            <button
+                class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#0E0EC0] text-white border-white font-taruno text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
+                GET YOUR TICKETS
+            </button>
+        </a>
+    </div>
     <div>
         <video autoplay loop muted
             class="fixed -z-10 w-auto lg:w-full md:min-w-full md:min-h-full max-w-fit object-cover" loading="lazy">

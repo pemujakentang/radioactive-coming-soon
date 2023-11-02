@@ -130,7 +130,7 @@
         <div id="ticket" class="flex flex-col justify-center items-center mt-16">
             <h4 class="font-taruno md:text-xl text-white text-center font-bold mb-16" data-aos="fade-up">GET YOUR
                 TICKETS</h4>
-            <div id="ticketType" class="flex flex-col md:flex-row gap-24">
+            <div id="ticketType" class="flex flex-col md:flex-row gap-4 md:gap-24">
                 <div id="ticket1" class="w-72 relative" data-aos="fade-up">
                     <img id="ticketblue1" class="" src="/images/TICKET-BLUE.webp" alt="" />
                     <img id="ticketblack1" class="hidden" src="/images/TICKET-BLACK.webp" alt="" />
