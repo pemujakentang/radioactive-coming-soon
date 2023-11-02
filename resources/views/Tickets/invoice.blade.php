@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <div class="max-w-sm md:max-w-md mx-auto md:py-40">
+    <div class="max-w-sm md:max-w-md mx-auto md:py-40 pt-20">
         <div
             class="bg-[#333333] text-white flex flex-col items-center  px-8 shadow-[#FFF000] border-white border-[3px]">
             <h2 class="font-taruno pt-10">Receipt</h2>
