@@ -89,6 +89,9 @@
             <button type="submit" id="pay-button"
                 class="button-submit font-taruno text-white bg-red-700 w-full text-sm px-5 py-1 my-6" disabled>Status :
                 {{ $order->status }}</button>
+            <div class="mb-4 flex flex-col font-pathway text-sm w-full">
+                <label for="" class="">Please check your email for your tickets. If you haven't received an email in an hour or if you have entered the wrong email feel free to contact us via Instagram <strong>@umnradioactive</strong></label>
+            </div>
         </div>
     </div>
 
