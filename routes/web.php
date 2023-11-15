@@ -121,6 +121,10 @@ Route::controller(VocController::class)->group(function () {
     Route::get('/voc/dashboard', 'dashboard');
 });
 
+Route::get('/doorprize', function(){
+    return view('RNG.index');
+})->middleware('auth');
+
 // Route::get('/rac', function(){
 //     return view('Rac.index');
 // });
