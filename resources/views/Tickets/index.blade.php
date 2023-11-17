@@ -223,8 +223,26 @@
                         </div>
                     </div>
                 </div>
+                <div id="ticket3" class="w-72 relative" data-aos="fade-up">
+                    <img id="ticketblack3" class="hidden" src="/images/TICKET-BLACK.webp" alt="" />
+                    <img id="ticketblue3" class="" src="/images/TICKET-BLUE.webp" alt="" />
+                    <div class="absolute top-0 bottom-0 left-0 right-0">
+                        <h4 class="font-taruno2 text-2xl text-white text-center mt-12">ON THE SPOT</h4>
+                        <p class="font-pathway text-md text-white text-center">18 November 2023</p>
+                        <h4 id="" class="font-taruno text-white text-center font-bold mt-20">
+                            HTM <br>Rp 50.000 <br>
+                        </h4>
+                        <h4 id="" class="font-taruno text-white text-center font-bold mt-16">
+                            PARKIRAN FH UMN
+                        </h4>
+                        <h4 id="" class="font-taruno text-white text-center font-bold mt-28 px-8">
+                            GET YOUR TICKETS ON THE SPOT
+                        </h4>
+                    </div>
+                </div>
             </div>
         </div>
+        
         <!-- <p class="text-3xl py-8">Tickets Menu</p>
         <div class="flex flex-col">
             <a href="/custom-order">Custom Order</a>
