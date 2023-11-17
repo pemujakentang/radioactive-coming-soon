@@ -338,7 +338,7 @@
     <script>
         var today = new Date();
         var presaleStartTime = new Date('2023-10-01');
-        var presaleEndTime = new Date('2023-11-18');
+        var presaleEndTime = new Date('2023-11-18T00:00:00+07:00');
 
         var earlySold = 0; //ger help!
 
