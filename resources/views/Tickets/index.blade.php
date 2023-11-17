@@ -365,7 +365,7 @@
             buttonPresale2.classList.remove('hidden');
             presaleComing.classList.add('hidden');
             presaleStart.classList.remove('hidden');
-            if (today >= presaleEnd) {
+            if (today >= presaleEndTime) {
                 ticketBlue2.classList.add('hidden');
                 ticketBlack2.classList.remove('hidden');
                 buttonPresale2.classList.add('hidden');
@@ -382,7 +382,7 @@
             buttonEarly2.classList.remove('hidden');
             buttonPresale1.classList.add('hidden');
             buttonPresale2.classList.remove('hidden');
-            if (today >= presaleEnd) {
+            if (today >= presaleEndTime) {
                 ticketBlue2.classList.add('hidden');
                 ticketBlack2.classList.remove('hidden');
                 buttonPresale2.classList.add('hidden');
