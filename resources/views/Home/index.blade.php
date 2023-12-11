@@ -13,7 +13,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <div id="button1" class="fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce" data-aos="fade-up">
+    <div id="button1" class="hidden fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce" data-aos="fade-up">
         <a href="/closing-night/#ticket" class="no-underline">
             <button
                 class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#0E0EC0] text-white border-white font-taruno text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
@@ -40,7 +40,7 @@
             <div class="pr-4 hidden space-x-6 lg:inline-block">
                 <a class="font-taruno text-white text-xs underline underline-offset-4 decoration-[#FFF000] cursor-pointer"
                     href="/">HOME</a>
-                <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
+                {{-- <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
                     href="/voc">VO
                     CHALLENGE</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
@@ -49,7 +49,7 @@
                     href="/closing-night">CLOSING
                     NIGHT</a>
                 <a class="font-taruno text-white text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#FFF000] cursor-pointer"
-                    href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                    href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
             </div>
 
             <div class="mobile-navbar">
@@ -58,7 +58,7 @@
                     <div class="flex flex-col space-y-6">
                         <a class="font-taruno text-black text-xs underline underline-offset-4 decoration-[#0E0EC0] cursor-pointer"
                             href="/">HOME</a>
-                        <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
+                        {{-- <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
                             href="/voc">VO
                             CHALLENGE</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
@@ -67,12 +67,11 @@
                             href="/closing-night">CLOSING
                             NIGHT</a>
                         <a class="font-taruno text-black text-xs no-underline hover:underline hover:underline-offset-4 hover:decoration-[#0E0EC0] cursor-pointer"
-                            href="https://merch.umnradioactive.com/">MERCHANDISE</a>
+                            href="https://merch.umnradioactive.com/">MERCHANDISE</a> --}}
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div id="section-1" class="pt-24 max-w-4xl mx-auto">
@@ -115,8 +114,8 @@
     </div>
 
     <div id="section3" class="-mb-20 lg:-mb-0 lg:my-16" data-aos="fade-up">
-        <h4 class="md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
-        <div class="carousel carousel-center flex">
+        <h4 class="hidden md:text-xl font-taruno2 text-white text-center my-12">UPCOMING EVENTS</h4>
+        <div class="hidden carousel carousel-center flex">
             <div class="carousel-item ml-16 lg:ml-32 border border-white">
                 <a href="/voc" class="no-underline">
                     <div class="flex bg-[#0E0EC0] flex-row max-h-44 lg:max-h-96">
