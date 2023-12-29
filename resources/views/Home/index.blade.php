@@ -13,7 +13,9 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <div id="button1" class="hidden fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce" data-aos="fade-up">
+    <div id="button1"
+        class="hidden fixed bottom-12 end-4 md:bottom-20 md:end-20 flex justify-center items-center z-50 animate-bounce"
+        data-aos="fade-up">
         <a href="/closing-night/#ticket" class="no-underline">
             <button
                 class="rounded-[100%] h-[5.5rem] md:h-32 aspect-square bg-[#0E0EC0] text-white border-white font-taruno text-2xs md:text-sm p-2 md:p-4 font-bold border-2 hover:bg-[#FFF000] hover:text-[#0E0EC0]">
@@ -207,7 +209,7 @@
             </div>
             </a>
         </div>
-        <div id="section4" class="-mb-20   md:-mb-0 md:my-24" data-aos="fade-up">
+        <div id="section4" class="-mb-20 md:-mb-0 md:my-24 hidden" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center mb-6 mt-12">EXCLUSIVE MEDIA PARTNER</h2>
             <div class="w-4/6 mb-4 md:w-1/4 items-center justify-center text-center mx-auto md:mb-6">
                 <img class="" src="/images/prambors.webp" alt="" />
@@ -252,7 +254,7 @@
             </div>
         </div>
 
-        <div id="section5" class="py-20 md:py-0 lg:-mb-0 lg:my-16" data-aos="fade-up">
+        <div id="section5" class="py-20 md:py-0 lg:-mb-0 lg:my-16 hidden" data-aos="fade-up">
             <h2 class="font-taruno2 text-white text-center my-12">SPONSORS</h2>
 
             <div id="sponsor-M"
@@ -280,6 +282,17 @@
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/chuga-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/puyo-xs.webp" alt="" />
                 <img class="h-auto md:w-32 md:mx-8 mb-2" src="/images/pandaboo-xs.webp" alt="" />
+            </div>
+        </div>
+
+        <div id="after" class="-mb-20 md:-mb-0 md:my-24" data-aos="fade-up">
+            <h2 class="font-taruno2 text-white text-center mb-6 mt-6">AFTER MOVIE</h2>
+            <div class="w-full flex justify-center">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/noafJ76PHeM?si=x_X9yxOawXxH8Id2" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </div>
 
