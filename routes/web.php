@@ -24,17 +24,13 @@ use App\Http\Controllers\VocController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/ra23', function () {
     return view('Home.index');
 });
 
-Route::get('/soon', function () {
+Route::get('/', function () {
     return view('Home.soon');
 });
-
-// Route::get('/voc', function () {
-//     return view('VOC.index');
-// });
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login');
