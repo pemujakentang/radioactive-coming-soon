@@ -28,6 +28,10 @@ Route::get('/', function () {
     return view('Home.index');
 });
 
+Route::get('/soon', function () {
+    return view('Home.soon');
+});
+
 // Route::get('/voc', function () {
 //     return view('VOC.index');
 // });
