@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
     <style>
         .shadow-follow {
-            filter: drop-shadow(0 0 25px rgb(255, 0, 21, 1));
+            filter: drop-shadow(0 0 25px rgb(214, 21, 37, 0.7));
         }
     </style>
 </head>
