@@ -21,7 +21,7 @@
             <source src="{{asset('images24/bgApi1.webm')}}" type="video/webm">
         </video>
     </div>
-    <div class="w-full pt-24 md:pt-16 flex justify-center items-center flex-wrap">
+    <div class="w-full pt-16 flex justify-center items-center flex-wrap">
         <div data-aos="fade-up" class="flex flex-col md:flex-row items-center justify-center gap-4">
             <p class="text-center font-ltmuseum-reg text-base md:text-xl text-white z-20">THE MOST SPECTACULAR ANNUAL EVENT BY </p>
             <img class="w-20 md:w-24 z-16" src="images/LOGO UMN RADIO.webp">
